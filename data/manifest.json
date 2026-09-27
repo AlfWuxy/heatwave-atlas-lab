@@ -1,0 +1,972 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-26T02:08:15+00:00",
+  "scope": "6 个坐标 2006—2025 年逐日日最高/最低气温；3 个短窗口逐小时；1 个官方站点 6 日样本。不是全球全量，不是完整热浪事件库。",
+  "sources": {
+    "open_meteo_era5": {
+      "original_dataset": "ERA5: ECMWF reanalysis, Copernicus Climate Change Service",
+      "original_dataset_url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=overview",
+      "provider": "Open-Meteo，第三方数据代理及 API；不是 ECMWF 官方下载端点",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "terms_url": "https://open-meteo.com/en/terms",
+      "attribution_url": "https://open-meteo.com/en/licence",
+      "api_data_licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "model": "ERA5",
+      "model_request": "models=era5",
+      "elevation_downscaling": "disabled: elevation=nan",
+      "grid_cell_selection": "nearest",
+      "time_basis": "UTC；日极值按 UTC 日聚合，不是城市当地日",
+      "interpretation": "网格再分析值，不是城市官方气象站纪录；2 米气温不等于热量或地表温度。"
+    },
+    "noaa_ncei_ghcn_daily": {
+      "original_dataset": "NOAA NCEI Global Historical Climatology Network Daily (GHCN-Daily)",
+      "provider": "NOAA NCEI 官方直接下载服务",
+      "documentation_url": "https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation",
+      "original_dataset_url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+      "licence_attribution_url": "https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00861",
+      "station_id": "USW00024229",
+      "time_basis": "站点观测日；不直接与 ERA5 UTC 日配对"
+    }
+  },
+  "requests": [
+    {
+      "path": "data/raw/smoke_portland_2021-06-27_2021-06-28.json",
+      "bytes": 3725,
+      "sha256": "a08518a19b9768a6660c1c0070d4a2f7319a599fe173e26dc639a48aae72af0d",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=45.52&longitude=-122.68&start_date=2021-06-27&end_date=2021-06-28&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Cprecipitation",
+      "retrieved_at_utc": "2026-09-26T02:08:15+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "purpose": "单请求短窗口可用性与字段验证",
+      "requested_location": {
+        "latitude": 45.52,
+        "longitude": -122.68
+      },
+      "returned_location": {
+        "latitude": 45.5,
+        "longitude": -122.75,
+        "elevation": 118.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        },
+        "hourly_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "cloud_cover": "%",
+          "shortwave_radiation": "W/m²",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°",
+          "soil_moisture_0_to_7cm": "m³/m³",
+          "precipitation": "mm"
+        }
+      }
+    },
+    {
+      "path": "data/raw/portland_daily_2006-01-01_2010-12-31.json",
+      "bytes": 40880,
+      "sha256": "db0a1a8e3a46dc8b14984ba02c38635aab4151a2702bae49dfdd62f0691d7a90",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=45.52&longitude=-122.68&start_date=2006-01-01&end_date=2010-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:16+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "portland",
+      "requested_location": {
+        "latitude": 45.52,
+        "longitude": -122.68
+      },
+      "returned_location": {
+        "latitude": 45.5,
+        "longitude": -122.75,
+        "elevation": 118.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/portland_daily_2011-01-01_2015-12-31.json",
+      "bytes": 40988,
+      "sha256": "83cb159976c25968bd92c38db5f3df4c053c5c7a4886fd38d250d0285ed0894a",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=45.52&longitude=-122.68&start_date=2011-01-01&end_date=2015-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:18+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "portland",
+      "requested_location": {
+        "latitude": 45.52,
+        "longitude": -122.68
+      },
+      "returned_location": {
+        "latitude": 45.5,
+        "longitude": -122.75,
+        "elevation": 118.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/portland_daily_2016-01-01_2020-12-31.json",
+      "bytes": 40985,
+      "sha256": "b857f8fa4d76f7c974ec64a9d1dd6afd6dc12e8a1e2652b67bf6e187a853acc7",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=45.52&longitude=-122.68&start_date=2016-01-01&end_date=2020-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:20+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "portland",
+      "requested_location": {
+        "latitude": 45.52,
+        "longitude": -122.68
+      },
+      "returned_location": {
+        "latitude": 45.5,
+        "longitude": -122.75,
+        "elevation": 118.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/portland_daily_2021-01-01_2025-12-31.json",
+      "bytes": 40953,
+      "sha256": "6a5394eb7067a7cff07923939aaf2366fd9f5518ab35032e38568e72f7c0ead4",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=45.52&longitude=-122.68&start_date=2021-01-01&end_date=2025-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:22+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "portland",
+      "requested_location": {
+        "latitude": 45.52,
+        "longitude": -122.68
+      },
+      "returned_location": {
+        "latitude": 45.5,
+        "longitude": -122.75,
+        "elevation": 118.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/paris_daily_2006-01-01_2010-12-31.json",
+      "bytes": 40989,
+      "sha256": "2eb7ce4e4654dbe336a5dcced7141f230c7135ace2984853290d8ed7635e6ba6",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.86&longitude=2.35&start_date=2006-01-01&end_date=2010-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:25+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "paris",
+      "requested_location": {
+        "latitude": 48.86,
+        "longitude": 2.35
+      },
+      "returned_location": {
+        "latitude": 48.75,
+        "longitude": 2.25,
+        "elevation": 104.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/paris_daily_2011-01-01_2015-12-31.json",
+      "bytes": 40899,
+      "sha256": "8a3314480d6b6920aee51619e8e531b7b4a14798ebab1fbeaa004bb133a86f8d",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.86&longitude=2.35&start_date=2011-01-01&end_date=2015-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:27+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "paris",
+      "requested_location": {
+        "latitude": 48.86,
+        "longitude": 2.35
+      },
+      "returned_location": {
+        "latitude": 48.75,
+        "longitude": 2.25,
+        "elevation": 104.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/paris_daily_2016-01-01_2020-12-31.json",
+      "bytes": 40963,
+      "sha256": "ebbf1e51be37af6e165efa8f6f083234a6170ac9fad57c75131264d6ebcd267b",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.86&longitude=2.35&start_date=2016-01-01&end_date=2020-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:28+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "paris",
+      "requested_location": {
+        "latitude": 48.86,
+        "longitude": 2.35
+      },
+      "returned_location": {
+        "latitude": 48.75,
+        "longitude": 2.25,
+        "elevation": 104.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/paris_daily_2021-01-01_2025-12-31.json",
+      "bytes": 41016,
+      "sha256": "f6edf6bf987feac784adca1f71b3e774c8401cf8efd7c85ea89ba8280e0c6b45",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.86&longitude=2.35&start_date=2021-01-01&end_date=2025-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:30+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "paris",
+      "requested_location": {
+        "latitude": 48.86,
+        "longitude": 2.35
+      },
+      "returned_location": {
+        "latitude": 48.75,
+        "longitude": 2.25,
+        "elevation": 104.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/chongqing_daily_2006-01-01_2010-12-31.json",
+      "bytes": 41690,
+      "sha256": "0e4c026f6836bdfc044b30d335dff0b185b507f906d4795f5e66373c8f667cb4",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.56&longitude=106.55&start_date=2006-01-01&end_date=2010-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:33+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "chongqing",
+      "requested_location": {
+        "latitude": 29.56,
+        "longitude": 106.55
+      },
+      "returned_location": {
+        "latitude": 29.5,
+        "longitude": 106.5,
+        "elevation": 333.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/chongqing_daily_2011-01-01_2015-12-31.json",
+      "bytes": 41658,
+      "sha256": "52ac91af8482dff531cb7dc52eaa8b8c7961b7540651e4f25f2661db264a2a3f",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.56&longitude=106.55&start_date=2011-01-01&end_date=2015-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:35+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "chongqing",
+      "requested_location": {
+        "latitude": 29.56,
+        "longitude": 106.55
+      },
+      "returned_location": {
+        "latitude": 29.5,
+        "longitude": 106.5,
+        "elevation": 333.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/chongqing_daily_2016-01-01_2020-12-31.json",
+      "bytes": 41728,
+      "sha256": "0cfb6c9288727fe27509cfd2f6735f07aa27bb5da6f72f7c409ab401cde7eae3",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.56&longitude=106.55&start_date=2016-01-01&end_date=2020-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:37+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "chongqing",
+      "requested_location": {
+        "latitude": 29.56,
+        "longitude": 106.55
+      },
+      "returned_location": {
+        "latitude": 29.5,
+        "longitude": 106.5,
+        "elevation": 333.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/chongqing_daily_2021-01-01_2025-12-31.json",
+      "bytes": 41718,
+      "sha256": "b70495cec7505169993dcd9bd7da3da829718692f9c1f94de33360fea594570a",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.56&longitude=106.55&start_date=2021-01-01&end_date=2025-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:39+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "chongqing",
+      "requested_location": {
+        "latitude": 29.56,
+        "longitude": 106.55
+      },
+      "returned_location": {
+        "latitude": 29.5,
+        "longitude": 106.5,
+        "elevation": 333.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/new_delhi_daily_2006-01-01_2010-12-31.json",
+      "bytes": 42089,
+      "sha256": "dcd17f37074fd7cd306ed65d709781f57c6bb20c3eafb0bd104b13509333bc90",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.61&longitude=77.21&start_date=2006-01-01&end_date=2010-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:41+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "new_delhi",
+      "requested_location": {
+        "latitude": 28.61,
+        "longitude": 77.21
+      },
+      "returned_location": {
+        "latitude": 28.5,
+        "longitude": 77.25,
+        "elevation": 220.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/new_delhi_daily_2011-01-01_2015-12-31.json",
+      "bytes": 42060,
+      "sha256": "0ec890a5b0a264c45c324f284bc664d28e7a8e70c7fd1e3ea8baf62bcdb68b3b",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.61&longitude=77.21&start_date=2011-01-01&end_date=2015-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:43+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "new_delhi",
+      "requested_location": {
+        "latitude": 28.61,
+        "longitude": 77.21
+      },
+      "returned_location": {
+        "latitude": 28.5,
+        "longitude": 77.25,
+        "elevation": 220.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/new_delhi_daily_2016-01-01_2020-12-31.json",
+      "bytes": 42086,
+      "sha256": "5e6dd3bd0916df847f540ea86a7624c400abaab61df69da5b5d3334d19a2bf69",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.61&longitude=77.21&start_date=2016-01-01&end_date=2020-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:45+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "new_delhi",
+      "requested_location": {
+        "latitude": 28.61,
+        "longitude": 77.21
+      },
+      "returned_location": {
+        "latitude": 28.5,
+        "longitude": 77.25,
+        "elevation": 220.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/new_delhi_daily_2021-01-01_2025-12-31.json",
+      "bytes": 42084,
+      "sha256": "06aa872584437d05c095b6366d4f4268f8f60e41b26021feda34b16eaabfba06",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=28.61&longitude=77.21&start_date=2021-01-01&end_date=2025-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:47+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "new_delhi",
+      "requested_location": {
+        "latitude": 28.61,
+        "longitude": 77.21
+      },
+      "returned_location": {
+        "latitude": 28.5,
+        "longitude": 77.25,
+        "elevation": 220.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/sao_paulo_daily_2006-01-01_2010-12-31.json",
+      "bytes": 42245,
+      "sha256": "adc5e1aa113c32e1833a25f4c9fdd7736eabb6c5f414ef6ec8a13f750586849a",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-23.55&longitude=-46.63&start_date=2006-01-01&end_date=2010-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:50+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "sao_paulo",
+      "requested_location": {
+        "latitude": -23.55,
+        "longitude": -46.63
+      },
+      "returned_location": {
+        "latitude": -23.5,
+        "longitude": -46.75,
+        "elevation": 790.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/sao_paulo_daily_2011-01-01_2015-12-31.json",
+      "bytes": 42254,
+      "sha256": "9c637cd6a6106743500b4a665871eb07531e848249030b62a9d070cb75b64981",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-23.55&longitude=-46.63&start_date=2011-01-01&end_date=2015-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:52+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "sao_paulo",
+      "requested_location": {
+        "latitude": -23.55,
+        "longitude": -46.63
+      },
+      "returned_location": {
+        "latitude": -23.5,
+        "longitude": -46.75,
+        "elevation": 790.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/sao_paulo_daily_2016-01-01_2020-12-31.json",
+      "bytes": 42272,
+      "sha256": "fac896eac99612c63634a334b06ab05006739d6fc94ac0eb27ea060388d21848",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-23.55&longitude=-46.63&start_date=2016-01-01&end_date=2020-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:54+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "sao_paulo",
+      "requested_location": {
+        "latitude": -23.55,
+        "longitude": -46.63
+      },
+      "returned_location": {
+        "latitude": -23.5,
+        "longitude": -46.75,
+        "elevation": 790.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/sao_paulo_daily_2021-01-01_2025-12-31.json",
+      "bytes": 42238,
+      "sha256": "2e2f71275291f030e47d64fcbddbaffffbe0bc636173ce59abf01a2efec6f814",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-23.55&longitude=-46.63&start_date=2021-01-01&end_date=2025-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:56+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "sao_paulo",
+      "requested_location": {
+        "latitude": -23.55,
+        "longitude": -46.63
+      },
+      "returned_location": {
+        "latitude": -23.5,
+        "longitude": -46.75,
+        "elevation": 790.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/sydney_daily_2006-01-01_2010-12-31.json",
+      "bytes": 42189,
+      "sha256": "14ebb9ba10fc6eea426a6ed1924340d779eea6af7fb57239f5e2a39ee9568d27",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-33.87&longitude=151.21&start_date=2006-01-01&end_date=2010-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:08:58+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "sydney",
+      "requested_location": {
+        "latitude": -33.87,
+        "longitude": 151.21
+      },
+      "returned_location": {
+        "latitude": -33.75,
+        "longitude": 151.25,
+        "elevation": 0.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/sydney_daily_2011-01-01_2015-12-31.json",
+      "bytes": 42207,
+      "sha256": "4f97ac06f13817224e758cc27bfbd0a9886d194059c139eac8e7dd2abc14a3c2",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-33.87&longitude=151.21&start_date=2011-01-01&end_date=2015-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:09:00+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "sydney",
+      "requested_location": {
+        "latitude": -33.87,
+        "longitude": 151.21
+      },
+      "returned_location": {
+        "latitude": -33.75,
+        "longitude": 151.25,
+        "elevation": 0.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/sydney_daily_2016-01-01_2020-12-31.json",
+      "bytes": 42239,
+      "sha256": "9c7fa858b4dcc92e5bd60e9e000cb3931332704285f237c925d7ecb51aef5917",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-33.87&longitude=151.21&start_date=2016-01-01&end_date=2020-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:09:02+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "sydney",
+      "requested_location": {
+        "latitude": -33.87,
+        "longitude": 151.21
+      },
+      "returned_location": {
+        "latitude": -33.75,
+        "longitude": 151.25,
+        "elevation": 0.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/sydney_daily_2021-01-01_2025-12-31.json",
+      "bytes": 42222,
+      "sha256": "877482fdc95e266b04205ee776cdc1e0b028e2c06dadcbcbaf675332b30c206c",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-33.87&longitude=151.21&start_date=2021-01-01&end_date=2025-12-31&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&daily=temperature_2m_max%2Ctemperature_2m_min",
+      "retrieved_at_utc": "2026-09-26T02:09:04+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "daily",
+      "city_id": "sydney",
+      "requested_location": {
+        "latitude": -33.87,
+        "longitude": 151.21
+      },
+      "returned_location": {
+        "latitude": -33.75,
+        "longitude": 151.25,
+        "elevation": 0.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "daily_units": {
+          "time": "iso8601",
+          "temperature_2m_max": "°C",
+          "temperature_2m_min": "°C"
+        }
+      }
+    },
+    {
+      "path": "data/raw/portland_hourly_2021-06-20_2021-07-05.json",
+      "bytes": 24220,
+      "sha256": "7c4778854e149b91900a26271291ccb6323431734fa9126de2cd07d3408e8e22",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=45.52&longitude=-122.68&start_date=2021-06-20&end_date=2021-07-05&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Cprecipitation",
+      "retrieved_at_utc": "2026-09-26T02:09:07+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "hourly",
+      "city_id": "portland",
+      "requested_location": {
+        "latitude": 45.52,
+        "longitude": -122.68
+      },
+      "window_note": "研究示例窗口，不是经阈值检定的热浪边界",
+      "returned_location": {
+        "latitude": 45.5,
+        "longitude": -122.75,
+        "elevation": 118.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "hourly_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "cloud_cover": "%",
+          "shortwave_radiation": "W/m²",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°",
+          "soil_moisture_0_to_7cm": "m³/m³",
+          "precipitation": "mm"
+        }
+      }
+    },
+    {
+      "path": "data/raw/paris_hourly_2019-07-18_2019-07-30.json",
+      "bytes": 19946,
+      "sha256": "7bbd835fc6a9784a13785829c188f29cd6e8df406340ac7520795aa94975299a",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.86&longitude=2.35&start_date=2019-07-18&end_date=2019-07-30&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Cprecipitation",
+      "retrieved_at_utc": "2026-09-26T02:09:08+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "hourly",
+      "city_id": "paris",
+      "requested_location": {
+        "latitude": 48.86,
+        "longitude": 2.35
+      },
+      "window_note": "研究示例窗口，不是经阈值检定的热浪边界",
+      "returned_location": {
+        "latitude": 48.75,
+        "longitude": 2.25,
+        "elevation": 104.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "hourly_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "cloud_cover": "%",
+          "shortwave_radiation": "W/m²",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°",
+          "soil_moisture_0_to_7cm": "m³/m³",
+          "precipitation": "mm"
+        }
+      }
+    },
+    {
+      "path": "data/raw/chongqing_hourly_2022-08-10_2022-08-28.json",
+      "bytes": 28630,
+      "sha256": "ba1475a7d2f891b3edbbb7b6825cea2b9ecabbd1c93b80125e6c634c94196840",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=29.56&longitude=106.55&start_date=2022-08-10&end_date=2022-08-28&models=era5&elevation=nan&timezone=UTC&cell_selection=nearest&wind_speed_unit=ms&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Cprecipitation",
+      "retrieved_at_utc": "2026-09-26T02:09:10+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "source": "open_meteo_era5",
+      "kind": "hourly",
+      "city_id": "chongqing",
+      "requested_location": {
+        "latitude": 29.56,
+        "longitude": 106.55
+      },
+      "window_note": "研究示例窗口，不是经阈值检定的热浪边界",
+      "returned_location": {
+        "latitude": 29.5,
+        "longitude": 106.5,
+        "elevation": 333.0,
+        "timezone": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "units": {
+        "hourly_units": {
+          "time": "iso8601",
+          "temperature_2m": "°C",
+          "relative_humidity_2m": "%",
+          "pressure_msl": "hPa",
+          "cloud_cover": "%",
+          "shortwave_radiation": "W/m²",
+          "wind_speed_10m": "m/s",
+          "wind_direction_10m": "°",
+          "soil_moisture_0_to_7cm": "m³/m³",
+          "precipitation": "mm"
+        }
+      }
+    },
+    {
+      "path": "data/raw/noaa_USW00024229_daily_2021-06-25_2021-06-30.json",
+      "bytes": 453,
+      "sha256": "1192a586e5474032619f181f3962d3621ff9b9e039d68b9c658bc7dd2a293084",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00024229&startDate=2021-06-25&endDate=2021-06-30&dataTypes=TMAX,TMIN&units=metric&format=json",
+      "retrieved_at_utc": "2026-09-26T02:09:12+00:00",
+      "content_type": "application/json;charset=utf-8",
+      "source": "noaa_ncei_ghcn_daily",
+      "station_id": "USW00024229",
+      "station_name": "PORTLAND INTERNATIONAL AIRPORT, OR US",
+      "time_basis": "站点观测日；不可直接与 ERA5 UTC 日配对",
+      "units": {
+        "TMAX": "°C",
+        "TMIN": "°C"
+      },
+      "requested_location": null
+    }
+  ],
+  "errors": [],
+  "status": "complete",
+  "derived_artifacts": [
+    {
+      "path": "data/csv/portland_daily_2006_2025.csv",
+      "bytes": 155283,
+      "sha256": "12fc8bc4a1e88337da8a68b3b5d517a50be791eab83afdf26411ba7aa91d17d9",
+      "rows": 7305
+    },
+    {
+      "path": "data/csv/paris_daily_2006_2025.csv",
+      "bytes": 155356,
+      "sha256": "3ec9ba7acdf056eb42ee8ae0a6d2e3520cc1c430886281cac3dd18f7a9543da9",
+      "rows": 7305
+    },
+    {
+      "path": "data/csv/chongqing_daily_2006_2025.csv",
+      "bytes": 158280,
+      "sha256": "b21ec6d18c5bf839e7c9249991f35aabea678dedf2743c1ddd5c371618a01d7e",
+      "rows": 7305
+    },
+    {
+      "path": "data/csv/new_delhi_daily_2006_2025.csv",
+      "bytes": 159807,
+      "sha256": "706bada0abddd95eab7070edd50c71b4e436a639734dd46b2aacad8aaf09a60f",
+      "rows": 7305
+    },
+    {
+      "path": "data/csv/sao_paulo_daily_2006_2025.csv",
+      "bytes": 160487,
+      "sha256": "b2c441bff5621fbb3378d0c756bea245211d72387ee9d2e0fafd58373035871b",
+      "rows": 7305
+    },
+    {
+      "path": "data/csv/sydney_daily_2006_2025.csv",
+      "bytes": 160339,
+      "sha256": "b511448890ee13cb0f3f1cd468250c42c982d957f25f61e4528d86a059e8bfe0",
+      "rows": 7305
+    },
+    {
+      "path": "data/csv/portland_hourly_2021-06-20_2021-07-05.csv",
+      "bytes": 22876,
+      "sha256": "6471f3544efac45ae4c9c2850b432220def911fbb13344716854ffeadee28dc0",
+      "rows": 384
+    },
+    {
+      "path": "data/csv/paris_hourly_2019-07-18_2019-07-30.csv",
+      "bytes": 18764,
+      "sha256": "c2ed2092a2ce0e523d39c053ecb93dbcced08139e09e6a7930574dffca8904f1",
+      "rows": 312
+    },
+    {
+      "path": "data/csv/chongqing_hourly_2022-08-10_2022-08-28.csv",
+      "bytes": 27134,
+      "sha256": "cc1b5a703601f4018e0a1749c599fe3da5be9ab56ef8f5579c399a8738d34023",
+      "rows": 456
+    },
+    {
+      "path": "data/csv/noaa_USW00024229_daily_2021-06-25_2021-06-30.csv",
+      "bytes": 148,
+      "sha256": "946db43991d9e112125e0780ceeb64b2fd3d9d8ac1ab466804c9ffdd976ef146",
+      "rows": 6
+    },
+    {
+      "path": "data/preview.json",
+      "bytes": 194272,
+      "sha256": "7bd70b00972350139f11e330890a474fe72cadf04ad2e470701e404793a00799"
+    },
+    {
+      "path": "data/validation_report.json",
+      "bytes": 17197,
+      "sha256": "2fac92f3991461173e774db40aa78f1a459da892ec541aa91a0fde998d472ab3"
+    }
+  ],
+  "completed_at_utc": "2026-09-26T02:09:13+00:00"
+}

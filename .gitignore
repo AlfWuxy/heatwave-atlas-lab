@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.wrangler/
+.npm-cache/
+.env
+.env.*
+!.env.example
+tmp/
+*.tsbuildinfo
+__pycache__/
+
+open-source/
+public/downloads/
+.DS_Store
+docs/发布/

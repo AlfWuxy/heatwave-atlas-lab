@@ -1,0 +1,5340 @@
+{
+  "schemaVersion": "1",
+  "caseId": "paris2019",
+  "createdAt": "2026-09-27T09:59:09Z",
+  "status": "complete",
+  "requestPolicy": {
+    "maxPointsPerBatch": 25,
+    "minimumSecondsAfterResponse": 8.0,
+    "limitCountingUnit": "requested locations",
+    "stopImmediatelyOn429": true,
+    "maximum5xxRetries": 1,
+    "cacheRequiresExactUrlAndSha256": true
+  },
+  "dataset": "ERA5 via Open-Meteo Historical Weather API",
+  "requests": [
+    {
+      "path": "data/regional/paris2019/raw/batch-000.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=46%2C46&longitude=-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T09:59:16Z",
+      "sha256": "219cbfbcc8346c45168d839dfabd2854547d4c98aa324394adc5c1a43b4966d9",
+      "bytes": 21204,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -1.0,
+          "latitude": 46.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 46.0
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 2,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -1.0,
+          "latitude": 46.0,
+          "elevation": 11.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 46.0,
+          "elevation": 23.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-001.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46%2C46.25%2C46.25&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T09:59:26Z",
+      "sha256": "11f3b1418c64246a96e6d816fce88b546fda2eb4b5589d279c6ca8077dbb6325",
+      "bytes": 265414,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 46.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 46.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 46.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 46.25
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 46.25
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 46.0,
+          "elevation": 39.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 46.0,
+          "elevation": 73.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 46.0,
+          "elevation": 104.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 46.0,
+          "elevation": 130.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 46.0,
+          "elevation": 156.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 46.0,
+          "elevation": 221.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 46.0,
+          "elevation": 280.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 46.0,
+          "elevation": 340.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 46.0,
+          "elevation": 395.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 46.0,
+          "elevation": 504.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 46.0,
+          "elevation": 543.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 46.0,
+          "elevation": 567.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 46.0,
+          "elevation": 632.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 46.0,
+          "elevation": 620.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 46.0,
+          "elevation": 506.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 46.0,
+          "elevation": 443.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 46.0,
+          "elevation": 455.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 46.0,
+          "elevation": 586.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 46.0,
+          "elevation": 494.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 46.0,
+          "elevation": 483.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 46.0,
+          "elevation": 457.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 46.0,
+          "elevation": 335.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 46.0,
+          "elevation": 277.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 46.25,
+          "elevation": 4.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 46.25,
+          "elevation": 12.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-002.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.25%2C46.5%2C46.5&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T09:59:36Z",
+      "sha256": "50cf72afe21a20ee7e3a4f40811dc7f8faf56388c946cf7ae4e842fe923cff7a",
+      "bytes": 265443,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 46.25
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 46.25
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 46.25
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 46.5
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 46.5
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 46.25,
+          "elevation": 54.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 46.25,
+          "elevation": 97.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 46.25,
+          "elevation": 136.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 46.25,
+          "elevation": 140.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 46.25,
+          "elevation": 150.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 46.25,
+          "elevation": 162.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 46.25,
+          "elevation": 213.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 46.25,
+          "elevation": 276.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 46.25,
+          "elevation": 342.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 46.25,
+          "elevation": 397.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 46.25,
+          "elevation": 413.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 46.25,
+          "elevation": 395.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 46.25,
+          "elevation": 421.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 46.25,
+          "elevation": 420.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 46.25,
+          "elevation": 394.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 46.25,
+          "elevation": 344.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 46.25,
+          "elevation": 337.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 46.25,
+          "elevation": 371.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 46.25,
+          "elevation": 381.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 46.25,
+          "elevation": 411.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 46.25,
+          "elevation": 462.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 46.25,
+          "elevation": 328.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 46.25,
+          "elevation": 263.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 46.5,
+          "elevation": 46.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 46.5,
+          "elevation": 68.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-003.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.5%2C46.75%2C46.75&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T09:59:46Z",
+      "sha256": "b559f3bbbbed776e2da88952ad69765b266af848077d66fdde9a2199bf12ff26",
+      "bytes": 265350,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 46.5
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 46.5
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 46.5
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 46.75
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 46.75
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 46.5,
+          "elevation": 115.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 46.5,
+          "elevation": 143.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 46.5,
+          "elevation": 149.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 46.5,
+          "elevation": 135.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 46.5,
+          "elevation": 127.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 46.5,
+          "elevation": 120.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 46.5,
+          "elevation": 132.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 46.5,
+          "elevation": 165.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 46.5,
+          "elevation": 210.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 46.5,
+          "elevation": 279.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 46.5,
+          "elevation": 310.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 46.5,
+          "elevation": 308.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 46.5,
+          "elevation": 297.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 46.5,
+          "elevation": 299.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 46.5,
+          "elevation": 313.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 46.5,
+          "elevation": 275.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 46.5,
+          "elevation": 251.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 46.5,
+          "elevation": 237.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 46.5,
+          "elevation": 271.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 46.5,
+          "elevation": 313.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 46.5,
+          "elevation": 365.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 46.5,
+          "elevation": 275.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 46.5,
+          "elevation": 215.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 46.75,
+          "elevation": 110.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 46.75,
+          "elevation": 141.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-004.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C46.75%2C47%2C47&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T09:59:57Z",
+      "sha256": "0e3a68a23e3f8442bb455ae9c2d2ccccd0e790f42f17c682ebbe3d51182f008b",
+      "bytes": 265341,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 46.75
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 46.75
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 46.75
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 47.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 47.0
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 46.75,
+          "elevation": 152.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 46.75,
+          "elevation": 144.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 46.75,
+          "elevation": 118.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 46.75,
+          "elevation": 107.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 46.75,
+          "elevation": 101.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 46.75,
+          "elevation": 107.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 46.75,
+          "elevation": 115.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 46.75,
+          "elevation": 131.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 46.75,
+          "elevation": 148.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 46.75,
+          "elevation": 180.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 46.75,
+          "elevation": 206.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 46.75,
+          "elevation": 195.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 46.75,
+          "elevation": 191.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 46.75,
+          "elevation": 213.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 46.75,
+          "elevation": 225.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 46.75,
+          "elevation": 224.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 46.75,
+          "elevation": 235.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 46.75,
+          "elevation": 273.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 46.75,
+          "elevation": 342.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 46.75,
+          "elevation": 336.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 46.75,
+          "elevation": 328.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 46.75,
+          "elevation": 282.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 46.75,
+          "elevation": 217.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 47.0,
+          "elevation": 107.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 47.0,
+          "elevation": 131.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-005.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47%2C47.25%2C47.25&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:00:07Z",
+      "sha256": "ca743d2bf3e4a607d137341eaa826b765d72884a052d3f47622c379acb0abae1",
+      "bytes": 265388,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 47.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 47.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 47.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 47.25
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 47.25
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 47.0,
+          "elevation": 117.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 47.0,
+          "elevation": 101.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 47.0,
+          "elevation": 73.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 47.0,
+          "elevation": 86.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 47.0,
+          "elevation": 87.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 47.0,
+          "elevation": 101.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 47.0,
+          "elevation": 119.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 47.0,
+          "elevation": 132.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 47.0,
+          "elevation": 137.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 47.0,
+          "elevation": 138.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 47.0,
+          "elevation": 150.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 47.0,
+          "elevation": 152.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 47.0,
+          "elevation": 173.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 47.0,
+          "elevation": 204.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 47.0,
+          "elevation": 212.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 47.0,
+          "elevation": 222.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 47.0,
+          "elevation": 270.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 47.0,
+          "elevation": 328.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 47.0,
+          "elevation": 448.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 47.0,
+          "elevation": 420.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 47.0,
+          "elevation": 392.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 47.0,
+          "elevation": 330.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 47.0,
+          "elevation": 262.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 47.25,
+          "elevation": 65.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 47.25,
+          "elevation": 83.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-006.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.25%2C47.5%2C47.5&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:00:17Z",
+      "sha256": "8605517e7bf823340642488c45ad2be7ce20c5534c26273468805ed32afb0c2d",
+      "bytes": 265458,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 47.25
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 47.25
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 47.25
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 47.5
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 47.5
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 47.25,
+          "elevation": 73.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 47.25,
+          "elevation": 71.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 47.25,
+          "elevation": 55.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 47.25,
+          "elevation": 70.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 47.25,
+          "elevation": 83.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 47.25,
+          "elevation": 92.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 47.25,
+          "elevation": 108.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 47.25,
+          "elevation": 117.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 47.25,
+          "elevation": 114.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 47.25,
+          "elevation": 116.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 47.25,
+          "elevation": 137.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 47.25,
+          "elevation": 172.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 47.25,
+          "elevation": 193.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 47.25,
+          "elevation": 221.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 47.25,
+          "elevation": 226.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 47.25,
+          "elevation": 236.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 47.25,
+          "elevation": 272.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 47.25,
+          "elevation": 329.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 47.25,
+          "elevation": 432.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 47.25,
+          "elevation": 423.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 47.25,
+          "elevation": 431.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 47.25,
+          "elevation": 400.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 47.25,
+          "elevation": 328.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 47.5,
+          "elevation": 65.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 47.5,
+          "elevation": 56.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-007.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.5%2C47.75%2C47.75&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:00:27Z",
+      "sha256": "a24b3f79385337cc815c84b38b855711532b6e15d7b666d90cb88dd6415e5fd1",
+      "bytes": 265473,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 47.5
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 47.5
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 47.5
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 47.75
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 47.75
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 47.5,
+          "elevation": 48.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 47.5,
+          "elevation": 46.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 47.5,
+          "elevation": 58.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 47.5,
+          "elevation": 81.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 47.5,
+          "elevation": 94.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 47.5,
+          "elevation": 103.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 47.5,
+          "elevation": 103.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 47.5,
+          "elevation": 111.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 47.5,
+          "elevation": 103.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 47.5,
+          "elevation": 109.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 47.5,
+          "elevation": 130.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 47.5,
+          "elevation": 161.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 47.5,
+          "elevation": 183.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 47.5,
+          "elevation": 209.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 47.5,
+          "elevation": 215.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 47.5,
+          "elevation": 227.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 47.5,
+          "elevation": 229.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 47.5,
+          "elevation": 287.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 47.5,
+          "elevation": 323.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 47.5,
+          "elevation": 368.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 47.5,
+          "elevation": 376.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 47.5,
+          "elevation": 406.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 47.5,
+          "elevation": 381.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 47.75,
+          "elevation": 72.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 47.75,
+          "elevation": 63.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-008.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C47.75%2C48%2C48&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:00:37Z",
+      "sha256": "bf2638ce5c27ea65c2ed06a93a428bb3c725b20c9c727fc82c86a4e896efe71a",
+      "bytes": 265500,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 47.75
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 47.75
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 47.75
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 48.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 48.0
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 47.75,
+          "elevation": 56.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 47.75,
+          "elevation": 52.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 47.75,
+          "elevation": 65.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 47.75,
+          "elevation": 89.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 47.75,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 47.75,
+          "elevation": 130.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 47.75,
+          "elevation": 129.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 47.75,
+          "elevation": 122.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 47.75,
+          "elevation": 106.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 47.75,
+          "elevation": 112.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 47.75,
+          "elevation": 124.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 47.75,
+          "elevation": 126.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 47.75,
+          "elevation": 148.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 47.75,
+          "elevation": 165.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 47.75,
+          "elevation": 188.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 47.75,
+          "elevation": 200.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 47.75,
+          "elevation": 190.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 47.75,
+          "elevation": 202.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 47.75,
+          "elevation": 230.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 47.75,
+          "elevation": 278.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 47.75,
+          "elevation": 316.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 47.75,
+          "elevation": 368.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 47.75,
+          "elevation": 343.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 48.0,
+          "elevation": 89.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 48.0,
+          "elevation": 98.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-009.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48%2C48.25%2C48.25&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:00:47Z",
+      "sha256": "1059dff7447785ab8544214c3bf13fa874819428f4ff677cc87f142582ef20d6",
+      "bytes": 265462,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 48.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 48.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 48.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 48.25
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 48.25
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 48.0,
+          "elevation": 98.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 48.0,
+          "elevation": 95.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 48.0,
+          "elevation": 86.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 48.0,
+          "elevation": 89.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 48.0,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 48.0,
+          "elevation": 146.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 48.0,
+          "elevation": 155.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 48.0,
+          "elevation": 148.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 48.0,
+          "elevation": 129.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 48.0,
+          "elevation": 117.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 48.0,
+          "elevation": 125.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 48.0,
+          "elevation": 118.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 48.0,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 48.0,
+          "elevation": 119.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 48.0,
+          "elevation": 143.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 48.0,
+          "elevation": 165.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 48.0,
+          "elevation": 165.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 48.0,
+          "elevation": 177.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 48.0,
+          "elevation": 192.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 48.0,
+          "elevation": 214.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 48.0,
+          "elevation": 252.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 48.0,
+          "elevation": 297.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 48.0,
+          "elevation": 344.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 48.25,
+          "elevation": 129.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 48.25,
+          "elevation": 142.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-010.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.25%2C48.5%2C48.5&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:00:58Z",
+      "sha256": "aad5ea3cc5d5948018fa6439c32d6eb9f79750c7b6237213899e42132ceebb26",
+      "bytes": 265490,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 48.25
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 48.25
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 48.25
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 48.5
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 48.5
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 48.25,
+          "elevation": 155.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 48.25,
+          "elevation": 158.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 48.25,
+          "elevation": 143.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 48.25,
+          "elevation": 127.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 48.25,
+          "elevation": 125.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 48.25,
+          "elevation": 163.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 48.25,
+          "elevation": 175.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 48.25,
+          "elevation": 172.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 48.25,
+          "elevation": 148.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 48.25,
+          "elevation": 135.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 48.25,
+          "elevation": 126.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 48.25,
+          "elevation": 115.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 48.25,
+          "elevation": 110.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 48.25,
+          "elevation": 106.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 48.25,
+          "elevation": 119.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 48.25,
+          "elevation": 138.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 48.25,
+          "elevation": 149.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 48.25,
+          "elevation": 153.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 48.25,
+          "elevation": 160.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 48.25,
+          "elevation": 175.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 48.25,
+          "elevation": 195.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 48.25,
+          "elevation": 227.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 48.25,
+          "elevation": 281.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 48.5,
+          "elevation": 152.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 48.5,
+          "elevation": 177.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-011.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.5%2C48.75%2C48.75&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:01:08Z",
+      "sha256": "b04fc49d557df9eaf832724c0125ebb36227add6413950b43f05bb02f6a406bf",
+      "bytes": 265435,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 48.5
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 48.5
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 48.5
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 48.75
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 48.75
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 48.5,
+          "elevation": 196.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 48.5,
+          "elevation": 205.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 48.5,
+          "elevation": 208.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 48.5,
+          "elevation": 199.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 48.5,
+          "elevation": 195.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 48.5,
+          "elevation": 206.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 48.5,
+          "elevation": 194.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 48.5,
+          "elevation": 183.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 48.5,
+          "elevation": 165.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 48.5,
+          "elevation": 150.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 48.5,
+          "elevation": 132.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 48.5,
+          "elevation": 111.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 48.5,
+          "elevation": 97.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 48.5,
+          "elevation": 91.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 48.5,
+          "elevation": 99.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 48.5,
+          "elevation": 112.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 48.5,
+          "elevation": 119.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 48.5,
+          "elevation": 118.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 48.5,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 48.5,
+          "elevation": 119.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 48.5,
+          "elevation": 137.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 48.5,
+          "elevation": 168.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 48.5,
+          "elevation": 227.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 48.75,
+          "elevation": 185.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 48.75,
+          "elevation": 222.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-012.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C48.75%2C49%2C49&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:01:18Z",
+      "sha256": "c48d9eb645d681a864e6eb80c0108ba649b57cf77e68d4f43e1bf357a0abec33",
+      "bytes": 265555,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 48.75
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 48.75
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 48.75
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 49.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 49.0
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 48.75,
+          "elevation": 202.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 48.75,
+          "elevation": 195.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 48.75,
+          "elevation": 192.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 48.75,
+          "elevation": 219.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 48.75,
+          "elevation": 229.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 48.75,
+          "elevation": 217.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 48.75,
+          "elevation": 183.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 48.75,
+          "elevation": 151.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 48.75,
+          "elevation": 142.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 48.75,
+          "elevation": 135.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 48.75,
+          "elevation": 127.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 48.75,
+          "elevation": 104.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 48.75,
+          "elevation": 93.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 48.75,
+          "elevation": 100.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 48.75,
+          "elevation": 121.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 48.75,
+          "elevation": 145.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 48.75,
+          "elevation": 157.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 48.75,
+          "elevation": 155.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 48.75,
+          "elevation": 146.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 48.75,
+          "elevation": 130.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 48.75,
+          "elevation": 129.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 48.75,
+          "elevation": 146.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 48.75,
+          "elevation": 203.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 49.0,
+          "elevation": 137.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 49.0,
+          "elevation": 162.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-013.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49%2C49.25%2C49.25&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:01:28Z",
+      "sha256": "8d3536a954e62303bf69169fa6a3650f4414cbe9425b16106ea4f82a6848e36e",
+      "bytes": 265530,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 49.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 49.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 49.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 49.25
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 49.25
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 49.0,
+          "elevation": 131.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 49.0,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 49.0,
+          "elevation": 100.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 49.0,
+          "elevation": 144.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 49.0,
+          "elevation": 172.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 49.0,
+          "elevation": 163.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 49.0,
+          "elevation": 139.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 49.0,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 49.0,
+          "elevation": 110.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 49.0,
+          "elevation": 106.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 49.0,
+          "elevation": 99.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 49.0,
+          "elevation": 87.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 49.0,
+          "elevation": 79.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 49.0,
+          "elevation": 96.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 49.0,
+          "elevation": 120.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 49.0,
+          "elevation": 156.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 49.0,
+          "elevation": 170.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 49.0,
+          "elevation": 173.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 49.0,
+          "elevation": 153.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 49.0,
+          "elevation": 138.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 49.0,
+          "elevation": 142.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 49.0,
+          "elevation": 169.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 49.0,
+          "elevation": 212.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 49.25,
+          "elevation": 59.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 49.25,
+          "elevation": 62.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-014.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.25%2C49.5%2C49.5&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:01:38Z",
+      "sha256": "b9f5bfc064fcf7302cd2e89ee6e3ff3f92b9fe3812be9127a487b4cab5df0591",
+      "bytes": 265529,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 49.25
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 49.25
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 49.25
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 49.5
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 49.5
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 49.25,
+          "elevation": 57.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 49.25,
+          "elevation": 41.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 49.25,
+          "elevation": 47.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 49.25,
+          "elevation": 94.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 49.25,
+          "elevation": 123.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 49.25,
+          "elevation": 119.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 49.25,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 49.25,
+          "elevation": 99.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 49.25,
+          "elevation": 105.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 49.25,
+          "elevation": 114.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 49.25,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 49.25,
+          "elevation": 104.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 49.25,
+          "elevation": 92.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 49.25,
+          "elevation": 88.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 49.25,
+          "elevation": 108.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 49.25,
+          "elevation": 127.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 49.25,
+          "elevation": 132.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 49.25,
+          "elevation": 134.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 49.25,
+          "elevation": 117.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 49.25,
+          "elevation": 117.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 49.25,
+          "elevation": 139.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 49.25,
+          "elevation": 164.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 49.25,
+          "elevation": 194.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 49.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 49.5,
+          "elevation": 0.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-015.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.5%2C49.75%2C49.75&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:01:48Z",
+      "sha256": "8b3db93ef952986fc121df7c14a17e828abebf7d92f53f10f4ec42396d9fa64e",
+      "bytes": 265516,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 49.5
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 49.5
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 49.5
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 49.75
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 49.75
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 49.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 49.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 49.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 49.5,
+          "elevation": 72.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 49.5,
+          "elevation": 106.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 49.5,
+          "elevation": 117.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 49.5,
+          "elevation": 113.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 49.5,
+          "elevation": 133.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 49.5,
+          "elevation": 152.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 49.5,
+          "elevation": 161.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 49.5,
+          "elevation": 145.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 49.5,
+          "elevation": 118.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 49.5,
+          "elevation": 99.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 49.5,
+          "elevation": 93.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 49.5,
+          "elevation": 88.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 49.5,
+          "elevation": 94.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 49.5,
+          "elevation": 100.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 49.5,
+          "elevation": 102.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 49.5,
+          "elevation": 123.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 49.5,
+          "elevation": 125.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 49.5,
+          "elevation": 157.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 49.5,
+          "elevation": 186.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 49.5,
+          "elevation": 213.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 49.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 49.75,
+          "elevation": 0.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-016.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C49.75%2C50%2C50&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:01:59Z",
+      "sha256": "27e15adf018b52ef77a8d8b1029dd7ff7940634272a7e71e47caa0ef8a9cab3e",
+      "bytes": 265691,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 49.75
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 49.75
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 49.75
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 50.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 50.0
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 49.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 49.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 49.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 49.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 49.75,
+          "elevation": 59.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 49.75,
+          "elevation": 76.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 49.75,
+          "elevation": 106.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 49.75,
+          "elevation": 129.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 49.75,
+          "elevation": 148.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 49.75,
+          "elevation": 154.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 49.75,
+          "elevation": 131.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 49.75,
+          "elevation": 105.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 49.75,
+          "elevation": 89.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 49.75,
+          "elevation": 90.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 49.75,
+          "elevation": 84.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 49.75,
+          "elevation": 93.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 49.75,
+          "elevation": 117.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 49.75,
+          "elevation": 126.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 49.75,
+          "elevation": 151.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 49.75,
+          "elevation": 192.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 49.75,
+          "elevation": 228.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 49.75,
+          "elevation": 256.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 49.75,
+          "elevation": 288.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 50.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 50.0,
+          "elevation": 0.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-017.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50%2C50.25%2C50.25&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:02:09Z",
+      "sha256": "a846539d1f2d5e184a1a22a22052d5e360bf34a4aa6204470a53aa99a0b7e6e4",
+      "bytes": 265835,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 50.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 50.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 50.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 50.25
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 50.25
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 50.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 50.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 50.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 50.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 50.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 50.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 50.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 50.0,
+          "elevation": 64.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 50.0,
+          "elevation": 83.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 50.0,
+          "elevation": 89.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 50.0,
+          "elevation": 86.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 50.0,
+          "elevation": 111.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 50.0,
+          "elevation": 98.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 50.0,
+          "elevation": 99.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 50.0,
+          "elevation": 86.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 50.0,
+          "elevation": 93.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 50.0,
+          "elevation": 118.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 50.0,
+          "elevation": 152.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 50.0,
+          "elevation": 191.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 50.0,
+          "elevation": 232.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 50.0,
+          "elevation": 259.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 50.0,
+          "elevation": 273.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 50.0,
+          "elevation": 306.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 50.25,
+          "elevation": 0.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-018.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.25%2C50.5%2C50.5&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:02:19Z",
+      "sha256": "96e87a2486dd116ba0587dc497b08a8e070a755939b12998a9212ede4a1e8c0c",
+      "bytes": 265952,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 50.25
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 50.25
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 50.25
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 50.5
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 50.5
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 50.25,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 50.25,
+          "elevation": 20.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 50.25,
+          "elevation": 50.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 50.25,
+          "elevation": 85.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 50.25,
+          "elevation": 109.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 50.25,
+          "elevation": 117.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 50.25,
+          "elevation": 92.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 50.25,
+          "elevation": 78.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 50.25,
+          "elevation": 72.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 50.25,
+          "elevation": 85.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 50.25,
+          "elevation": 122.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 50.25,
+          "elevation": 159.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 50.25,
+          "elevation": 192.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 50.25,
+          "elevation": 205.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 50.25,
+          "elevation": 220.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 50.25,
+          "elevation": 233.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 50.5,
+          "elevation": 0.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-019.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.5%2C50.75%2C50.75&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:02:29Z",
+      "sha256": "26013a8478f441db412bdececa1a0e85666efc7a02c2ee5762d23c894b9384c1",
+      "bytes": 265982,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 50.5
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 50.5
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 50.5
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 50.75
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 50.75
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 50.5,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 50.5,
+          "elevation": 52.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 50.5,
+          "elevation": 96.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 50.5,
+          "elevation": 93.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 50.5,
+          "elevation": 90.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 50.5,
+          "elevation": 57.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 50.5,
+          "elevation": 44.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 50.5,
+          "elevation": 33.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 50.5,
+          "elevation": 44.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 50.5,
+          "elevation": 60.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 50.5,
+          "elevation": 89.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 50.5,
+          "elevation": 121.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 50.5,
+          "elevation": 146.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 50.5,
+          "elevation": 158.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 50.5,
+          "elevation": 168.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 50.75,
+          "elevation": 0.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-020.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C50.75%2C51%2C51&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5%2C-1%2C-0.75&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:02:39Z",
+      "sha256": "6cea1a364f4ab9114d5aa61e61a3dc8be360567bea4daf1345d640833014188d",
+      "bytes": 266032,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 50.75
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 50.75
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 50.75
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 51.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 51.0
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 50.75,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 50.75,
+          "elevation": 50.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 50.75,
+          "elevation": 70.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 50.75,
+          "elevation": 60.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 50.75,
+          "elevation": 38.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 50.75,
+          "elevation": 26.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 50.75,
+          "elevation": 18.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 50.75,
+          "elevation": 28.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 50.75,
+          "elevation": 34.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 50.75,
+          "elevation": 42.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 50.75,
+          "elevation": 56.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 50.75,
+          "elevation": 66.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 50.75,
+          "elevation": 81.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 50.75,
+          "elevation": 95.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 50.75,
+          "elevation": 106.0
+        },
+        {
+          "longitude": -1.0,
+          "latitude": 51.0,
+          "elevation": 82.0
+        },
+        {
+          "longitude": -0.75,
+          "latitude": 51.0,
+          "elevation": 75.0
+        }
+      ]
+    },
+    {
+      "path": "data/regional/paris2019/raw/batch-021.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51%2C51&longitude=-0.5%2C-0.25%2C0%2C0.25%2C0.5%2C0.75%2C1%2C1.25%2C1.5%2C1.75%2C2%2C2.25%2C2.5%2C2.75%2C3%2C3.25%2C3.5%2C3.75%2C4%2C4.25%2C4.5%2C4.75%2C5&start_date=2019-07-18&end_date=2019-07-30&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-09-27T10:02:50Z",
+      "sha256": "2491908bbb80c5e6a49d12df4adad262f636829ea8c55c3384c252454c579807",
+      "bytes": 244661,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "requestedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 51.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 51.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 51.0
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 23,
+        "hoursPerPoint": 312,
+        "exactRequestedCoordinates": true,
+        "noDuplicateCoordinates": true,
+        "completeHourlyUtc": true,
+        "unitsMatch": true,
+        "noMissingValues": true,
+        "finiteValues": true,
+        "nonnegativeWindSpeed": true,
+        "validWindDirection": true
+      },
+      "returnedGrid": [
+        {
+          "longitude": -0.5,
+          "latitude": 51.0,
+          "elevation": 61.0
+        },
+        {
+          "longitude": -0.25,
+          "latitude": 51.0,
+          "elevation": 65.0
+        },
+        {
+          "longitude": 0.0,
+          "latitude": 51.0,
+          "elevation": 78.0
+        },
+        {
+          "longitude": 0.25,
+          "latitude": 51.0,
+          "elevation": 72.0
+        },
+        {
+          "longitude": 0.5,
+          "latitude": 51.0,
+          "elevation": 60.0
+        },
+        {
+          "longitude": 0.75,
+          "latitude": 51.0,
+          "elevation": 32.0
+        },
+        {
+          "longitude": 1.0,
+          "latitude": 51.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.25,
+          "latitude": 51.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.5,
+          "latitude": 51.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 1.75,
+          "latitude": 51.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 2.0,
+          "latitude": 51.0,
+          "elevation": 0.0
+        },
+        {
+          "longitude": 2.25,
+          "latitude": 51.0,
+          "elevation": 6.0
+        },
+        {
+          "longitude": 2.5,
+          "latitude": 51.0,
+          "elevation": 3.0
+        },
+        {
+          "longitude": 2.75,
+          "latitude": 51.0,
+          "elevation": 8.0
+        },
+        {
+          "longitude": 3.0,
+          "latitude": 51.0,
+          "elevation": 12.0
+        },
+        {
+          "longitude": 3.25,
+          "latitude": 51.0,
+          "elevation": 19.0
+        },
+        {
+          "longitude": 3.5,
+          "latitude": 51.0,
+          "elevation": 20.0
+        },
+        {
+          "longitude": 3.75,
+          "latitude": 51.0,
+          "elevation": 19.0
+        },
+        {
+          "longitude": 4.0,
+          "latitude": 51.0,
+          "elevation": 20.0
+        },
+        {
+          "longitude": 4.25,
+          "latitude": 51.0,
+          "elevation": 18.0
+        },
+        {
+          "longitude": 4.5,
+          "latitude": 51.0,
+          "elevation": 14.0
+        },
+        {
+          "longitude": 4.75,
+          "latitude": 51.0,
+          "elevation": 22.0
+        },
+        {
+          "longitude": 5.0,
+          "latitude": 51.0,
+          "elevation": 34.0
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "completedAt": "2026-09-27T10:02:52Z",
+  "validation": {
+    "passed": true,
+    "pointCount": 525,
+    "frameCount": 312,
+    "completeRegularGrid": true,
+    "exactRequestedCoordinates": true,
+    "uniqueCoordinates": true,
+    "hourlyUtcContiguous": true,
+    "allArrayLengthsMatch": true,
+    "noMissingValues": true,
+    "allValuesFinite": true,
+    "unitsMatch": true,
+    "resolutionDegrees": 0.25,
+    "temperatureMin": 7.5,
+    "temperatureMax": 43.0,
+    "windConversion": "u=-speed*sin(direction*pi/180); v=-speed*cos(direction*pi/180)",
+    "windPrecisionDecimals": 6,
+    "interpolationApplied": false
+  },
+  "artifact": {
+    "path": "public/data/regional-paris2019.json",
+    "sha256": "16dd9c1a00a9c3b751e499d1b683771bee5aab9c27471f5b9618a569925c35f4",
+    "bytes": 3803430
+  }
+}
