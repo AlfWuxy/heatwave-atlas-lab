@@ -2,6 +2,8 @@
 
 A public climate education website: explore historical heat events, regional wind and temperature, and idealized thermal processes. 界面主要使用中文，面向公众展示真实资料与可操作的物理机制。
 
+Live website: [heatwave-atlas-lab.yilaoweather.org](https://heatwave-atlas-lab.yilaoweather.org/).
+
 ## What is included
 
 - Regional replay: Chongqing–Sichuan 2022, Paris area 2019, Portland area 2021; 0.25° ERA5 grids, 1,475 spatial nodes and 559,200 grid-hours.
