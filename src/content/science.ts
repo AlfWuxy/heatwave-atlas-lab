@@ -49,6 +49,15 @@ export interface TeachingModel {
 
 export const sources: ScienceSource[] = [
   {
+    id: 'europe2019-soil',
+    title: 'Distinct influences of large-scale circulation and regional feedbacks in two exceptional 2019 European heatwaves',
+    organisation: 'Sousa et al. / Communications Earth & Environment (2020)',
+    url: 'https://www.nature.com/articles/s43247-020-00048-9',
+    kind: 'paper', checkedAt: '2026-10-02',
+    scope: '已下载原论文；核对事件窗、Methods及土壤水分与环流类比相关图注，目视关键图。',
+    limitation: '本站四格点ERA5序列是描述性观察，未复现论文类比、因果贡献或全部补充分析。',
+  },
+  {
     id: 'c3s-heatwaves',
     title: 'Heatwaves — a brief introduction',
     organisation: 'Copernicus Climate Change Service / ECMWF',

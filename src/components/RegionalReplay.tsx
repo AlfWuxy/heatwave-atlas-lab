@@ -7,6 +7,8 @@ import { type RegionalField, sampleRegionalField } from '../lib/regional-field';
 import { type CaseData, useData, timeLabel, coordinates } from '../lib/data';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import './regional-replay.css';
+import NightObservation from './NightObservation';
+import { snapReplayPoint, type ReplayPoint } from '../lib/replay-state';
 
 // 显式打包地图工作线程，生产环境不依赖外部脚本或动态执行。
 setWorkerUrl(mapWorkerUrl);
@@ -17,7 +19,7 @@ type RegionalData = {
   units: { temperature: string; wind: string }; retrievedAt: string;
   source: { label: string; documentationUrl: string; datasetUrl: string; attribution: string };
 };
-type Props = { data: CaseData; position: number; playing: boolean; speed: number; onPosition: (value: number) => void; onPlaying: () => void; onSpeed: (speed: number) => void; localTime: boolean };
+type Props = { data: CaseData; position: number; playing: boolean; speed: number; onPosition: (value: number) => void; onPlaying: () => void; onSpeed: (speed: number) => void; localTime: boolean; selected: ReplayPoint; onSelected: (point: ReplayPoint) => void; showTemperature: boolean; onTemperature: (value: boolean) => void; showParticles: boolean; onParticles: (value: boolean) => void; compare: { a: number; b: number; side: 'A' | 'B' } | null };
 
 function validate(data: RegionalData, caseData: CaseData) {
   if (data.caseId !== caseData.id || data.grid.crs !== 'EPSG:4326' || data.units.temperature !== '°C' || data.units.wind !== 'm/s') throw new Error('区域数据标识、坐标或单位不匹配。');
@@ -40,18 +42,15 @@ export default function RegionalReplay(props: Props) {
   return <RegionalMap key={checked.data.caseId} {...props} region={checked.data} />;
 }
 
-function RegionalMap({ data, region, position, playing, speed, onPosition, onPlaying, onSpeed, localTime }: Props & { region: RegionalData }) {
+function RegionalMap({ data, region, position, playing, speed, onPosition, onPlaying, onSpeed, localTime, selected, onSelected, showTemperature, onTemperature, showParticles, onParticles, compare }: Props & { region: RegionalData }) {
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<Map | null>(null);
   const flow = useRef<RegionalFlowLayer | null>(null);
   const [ready, setReady] = useState(false);
   const [failure, setFailure] = useState('');
   const [tileWarning, setTileWarning] = useState(false);
-  const [showTemperature, setShowTemperature] = useState(true);
-  const [showParticles, setShowParticles] = useState(true);
   const [animate, setAnimate] = useState(() => !window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [count, setCount] = useState(0);
-  const [selected, setSelected] = useState({ lon: data.gridLocation.longitude, lat: data.gridLocation.latitude });
   const [status, setStatus] = useState('点击地图，读取最近的原始格点。');
   const visible = useRef(true);
   const index = Math.max(0, Math.min(region.times.length - 1, position));
@@ -61,7 +60,17 @@ function RegionalMap({ data, region, position, playing, speed, onPosition, onPla
   const clock = region.times[index];
   const zone = localTime ? data.timezone : 'UTC';
   const bounds = useMemo<LngLatBoundsLike>(() => [[region.grid.lons[0], region.grid.lats[0]], [region.grid.lons.at(-1)!, region.grid.lats.at(-1)!]], [region]);
-  const chosen = sampleRegionalField(field, selected.lon, selected.lat);
+  const validatedPoint = snapReplayPoint(selected, region.grid.lons, region.grid.lats);
+  const probe = validatedPoint ?? snapReplayPoint({ lon: data.gridLocation.longitude, lat: data.gridLocation.latitude }, region.grid.lons, region.grid.lats)!;
+  const chosen = sampleRegionalField(field, probe.lon, probe.lat);
+  const probeIndex = region.grid.lats.indexOf(probe.lat) * region.grid.nx + region.grid.lons.indexOf(probe.lon);
+  const nightSamples = useMemo(() => region.times.map((time, index) => ({ time, temperature: region.temperature[index][probeIndex] })), [region, probeIndex]);
+  useEffect(() => {
+    if (!validatedPoint || probe.lon !== selected.lon || probe.lat !== selected.lat) {
+      onSelected(probe);
+      setStatus(validatedPoint ? '已将分享位置吸附到最近原始格点。' : '分享位置在本案例数据范围外，已恢复代表格点。');
+    }
+  }, [probe.lon, probe.lat, selected.lon, selected.lat, onSelected, validatedPoint?.lon, validatedPoint?.lat]);
   const min = Math.min(...field.temperature), max = Math.max(...field.temperature);
 
   function selectGrid(lon: number, lat: number) {
@@ -69,7 +78,7 @@ function RegionalMap({ data, region, position, playing, speed, onPosition, onPla
     if (lon < lons[0] || lon > lons.at(-1)! || lat < lats[0] || lat > lats.at(-1)!) { setStatus('这里位于本次下载范围之外，没有区域气象值。'); return; }
     const i = Math.max(0, Math.min(lons.length - 1, Math.round((lon - lons[0]) / spacing)));
     const j = Math.max(0, Math.min(lats.length - 1, Math.round((lat - lats[0]) / spacing)));
-    setSelected({ lon: lons[i], lat: lats[j] });
+    onSelected({ lon: lons[i], lat: lats[j] });
     setStatus(`已选择 ${coordinates({ latitude: lats[j], longitude: lons[i] })} 的原始格点。`);
   }
 
@@ -151,8 +160,10 @@ function RegionalMap({ data, region, position, playing, speed, onPosition, onPla
       </div>
       <div className="regional-legend"><span>12°C</span><div aria-label="固定温度色标12至42摄氏度，低温蓝色，高温红色"><i /><span>2米气温 · 摄氏度 · 固定色标</span></div><span>42°C</span><p>此刻区域格点 {min.toFixed(1)}–{max.toFixed(1)}°C</p></div>
       <div className="regional-time"><button onClick={onPlaying} aria-label={playing ? '暂停地图时间回放' : '播放地图时间回放'}>{playing ? <Pause size={17} /> : <Play size={17} />}</button><input type="range" min={0} max={region.times.length-1} value={index} aria-label="地图回放时刻" aria-valuetext={clock} onChange={event => onPosition(Number(event.target.value))} /><label><span className="sr-only">地图时间回放速度</span><select value={speed} onChange={event => onSpeed(Number(event.target.value))}><option value={1}>1×</option><option value={3}>3×</option><option value={6}>6×</option></select></label><time dateTime={clock}>{timeLabel(clock, zone)}</time></div>
-      <div className="regional-tools"><label><input type="checkbox" checked={showTemperature} onChange={event => setShowTemperature(event.target.checked)} />温度色面</label><label><input type="checkbox" checked={showParticles} onChange={event => setShowParticles(event.target.checked)} />风向粒子</label><button aria-pressed={animate} onClick={() => setAnimate(value => !value)}>{animate ? <Pause size={13} /> : <Play size={13} />}{animate ? '暂停风场动画' : '播放风场动画'}</button><button onClick={() => { const center = mapRef.current?.getCenter(); if (center) selectGrid(center.lng, center.lat); }}>读取地图中心</button><button onClick={() => selectGrid(data.gridLocation.longitude, data.gridLocation.latitude)}>读取曲线格点</button><span>{count.toLocaleString()} 粒子</span></div>
+      <div className="regional-tools"><label><input type="checkbox" checked={showTemperature} onChange={event => onTemperature(event.target.checked)} />温度色面</label><label><input type="checkbox" checked={showParticles} onChange={event => onParticles(event.target.checked)} />风向粒子</label><button aria-pressed={animate} onClick={() => setAnimate(value => !value)}>{animate ? <Pause size={13} /> : <Play size={13} />}{animate ? '暂停风场动画' : '播放风场动画'}</button><button onClick={() => { const center = mapRef.current?.getCenter(); if (center) selectGrid(center.lng, center.lat); }}>读取地图中心</button><button onClick={() => selectGrid(data.gridLocation.longitude, data.gridLocation.latitude)}>读取曲线格点</button><span>{count.toLocaleString()} 粒子</span></div>
     </div>
+    {compare && <div className="replay-comparison-values" aria-live="polite"><div><span>A · {region.times[compare.a]}</span><strong>{region.temperature[compare.a][probeIndex].toFixed(1)} °C</strong></div><div><span>B · {region.times[compare.b]}</span><strong>{region.temperature[compare.b][probeIndex].toFixed(1)} °C</strong></div><div><span>B − A · 两个小时之差</span><strong>{(region.temperature[compare.b][probeIndex] - region.temperature[compare.a][probeIndex]).toFixed(1)} °C</strong></div><p>同一原始格点 {coordinates({ latitude: probe.lat, longitude: probe.lon })} · 当前显示 {compare.side}。差值不是气候距平或成因贡献。</p></div>}
+    <NightObservation samples={nightSamples} timezone={data.timezone} locationLabel={`地图所选原始格点 ${coordinates({ latitude: probe.lat, longitude: probe.lon })}`} onTime={time => onPosition(region.times.indexOf(time))} />
     {tileWarning && <p className="regional-network">地图载入出现问题；气象数据与经纬网来自本地文件，可继续查看下方曲线与下载格点。</p>}
     <div className="regional-notes"><p>粒子跟随<strong>所选小时的10米风</strong>，颜色取当前位置的<strong>2米气温</strong>。风场动画独立于日期播放，约1显示秒表示2小时的位移；不是气块携带热量的历史轨迹。</p><p>虚线是下载范围。气象格点间距0.25°，放大不会增加原始分辨率。颜色显示气温，蓝色不代表低于气候常年值；超过12–42°C的颜色会饱和。底图为当前地理背景。<a href="/regional-methods.md" download>模型与资料说明 <ArrowUpRight size={12} /></a></p></div>
     <p className="regional-status" aria-live="polite">{status}</p>

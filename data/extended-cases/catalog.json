@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-02",
+  "timeBasis": "UTC",
+  "windowDefinition": "人工回放窗，非统一阈值识别；长事件可能仅取片段",
+  "dataProduct": "ERA5 via Open-Meteo; 网格再分析回放，不是新建或验证的独立气候模型",
+  "cases": [
+    {
+      "id": "london2022",
+      "cityId": "london",
+      "name": "伦敦",
+      "country": "英国",
+      "title": "2022 伦敦热浪",
+      "year": 2022,
+      "timezone": "Europe/London",
+      "latitude": 51.51,
+      "longitude": -0.13,
+      "start": "2022-07-10",
+      "end": "2022-07-25",
+      "sourceUrls": [
+        {
+          "title": "A milestone in UK climate history",
+          "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2022/july-heat-review",
+          "organisation": "Met Office",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "英国在7月18—19日出现极端高温，伦敦地区同时经历异常暖夜。",
+      "mechanismNote": "对比白天升温与夜间降温，观察气温、风与短波如何共同变化；不以局地点位代替英国全国纪录。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+    },
+    {
+      "id": "phoenix2023",
+      "cityId": "phoenix",
+      "name": "凤凰城",
+      "country": "美国",
+      "title": "2023 凤凰城热浪",
+      "year": 2023,
+      "timezone": "America/Phoenix",
+      "latitude": 33.45,
+      "longitude": -112.07,
+      "start": "2023-07-01",
+      "end": "2023-07-31",
+      "sourceUrls": [
+        {
+          "title": "Assessing the U.S. Climate in July 2023",
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202307",
+          "organisation": "NOAA NCEI",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "2023年7月凤凰城经历持续极端炎热与高夜间气温。",
+      "mechanismNote": "观察长期少雨、高温与暖夜的共同过程；31天窗口未覆盖全部前期条件，不能据此计算高压或土壤贡献。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。 7月整月窗未包含6月30日及更早前期条件。"
+    },
+    {
+      "id": "melbourne2009",
+      "cityId": "melbourne",
+      "name": "墨尔本",
+      "country": "澳大利亚",
+      "title": "2009 墨尔本热浪",
+      "year": 2009,
+      "timezone": "Australia/Melbourne",
+      "latitude": -37.81,
+      "longitude": 144.96,
+      "start": "2009-01-20",
+      "end": "2009-02-10",
+      "sourceUrls": [
+        {
+          "title": "Victoria summer 2008–09 climate summary",
+          "url": "https://www.bom.gov.au/climate/current/season/vic/archive/200902.summary.shtml",
+          "organisation": "Australian Bureau of Meteorology",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "澳大利亚气象局记录1月28—31日和2月6—8日两轮显著高温，前后有短暂缓解。",
+      "mechanismNote": "观察两次升温与风向改变、短波和土壤状态的关系；地方风温不能重建火灾或证明火灾归因。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+    },
+    {
+      "id": "tokyo2018",
+      "cityId": "tokyo",
+      "name": "东京",
+      "country": "日本",
+      "title": "2018 东京热浪",
+      "year": 2018,
+      "timezone": "Asia/Tokyo",
+      "latitude": 35.68,
+      "longitude": 139.76,
+      "start": "2018-07-10",
+      "end": "2018-07-31",
+      "sourceUrls": [
+        {
+          "title": "Primary Factors behind the Heavy Rain Event of July 2018 and the Subsequent Heatwave",
+          "url": "https://ds.data.jma.go.jp/tcc/tcc/news/press_20180822.pdf",
+          "organisation": "Japan Meteorological Agency / Tokyo Climate Center",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "日本2018年7月中旬起持续高温，JMA分析了副热带高压与高空环流背景。",
+      "mechanismNote": "以东京附近地面资料观察昼夜与湿度；高空过程来自文献解释，本包没有压力层证据。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+    },
+    {
+      "id": "dhaka2023",
+      "cityId": "dhaka",
+      "name": "达卡",
+      "country": "孟加拉国",
+      "title": "2023 达卡热浪",
+      "year": 2023,
+      "timezone": "Asia/Dhaka",
+      "latitude": 23.81,
+      "longitude": 90.41,
+      "start": "2023-04-10",
+      "end": "2023-04-25",
+      "sourceUrls": [
+        {
+          "title": "Extreme humid heat in South Asia in April 2023",
+          "url": "https://www.worldweatherattribution.org/extreme-humid-heat-in-south-asia-in-april-2023-largely-driven-by-climate-change-detrimental-to-vulnerable-and-disadvantaged-communities/",
+          "organisation": "World Weather Attribution",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "2023年4月南亚出现高温，WWA原始研究将孟加拉国纳入湿热分析并报告达卡的高温。",
+      "mechanismNote": "同时读取气温和相对湿度，分清空气变热与人体散热环境；本站不直接复用WWA区域四日热指数结论。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+    },
+    {
+      "id": "karachi2015",
+      "cityId": "karachi",
+      "name": "卡拉奇",
+      "country": "巴基斯坦",
+      "title": "2015 卡拉奇热浪",
+      "year": 2015,
+      "timezone": "Asia/Karachi",
+      "latitude": 24.86,
+      "longitude": 67.01,
+      "start": "2015-06-12",
+      "end": "2015-06-30",
+      "sourceUrls": [
+        {
+          "title": "Climate of Pakistan 2015",
+          "url": "https://ndmc.pmd.gov.pk/report2015.pdf",
+          "organisation": "Pakistan Meteorological Department / NDMC",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "PMD报告记载2015年6月卡拉奇严重热浪，突出过程为6月19—23日。",
+      "mechanismNote": "观察沿海气温、湿度与风向的变化；粗格点不能据此还原城市街区热岛或计算健康损失。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+    },
+    {
+      "id": "moscow2010",
+      "cityId": "moscow",
+      "name": "莫斯科",
+      "country": "俄罗斯",
+      "title": "2010 莫斯科热浪",
+      "year": 2010,
+      "timezone": "Europe/Moscow",
+      "latitude": 55.75,
+      "longitude": 37.62,
+      "start": "2010-07-20",
+      "end": "2010-08-19",
+      "sourceUrls": [
+        {
+          "title": "Reconciling two approaches to attribution of the 2010 Russian heat wave",
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2011GL050422",
+          "organisation": "Otto et al. / Geophysical Research Letters",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "2010年俄罗斯西部持续热浪在7月末达到极端水平，研究记载其于8月19日前后结束。",
+      "mechanismNote": "观察持续热浪的后半段与缓解过程；事件概率归因与强度归因是不同问题，本站点位不重做任何归因。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。 本窗截取长事件后半段，未包含7月初起始阶段。"
+    },
+    {
+      "id": "madrid2022",
+      "cityId": "madrid",
+      "name": "马德里",
+      "country": "西班牙",
+      "title": "2022 马德里热浪",
+      "year": 2022,
+      "timezone": "Europe/Madrid",
+      "latitude": 40.42,
+      "longitude": -3.7,
+      "start": "2022-07-05",
+      "end": "2022-07-29",
+      "sourceUrls": [
+        {
+          "title": "Informe sobre el estado del clima de España 2022",
+          "url": "https://www.aemet.es/documentos/es/conocermas/recursos_en_linea/publicaciones_y_estudios/publicaciones/Informes_estado_clima/IECLI_2022_baja_res.pdf",
+          "organisation": "AEMET",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official PDF downloaded and relevant text extracted"
+        }
+      ],
+      "summary": "AEMET报告记录7月9—26日热浪及马德里多站高温，适合观察长过程与暖夜。",
+      "mechanismNote": "比较土壤层水分、短波、气温和降水的时序；不把同步变化解释为单独因果贡献。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+    },
+    {
+      "id": "buenosaires2023",
+      "cityId": "buenosaires",
+      "name": "布宜诺斯艾利斯",
+      "country": "阿根廷",
+      "title": "2023 布宜诺斯艾利斯热浪",
+      "year": 2023,
+      "timezone": "America/Argentina/Buenos_Aires",
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "start": "2023-03-01",
+      "end": "2023-03-22",
+      "sourceUrls": [
+        {
+          "title": "Informe Especial N°10 por ola de calor / altas temperaturas temporada 2022–2023",
+          "url": "https://repositorio.smn.gob.ar/bitstream/handle/20.500.12160/2407/0015CL2023.pdf?isAllowed=y&sequence=1",
+          "organisation": "Servicio Meteorológico Nacional Argentina",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "阿根廷SMN记录2023年3月夏季末期热浪，布宜诺斯艾利斯经历高日温与暖夜。",
+      "mechanismNote": "观察南半球夏末高温、夜间状态与风的转变；不同季节案例用原值比较，不能等同于相同气候异常。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+    },
+    {
+      "id": "agadir2023",
+      "cityId": "agadir",
+      "name": "阿加迪尔",
+      "country": "摩洛哥",
+      "title": "2023 阿加迪尔热浪",
+      "year": 2023,
+      "timezone": "Africa/Casablanca",
+      "latitude": 30.43,
+      "longitude": -9.6,
+      "start": "2023-08-05",
+      "end": "2023-08-20",
+      "sourceUrls": [
+        {
+          "title": "Extreme weather is the new norm",
+          "url": "https://wmo.int/media/news/extreme-weather-new-norm",
+          "organisation": "World Meteorological Organization",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "summary": "WMO记录2023年8月11日阿加迪尔出现50.4°C观测值，成为摩洛哥当时全国高温纪录。",
+      "mechanismNote": "观察北非沿海热过程与风向、湿度变化；ERA5格点极值不应被强行调到站点纪录，局地区域也不能解释全部上游来源。",
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+    }
+  ]
+}

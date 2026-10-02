@@ -5,6 +5,7 @@ import type { GeometryCollection, Topology } from 'topojson-specification';
 import atlas from 'world-atlas/countries-110m.json';
 import { globalEvents, mechanisms, sources } from '../content/science';
 import './world-explorer.css';
+import CaseLibrary from './CaseLibrary';
 
 type WorldExplorerProps = { onReplay: (id: string) => void };
 type PeriodFilter = 'all' | '2009–2018' | '2019–2022' | '2023–2025';
@@ -55,10 +56,16 @@ export default function WorldExplorer({ onReplay }: WorldExplorerProps) {
     <section className="world-page" aria-labelledby="world-heading">
       <header className="world-heading-block">
         <h1 id="world-heading">每场热浪，都有自己的故事。</h1>
-        <p className="world-intro">从官方报告出发，比较不同地方的高温过程。</p>
-        <p className="world-scope">这里收录 {globalEvents.length} 个精选事件，便于追溯与比较；它们不构成全球所有热浪的完整清单。</p>
+        <p className="world-intro">打开逐小时资料，或沿着原始报告理解高温。</p>
+        <p className="world-scope">可回放资料与文献事件分别列出；它们不构成全球所有热浪的完整清单。</p>
       </header>
 
+      <CaseLibrary onReplay={onReplay} />
+
+      <div className="world-directory-heading">
+        <h2>文献中的热浪</h2>
+        <span>{globalEvents.length} 个精选事件 · 官方报告与研究</span>
+      </div>
       <div className="world-filter-bar">
         <span className="world-filter-label" id="world-period-label">按年份浏览</span>
         <div className="world-filters" role="group" aria-labelledby="world-period-label">

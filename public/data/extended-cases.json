@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-02T13:04:58Z",
+  "cases": [
+    {
+      "id": "london2022",
+      "cityId": "london",
+      "title": "2022 伦敦热浪",
+      "start": "2022-07-10",
+      "end": "2022-07-25",
+      "hours": 384,
+      "peakTemperature": 37.3,
+      "peakTime": "2022-07-19T13:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/London",
+      "dataUrl": "/data/case-london2022.json",
+      "csvUrl": "/data/case-london2022.csv",
+      "requestedLocation": {
+        "latitude": 51.51,
+        "longitude": -0.13
+      },
+      "gridLocation": {
+        "latitude": 51.5,
+        "longitude": -0.25,
+        "elevation": 71.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T12:57:31Z",
+      "rawSha256": "8812d0e87bd7f483729af7e779324ae90a38bec8dfc27ac6925c7338cbc2a81e",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=51.5&longitude=-0.25&start_date=2022-07-10&end_date=2022-07-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "英国在7月18—19日出现极端高温，伦敦地区同时经历异常暖夜。",
+      "eventEvidence": [
+        {
+          "title": "A milestone in UK climate history",
+          "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2022/july-heat-review",
+          "organisation": "Met Office",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    },
+    {
+      "id": "phoenix2023",
+      "cityId": "phoenix",
+      "title": "2023 凤凰城热浪",
+      "start": "2023-07-01",
+      "end": "2023-07-31",
+      "hours": 744,
+      "peakTemperature": 47.2,
+      "peakTime": "2023-07-21T00:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Phoenix",
+      "dataUrl": "/data/case-phoenix2023.json",
+      "csvUrl": "/data/case-phoenix2023.csv",
+      "requestedLocation": {
+        "latitude": 33.45,
+        "longitude": -112.07
+      },
+      "gridLocation": {
+        "latitude": 33.5,
+        "longitude": -112.0,
+        "elevation": 402.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T12:58:50Z",
+      "rawSha256": "141c1b1ed52cd72cdad0a1443f3c8845fd1fa87953876dba7f7dd7495af9f050",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=33.5&longitude=-112.0&start_date=2023-07-01&end_date=2023-07-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "2023年7月凤凰城经历持续极端炎热与高夜间气温。",
+      "eventEvidence": [
+        {
+          "title": "Assessing the U.S. Climate in July 2023",
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202307",
+          "organisation": "NOAA NCEI",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。 7月整月窗未包含6月30日及更早前期条件。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "flagged",
+      "qualityWarnings": [
+        {
+          "variable": "soil_moisture_0_to_7cm",
+          "count": 11,
+          "min": -0.001,
+          "max": -0.001,
+          "message": "原始再分析含水量出现轻微负值；已保留并标记，不能解释为物理上的负含水量。"
+        }
+      ]
+    },
+    {
+      "id": "melbourne2009",
+      "cityId": "melbourne",
+      "title": "2009 墨尔本热浪",
+      "start": "2009-01-20",
+      "end": "2009-02-10",
+      "hours": 528,
+      "peakTemperature": 45.4,
+      "peakTime": "2009-02-07T05:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Australia/Melbourne",
+      "dataUrl": "/data/case-melbourne2009.json",
+      "csvUrl": "/data/case-melbourne2009.csv",
+      "requestedLocation": {
+        "latitude": -37.81,
+        "longitude": 144.96
+      },
+      "gridLocation": {
+        "latitude": -37.75,
+        "longitude": 145.0,
+        "elevation": 84.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:00:00Z",
+      "rawSha256": "f8d4edae2d80d96aa1c16633e19e6f425179b401bc890aee7242126aa8617521",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=-37.75&longitude=145.0&start_date=2009-01-20&end_date=2009-02-10&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "澳大利亚气象局记录1月28—31日和2月6—8日两轮显著高温，前后有短暂缓解。",
+      "eventEvidence": [
+        {
+          "title": "Victoria summer 2008–09 climate summary",
+          "url": "https://www.bom.gov.au/climate/current/season/vic/archive/200902.summary.shtml",
+          "organisation": "Australian Bureau of Meteorology",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    },
+    {
+      "id": "tokyo2018",
+      "cityId": "tokyo",
+      "title": "2018 东京热浪",
+      "start": "2018-07-10",
+      "end": "2018-07-31",
+      "hours": 528,
+      "peakTemperature": 39.3,
+      "peakTime": "2018-07-23T05:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Tokyo",
+      "dataUrl": "/data/case-tokyo2018.json",
+      "csvUrl": "/data/case-tokyo2018.csv",
+      "requestedLocation": {
+        "latitude": 35.68,
+        "longitude": 139.76
+      },
+      "gridLocation": {
+        "latitude": 35.75,
+        "longitude": 139.75,
+        "elevation": -5.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:01:06Z",
+      "rawSha256": "6b95dc2257e7a721005f4c784d663f5d995bcfbb1400edc8c5407cedfe317ce7",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=35.75&longitude=139.75&start_date=2018-07-10&end_date=2018-07-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "日本2018年7月中旬起持续高温，JMA分析了副热带高压与高空环流背景。",
+      "eventEvidence": [
+        {
+          "title": "Primary Factors behind the Heavy Rain Event of July 2018 and the Subsequent Heatwave",
+          "url": "https://ds.data.jma.go.jp/tcc/tcc/news/press_20180822.pdf",
+          "organisation": "Japan Meteorological Agency / Tokyo Climate Center",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    },
+    {
+      "id": "dhaka2023",
+      "cityId": "dhaka",
+      "title": "2023 达卡热浪",
+      "start": "2023-04-10",
+      "end": "2023-04-25",
+      "hours": 384,
+      "peakTemperature": 39.7,
+      "peakTime": "2023-04-14T08:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Dhaka",
+      "dataUrl": "/data/case-dhaka2023.json",
+      "csvUrl": "/data/case-dhaka2023.csv",
+      "requestedLocation": {
+        "latitude": 23.81,
+        "longitude": 90.41
+      },
+      "gridLocation": {
+        "latitude": 23.75,
+        "longitude": 90.5,
+        "elevation": 8.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:01:41Z",
+      "rawSha256": "c5b00e34b4140a44928779917bc01829e4ead4ee181f5dea0839a5c15283e5b7",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=23.75&longitude=90.5&start_date=2023-04-10&end_date=2023-04-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "2023年4月南亚出现高温，WWA原始研究将孟加拉国纳入湿热分析并报告达卡的高温。",
+      "eventEvidence": [
+        {
+          "title": "Extreme humid heat in South Asia in April 2023",
+          "url": "https://www.worldweatherattribution.org/extreme-humid-heat-in-south-asia-in-april-2023-largely-driven-by-climate-change-detrimental-to-vulnerable-and-disadvantaged-communities/",
+          "organisation": "World Weather Attribution",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    },
+    {
+      "id": "karachi2015",
+      "cityId": "karachi",
+      "title": "2015 卡拉奇热浪",
+      "start": "2015-06-12",
+      "end": "2015-06-30",
+      "hours": 456,
+      "peakTemperature": 38.3,
+      "peakTime": "2015-06-21T11:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Karachi",
+      "dataUrl": "/data/case-karachi2015.json",
+      "csvUrl": "/data/case-karachi2015.csv",
+      "requestedLocation": {
+        "latitude": 24.86,
+        "longitude": 67.01
+      },
+      "gridLocation": {
+        "latitude": 24.75,
+        "longitude": 67.0,
+        "elevation": 0.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:02:17Z",
+      "rawSha256": "b688b6e78219629276fce6eda3faf9131279cbd56af48b09d4a50f70b36d1a70",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=24.75&longitude=67.0&start_date=2015-06-12&end_date=2015-06-30&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "PMD报告记载2015年6月卡拉奇严重热浪，突出过程为6月19—23日。",
+      "eventEvidence": [
+        {
+          "title": "Climate of Pakistan 2015",
+          "url": "https://ndmc.pmd.gov.pk/report2015.pdf",
+          "organisation": "Pakistan Meteorological Department / NDMC",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    },
+    {
+      "id": "moscow2010",
+      "cityId": "moscow",
+      "title": "2010 莫斯科热浪",
+      "start": "2010-07-20",
+      "end": "2010-08-19",
+      "hours": 744,
+      "peakTemperature": 37.7,
+      "peakTime": "2010-07-28T12:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Moscow",
+      "dataUrl": "/data/case-moscow2010.json",
+      "csvUrl": "/data/case-moscow2010.csv",
+      "requestedLocation": {
+        "latitude": 55.75,
+        "longitude": 37.62
+      },
+      "gridLocation": {
+        "latitude": 55.75,
+        "longitude": 37.5,
+        "elevation": 158.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:02:52Z",
+      "rawSha256": "47644dba8ed162b27c70917f7f03022e362b490f86606558ec403332e5078ee2",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=55.75&longitude=37.5&start_date=2010-07-20&end_date=2010-08-19&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "2010年俄罗斯西部持续热浪在7月末达到极端水平，研究记载其于8月19日前后结束。",
+      "eventEvidence": [
+        {
+          "title": "Reconciling two approaches to attribution of the 2010 Russian heat wave",
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2011GL050422",
+          "organisation": "Otto et al. / Geophysical Research Letters",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。 本窗截取长事件后半段，未包含7月初起始阶段。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    },
+    {
+      "id": "madrid2022",
+      "cityId": "madrid",
+      "title": "2022 马德里热浪",
+      "start": "2022-07-05",
+      "end": "2022-07-29",
+      "hours": 600,
+      "peakTemperature": 39.8,
+      "peakTime": "2022-07-14T15:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Madrid",
+      "dataUrl": "/data/case-madrid2022.json",
+      "csvUrl": "/data/case-madrid2022.csv",
+      "requestedLocation": {
+        "latitude": 40.42,
+        "longitude": -3.7
+      },
+      "gridLocation": {
+        "latitude": 40.5,
+        "longitude": -3.75,
+        "elevation": 660.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:03:27Z",
+      "rawSha256": "9b459e0a27c3770e924761f61289301f9658a3c14493bac2334ad03a73484c48",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=40.5&longitude=-3.75&start_date=2022-07-05&end_date=2022-07-29&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "AEMET报告记录7月9—26日热浪及马德里多站高温，适合观察长过程与暖夜。",
+      "eventEvidence": [
+        {
+          "title": "Informe sobre el estado del clima de España 2022",
+          "url": "https://www.aemet.es/documentos/es/conocermas/recursos_en_linea/publicaciones_y_estudios/publicaciones/Informes_estado_clima/IECLI_2022_baja_res.pdf",
+          "organisation": "AEMET",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official PDF downloaded and relevant text extracted"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    },
+    {
+      "id": "buenosaires2023",
+      "cityId": "buenosaires",
+      "title": "2023 布宜诺斯艾利斯热浪",
+      "start": "2023-03-01",
+      "end": "2023-03-22",
+      "hours": 528,
+      "peakTemperature": 34.3,
+      "peakTime": "2023-03-11T18:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Argentina/Buenos_Aires",
+      "dataUrl": "/data/case-buenosaires2023.json",
+      "csvUrl": "/data/case-buenosaires2023.csv",
+      "requestedLocation": {
+        "latitude": -34.6,
+        "longitude": -58.38
+      },
+      "gridLocation": {
+        "latitude": -34.5,
+        "longitude": -58.5,
+        "elevation": 8.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:04:04Z",
+      "rawSha256": "8534219bd56656bb6f8b5d2a25c9c2df48c9ad0b23da3160273e9ce9cdb8e4e4",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=-34.5&longitude=-58.5&start_date=2023-03-01&end_date=2023-03-22&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "阿根廷SMN记录2023年3月夏季末期热浪，布宜诺斯艾利斯经历高日温与暖夜。",
+      "eventEvidence": [
+        {
+          "title": "Informe Especial N°10 por ola de calor / altas temperaturas temporada 2022–2023",
+          "url": "https://repositorio.smn.gob.ar/bitstream/handle/20.500.12160/2407/0015CL2023.pdf?isAllowed=y&sequence=1",
+          "organisation": "Servicio Meteorológico Nacional Argentina",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    },
+    {
+      "id": "agadir2023",
+      "cityId": "agadir",
+      "title": "2023 阿加迪尔热浪",
+      "start": "2023-08-05",
+      "end": "2023-08-20",
+      "hours": 384,
+      "peakTemperature": 49.2,
+      "peakTime": "2023-08-11T13:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Africa/Casablanca",
+      "dataUrl": "/data/case-agadir2023.json",
+      "csvUrl": "/data/case-agadir2023.csv",
+      "requestedLocation": {
+        "latitude": 30.43,
+        "longitude": -9.6
+      },
+      "gridLocation": {
+        "latitude": 30.5,
+        "longitude": -9.5,
+        "elevation": 272.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:04:39Z",
+      "rawSha256": "61241ba9f9fb49d6f3bb1a01e491850df938f89c2fcbd02b8ed67096655c8e80",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=30.5&longitude=-9.5&start_date=2023-08-05&end_date=2023-08-20&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "WMO记录2023年8月11日阿加迪尔出现50.4°C观测值，成为摩洛哥当时全国高温纪录。",
+      "eventEvidence": [
+        {
+          "title": "Extreme weather is the new norm",
+          "url": "https://wmo.int/media/news/extreme-weather-new-norm",
+          "organisation": "World Meteorological Organization",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary page or PDF opened and relevant content checked"
+        }
+      ],
+      "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": []
+    }
+  ],
+  "status": "complete",
+  "expectedCases": 10,
+  "scope": "十处独立热浪事件的有限区域与代表格点；不是全球连续覆盖，也不是新增十个20年城市序列。"
+}

@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 export interface Location { latitude: number; longitude: number; elevation?: number }
 export interface Source { label: string; datasetUrl: string; documentationUrl: string; provider: string }
 export interface CaseMeta {
+  qualityStatus?: 'clean' | 'flagged'; qualityWarnings?: { variable: string; count: number; min: number; max: number; message: string }[];
+  summary?: string; eventEvidence?: { title: string; url: string; organisation: string }[]; scopeNote?: string;
   id: string; cityId: string; title: string; start: string; end: string; hours: number;
   peakTemperature: number; peakTime: string; timezone: string; dataUrl: string; csvUrl: string;
   requestedLocation: Location; gridLocation: Location; source: Source; retrievedAt: string; caveat: string;
@@ -10,7 +12,7 @@ export interface CaseMeta {
 export interface HourRow {
   time: string; temperature_2m: number; relative_humidity_2m: number; pressure_msl: number;
   cloud_cover: number; shortwave_radiation: number; wind_speed_10m: number;
-  wind_direction_10m: number; soil_moisture_0_to_7cm: number; precipitation: number;
+  wind_direction_10m: number; soil_moisture_0_to_7cm: number; soil_moisture_7_to_28cm?: number; precipitation: number;
 }
 export interface CaseData extends CaseMeta { rows: HourRow[]; units: Record<string, string> }
 export interface AnnualRow {

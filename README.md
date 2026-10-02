@@ -7,7 +7,9 @@ Live website: [heatwave-atlas-lab.yilaoweather.org](https://heatwave-atlas-lab.y
 ## What is included
 
 - Regional replay: Chongqing–Sichuan 2022, Paris area 2019, Portland area 2021; 0.25° ERA5 grids, 1,475 spatial nodes and 559,200 grid-hours.
-- A map with temperature colors, wind-driven particles, hourly controls, original-grid probes and downloadable provenance.
+- Ten additional local replays: London 2022, Phoenix 2023, Melbourne 2009, Tokyo 2018, Dhaka 2023, Karachi 2015, Moscow 2010, Madrid 2022, Buenos Aires 2023 and Agadir 2023. Each includes ten hourly point variables and a 5×5, 0.25° regional wind/temperature grid, within an explicitly curated event window.
+- A map with temperature colors, wind-driven particles, hourly controls, original-grid probes and downloadable provenance. Same-point A/B comparison, local-night statistics and shareable UTC states are included.
+- Europe 2019 surface-memory explorer: four ERA5 grid points over June–July, 5,856 point-hours and eight variables. Linked charts, soil-depth selection, data-driven schematic animation and point CSV export.
 - Daily maximum/minimum 2 m temperature for six locations over 2006–2025, with a 1991–2020 seasonal reference period.
 - An idealized thermal particle box, dry adiabatic compression and surface energy partition experiments.
 - Twelve selected historical cases, source links and transparent methods.
@@ -35,12 +37,19 @@ Original API responses and URL/time/SHA-256 manifests are included under `data/`
 ```sh
 python3 scripts/build_site_data.py
 python3 scripts/fetch_regional_data.py --case all
+python3 scripts/fetch_europe_mechanism.py
+python3 scripts/build_europe_mechanism.py
+python3 scripts/build_extended_cases.py
 ```
+
+`python3 scripts/build_extended_cases.py` rebuilds all ten cases from the bundled raw responses without network access. To refresh them, use `python3 scripts/fetch_extended_cases.py --help` and follow its serial, cached retrieval workflow. Physical-range anomalies are retained and flagged; soil warnings are visible in the replay and included in the manifests.
 
 The second command may use the network when a verified cache is absent. It stops on HTTP 429 and respects serial batching. Read the applicable provider terms before refreshing data or using the service commercially.
 
 - [Data methods](docs/网站数据口径.md)
 - [Regional wind and temperature](docs/区域风温回放方法.md)
+- [Ten-location event windows, quality flags and data methods](docs/十地历史热浪数据方法.md)
+- [Europe 2019 data and visual interpretation](docs/欧洲2019机制数据方法.md)
 - [Idealized thermal model](docs/粒子热场方法.md)
 - [Regional download procedure](data/regional/README.md)
 

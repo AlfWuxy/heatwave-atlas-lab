@@ -1,0 +1,1818 @@
+{
+  "schemaVersion": 1,
+  "caseId": "dhaka2023",
+  "createdAt": "2026-10-02T13:01:20Z",
+  "status": "complete",
+  "catalogSha256": "2166c6ccd0fceb4a43afffc9970404a98bc67ba5c1c7ddf8b2505d94499d76e7",
+  "requests": [
+    {
+      "path": "data/extended-cases/dhaka2023/raw/smoke.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=23.25%2C23.25&longitude=90.0%2C90.25&start_date=2023-04-10&end_date=2023-04-10&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-10-02T13:01:30Z",
+      "sha256": "3f5831766561131ef712d9a3f1d744849d578217b91164241fe196263d61b9df",
+      "bytes": 2298,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "purpose": "smoke",
+      "variables": [
+        "temperature_2m",
+        "wind_speed_10m",
+        "wind_direction_10m"
+      ],
+      "start": "2023-04-10",
+      "end": "2023-04-10",
+      "requestedGrid": [
+        {
+          "longitude": 90.0,
+          "latitude": 23.25
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 23.25
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 2,
+        "hoursPerPoint": 24,
+        "exactCoordinates": true,
+        "uniqueCoordinates": true,
+        "utcContiguous": true,
+        "ranges": [
+          {
+            "longitude": 90.0,
+            "latitude": 23.25,
+            "hours": 24,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 23.4,
+                "maximum": 37.4,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.63,
+                "maximum": 2.12,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 157,
+                "maximum": 344,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.25,
+            "latitude": 23.25,
+            "hours": 24,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 23.7,
+                "maximum": 36.8,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.63,
+                "maximum": 2.42,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 173,
+                "maximum": 323,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          }
+        ]
+      },
+      "returnedGrid": [
+        {
+          "longitude": 90.0,
+          "latitude": 23.25,
+          "elevation": 8.0
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 23.25,
+          "elevation": 3.0
+        }
+      ]
+    },
+    {
+      "path": "data/extended-cases/dhaka2023/raw/point.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=23.75&longitude=90.5&start_date=2023-04-10&end_date=2023-04-25&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-10-02T13:01:41Z",
+      "sha256": "c5b00e34b4140a44928779917bc01829e4ead4ee181f5dea0839a5c15283e5b7",
+      "bytes": 26598,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "purpose": "point",
+      "variables": [
+        "temperature_2m",
+        "relative_humidity_2m",
+        "pressure_msl",
+        "cloud_cover",
+        "shortwave_radiation",
+        "wind_speed_10m",
+        "wind_direction_10m",
+        "soil_moisture_0_to_7cm",
+        "soil_moisture_7_to_28cm",
+        "precipitation"
+      ],
+      "start": "2023-04-10",
+      "end": "2023-04-25",
+      "requestedGrid": [
+        {
+          "longitude": 90.5,
+          "latitude": 23.75
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 1,
+        "hoursPerPoint": 384,
+        "exactCoordinates": true,
+        "uniqueCoordinates": true,
+        "utcContiguous": true,
+        "ranges": [
+          {
+            "longitude": 90.5,
+            "latitude": 23.75,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.6,
+                "maximum": 39.7,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "relative_humidity_2m": {
+                "unit": "%",
+                "minimum": 23,
+                "maximum": 99,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  100
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "pressure_msl": {
+                "unit": "hPa",
+                "minimum": 999.0,
+                "maximum": 1013.0,
+                "missing": 0,
+                "physicalRange": [
+                  850,
+                  1100
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 850
+              },
+              "cloud_cover": {
+                "unit": "%",
+                "minimum": 0,
+                "maximum": 100,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  100
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "shortwave_radiation": {
+                "unit": "W/m²",
+                "minimum": 0.0,
+                "maximum": 979.0,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  1600
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.5,
+                "maximum": 6.5,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 11,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "soil_moisture_0_to_7cm": {
+                "unit": "m³/m³",
+                "minimum": 0.148,
+                "maximum": 0.2,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  1
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -0.005
+              },
+              "soil_moisture_7_to_28cm": {
+                "unit": "m³/m³",
+                "minimum": 0.16,
+                "maximum": 0.222,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  1
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -0.005
+              },
+              "precipitation": {
+                "unit": "mm",
+                "minimum": 0.0,
+                "maximum": 1.0,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  500
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          }
+        ]
+      },
+      "returnedGrid": [
+        {
+          "longitude": 90.5,
+          "latitude": 23.75,
+          "elevation": 8.0
+        }
+      ]
+    },
+    {
+      "path": "data/extended-cases/dhaka2023/raw/regional.json",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=23.25%2C23.25%2C23.25%2C23.25%2C23.25%2C23.5%2C23.5%2C23.5%2C23.5%2C23.5%2C23.75%2C23.75%2C23.75%2C23.75%2C23.75%2C24.0%2C24.0%2C24.0%2C24.0%2C24.0%2C24.25%2C24.25%2C24.25%2C24.25%2C24.25&longitude=90.0%2C90.25%2C90.5%2C90.75%2C91.0%2C90.0%2C90.25%2C90.5%2C90.75%2C91.0%2C90.0%2C90.25%2C90.5%2C90.75%2C91.0%2C90.0%2C90.25%2C90.5%2C90.75%2C91.0%2C90.0%2C90.25%2C90.5%2C90.75%2C91.0&start_date=2023-04-10&end_date=2023-04-25&hourly=temperature_2m%2Cwind_speed_10m%2Cwind_direction_10m&models=era5&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan%2Cnan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "retrievedAt": "2026-10-02T13:01:53Z",
+      "sha256": "32de3d20c4bb385f3237aa222192fc4c6d22f4e79a564cf35f87b88a50cff34d",
+      "bytes": 324788,
+      "httpStatus": 200,
+      "contentType": "application/json; charset=utf-8",
+      "purpose": "regional",
+      "variables": [
+        "temperature_2m",
+        "wind_speed_10m",
+        "wind_direction_10m"
+      ],
+      "start": "2023-04-10",
+      "end": "2023-04-25",
+      "requestedGrid": [
+        {
+          "longitude": 90.0,
+          "latitude": 23.25
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 23.25
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 23.25
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 23.25
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 23.25
+        },
+        {
+          "longitude": 90.0,
+          "latitude": 23.5
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 23.5
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 23.5
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 23.5
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 23.5
+        },
+        {
+          "longitude": 90.0,
+          "latitude": 23.75
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 23.75
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 23.75
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 23.75
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 23.75
+        },
+        {
+          "longitude": 90.0,
+          "latitude": 24.0
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 24.0
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 24.0
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 24.0
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 24.0
+        },
+        {
+          "longitude": 90.0,
+          "latitude": 24.25
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 24.25
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 24.25
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 24.25
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 24.25
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "points": 25,
+        "hoursPerPoint": 384,
+        "exactCoordinates": true,
+        "uniqueCoordinates": true,
+        "utcContiguous": true,
+        "ranges": [
+          {
+            "longitude": 90.0,
+            "latitude": 23.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.9,
+                "maximum": 40.9,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.22,
+                "maximum": 5.41,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 19,
+                "maximum": 357,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.25,
+            "latitude": 23.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 22.1,
+                "maximum": 40.0,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.1,
+                "maximum": 5.77,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 6,
+                "maximum": 356,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.5,
+            "latitude": 23.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 22.9,
+                "maximum": 40.1,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.2,
+                "maximum": 5.8,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 6,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.75,
+            "latitude": 23.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 22.2,
+                "maximum": 40.7,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.1,
+                "maximum": 5.81,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 3,
+                "maximum": 354,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 91.0,
+            "latitude": 23.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 20.9,
+                "maximum": 40.1,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.22,
+                "maximum": 6.07,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 3,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.0,
+            "latitude": 23.5,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 22.3,
+                "maximum": 39.6,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.1,
+                "maximum": 5.8,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 16,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.25,
+            "latitude": 23.5,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 22.1,
+                "maximum": 38.5,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.1,
+                "maximum": 6.03,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 5,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.5,
+            "latitude": 23.5,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 22.2,
+                "maximum": 38.8,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.1,
+                "maximum": 6.18,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 7,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.75,
+            "latitude": 23.5,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.7,
+                "maximum": 40.4,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.0,
+                "maximum": 6.31,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 6,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 91.0,
+            "latitude": 23.5,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.2,
+                "maximum": 41.4,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.22,
+                "maximum": 5.95,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 3,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.0,
+            "latitude": 23.75,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.9,
+                "maximum": 38.9,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.28,
+                "maximum": 6.45,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 2,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.25,
+            "latitude": 23.75,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.6,
+                "maximum": 39.6,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.5,
+                "maximum": 6.1,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 2,
+                "maximum": 354,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.5,
+            "latitude": 23.75,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.6,
+                "maximum": 39.7,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.5,
+                "maximum": 6.5,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 11,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.75,
+            "latitude": 23.75,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.5,
+                "maximum": 40.2,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.4,
+                "maximum": 6.13,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 3,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 91.0,
+            "latitude": 23.75,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.2,
+                "maximum": 40.2,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.1,
+                "maximum": 5.74,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 3,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.0,
+            "latitude": 24.0,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.5,
+                "maximum": 38.9,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.41,
+                "maximum": 5.8,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 7,
+                "maximum": 358,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.25,
+            "latitude": 24.0,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.1,
+                "maximum": 38.6,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.1,
+                "maximum": 5.51,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 9,
+                "maximum": 356,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.5,
+            "latitude": 24.0,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.3,
+                "maximum": 38.4,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.14,
+                "maximum": 6.07,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 2,
+                "maximum": 352,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.75,
+            "latitude": 24.0,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.5,
+                "maximum": 38.5,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.14,
+                "maximum": 6.24,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 4,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 91.0,
+            "latitude": 24.0,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.5,
+                "maximum": 38.4,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.0,
+                "maximum": 5.63,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 2,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.0,
+            "latitude": 24.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.2,
+                "maximum": 38.7,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.22,
+                "maximum": 5.67,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 3,
+                "maximum": 351,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.25,
+            "latitude": 24.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 20.8,
+                "maximum": 38.3,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.1,
+                "maximum": 5.08,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 6,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.5,
+            "latitude": 24.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 20.9,
+                "maximum": 37.8,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.36,
+                "maximum": 5.07,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 4,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 90.75,
+            "latitude": 24.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.1,
+                "maximum": 37.7,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.41,
+                "maximum": 5.16,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 4,
+                "maximum": 360,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          },
+          {
+            "longitude": 91.0,
+            "latitude": 24.25,
+            "hours": 384,
+            "variables": {
+              "temperature_2m": {
+                "unit": "°C",
+                "minimum": 21.5,
+                "maximum": 37.7,
+                "missing": 0,
+                "physicalRange": [
+                  -90,
+                  65
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": -90
+              },
+              "wind_speed_10m": {
+                "unit": "m/s",
+                "minimum": 0.22,
+                "maximum": 5.36,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  150
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              },
+              "wind_direction_10m": {
+                "unit": "°",
+                "minimum": 5,
+                "maximum": 358,
+                "missing": 0,
+                "physicalRange": [
+                  0,
+                  360
+                ],
+                "outsidePhysicalRange": [],
+                "qualityStatus": "clean",
+                "engineeringReviewLowerBound": 0
+              }
+            }
+          }
+        ]
+      },
+      "returnedGrid": [
+        {
+          "longitude": 90.0,
+          "latitude": 23.25,
+          "elevation": 8.0
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 23.25,
+          "elevation": 3.0
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 23.25,
+          "elevation": 7.0
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 23.25,
+          "elevation": 8.0
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 23.25,
+          "elevation": 8.0
+        },
+        {
+          "longitude": 90.0,
+          "latitude": 23.5,
+          "elevation": 10.0
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 23.5,
+          "elevation": 6.0
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 23.5,
+          "elevation": 7.0
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 23.5,
+          "elevation": 7.0
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 23.5,
+          "elevation": 11.0
+        },
+        {
+          "longitude": 90.0,
+          "latitude": 23.75,
+          "elevation": 1.0
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 23.75,
+          "elevation": 5.0
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 23.75,
+          "elevation": 8.0
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 23.75,
+          "elevation": 6.0
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 23.75,
+          "elevation": 7.0
+        },
+        {
+          "longitude": 90.0,
+          "latitude": 24.0,
+          "elevation": 16.0
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 24.0,
+          "elevation": 14.0
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 24.0,
+          "elevation": 11.0
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 24.0,
+          "elevation": 11.0
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 24.0,
+          "elevation": 15.0
+        },
+        {
+          "longitude": 90.0,
+          "latitude": 24.25,
+          "elevation": 6.0
+        },
+        {
+          "longitude": 90.25,
+          "latitude": 24.25,
+          "elevation": 12.0
+        },
+        {
+          "longitude": 90.5,
+          "latitude": 24.25,
+          "elevation": 15.0
+        },
+        {
+          "longitude": 90.75,
+          "latitude": 24.25,
+          "elevation": 12.0
+        },
+        {
+          "longitude": 91.0,
+          "latitude": 24.25,
+          "elevation": 2.0
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "requestPolicy": {
+    "serial": true,
+    "minimumSecondsAfterResponse": 10,
+    "stopImmediatelyOn429": true,
+    "retryCount": 0,
+    "cacheRequiresExactUrlAndSha256": true
+  },
+  "completedAt": "2026-10-02T13:04:57Z",
+  "validation": {
+    "passed": true,
+    "pointCount": 25,
+    "frameCount": 384,
+    "completeRegularGrid": true,
+    "exactRequestedCoordinates": true,
+    "uniqueCoordinates": true,
+    "hourlyUtcContiguous": true,
+    "allArrayLengthsMatch": true,
+    "noMissingValues": true,
+    "allValuesFinite": true,
+    "unitsMatch": true,
+    "resolutionDegrees": 0.25,
+    "interpolationApplied": false,
+    "temperatureMin": 20.8,
+    "temperatureMax": 41.4,
+    "windConversion": "u=-speed*sin(direction*pi/180); v=-speed*cos(direction*pi/180)",
+    "windPrecisionDecimals": 6
+  },
+  "qualityStatus": "clean",
+  "qualityWarnings": [],
+  "artifacts": [
+    {
+      "path": "public/data/case-dhaka2023.json",
+      "sha256": "5ff4400ffb1d47b43259df5554e83c07e439fb5171fd6326148b75820a9128da",
+      "bytes": 108336
+    },
+    {
+      "path": "public/data/case-dhaka2023.csv",
+      "sha256": "3fd5a1544b5d83a3e41ce760770b966671436cfeb393c63d9695b6f69d1f1d90",
+      "bytes": 26709
+    },
+    {
+      "path": "public/data/regional-dhaka2023.json",
+      "sha256": "469c59c94ea1e6865822bf7eec1a14cdf69129cd4f46f0bd3a822123cbb797ee",
+      "bytes": 233914
+    }
+  ],
+  "artifact": {
+    "path": "public/data/regional-dhaka2023.json",
+    "sha256": "469c59c94ea1e6865822bf7eec1a14cdf69129cd4f46f0bd3a822123cbb797ee",
+    "bytes": 233914
+  },
+  "builtCatalogSha256": "2166c6ccd0fceb4a43afffc9970404a98bc67ba5c1c7ddf8b2505d94499d76e7",
+  "caseSpecification": {
+    "id": "dhaka2023",
+    "cityId": "dhaka",
+    "name": "达卡",
+    "country": "孟加拉国",
+    "title": "2023 达卡热浪",
+    "year": 2023,
+    "timezone": "Asia/Dhaka",
+    "latitude": 23.81,
+    "longitude": 90.41,
+    "start": "2023-04-10",
+    "end": "2023-04-25",
+    "sourceUrls": [
+      {
+        "title": "Extreme humid heat in South Asia in April 2023",
+        "url": "https://www.worldweatherattribution.org/extreme-humid-heat-in-south-asia-in-april-2023-largely-driven-by-climate-change-detrimental-to-vulnerable-and-disadvantaged-communities/",
+        "organisation": "World Weather Attribution",
+        "verifiedOn": "2026-10-02",
+        "accessMethod": "primary page or PDF opened and relevant content checked"
+      }
+    ],
+    "summary": "2023年4月南亚出现高温，WWA原始研究将孟加拉国纳入湿热分析并报告达卡的高温。",
+    "mechanismNote": "同时读取气温和相对湿度，分清空气变热与人体散热环境；本站不直接复用WWA区域四日热指数结论。",
+    "scopeNote": "人工选定UTC回放窗，不是统一阈值识别的事件边界；城市附近格点再分析不等于城市实测或热浪全域。"
+  }
+}
