@@ -1,0 +1,1735 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-02T13:52:33Z",
+  "cases": [
+    {
+      "id": "seattle2021",
+      "cityId": "seattle",
+      "title": "2021 西雅图热浪",
+      "start": "2021-06-20",
+      "end": "2021-07-05",
+      "hours": 384,
+      "peakTemperature": 38.3,
+      "peakTime": "2021-06-28T23:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Los_Angeles",
+      "dataUrl": "/data/case-seattle2021.json",
+      "csvUrl": "/data/case-seattle2021.csv",
+      "requestedLocation": {
+        "latitude": 47.61,
+        "longitude": -122.33
+      },
+      "gridLocation": {
+        "latitude": 47.5,
+        "longitude": -122.25,
+        "elevation": 76.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:31:27Z",
+      "rawSha256": "7f863b5f183fbb1823480b9ec34f89b9ff6da98d78982aa23dc07c7032405c8f",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=47.5&longitude=-122.25&start_date=2021-06-20&end_date=2021-07-05&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "2021年6月底，太平洋西北地区热浪影响西雅图。原始研究将其置于持续阻塞与下沉增温背景下；回放保留高温前后的局地变化，便于和邻近海岸城市比较。",
+      "eventEvidence": [
+        {
+          "title": "Causes of the record-breaking Pacific Northwest heatwave, late June 2021",
+          "url": "https://repository.library.noaa.gov/view/noaa/40148",
+          "organisation": "NOAA PMEL / Atmosphere, Overland (2021)",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary research repository page opened; abstract checked",
+          "evidenceNote": "论文摘要明确记载2021年6月底太平洋西北地区热浪及西雅图极端高温，并讨论大尺度阻塞、下沉增温与太阳辐射；此处不复现归因。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，不是统一算法识别的事件边界；再分析格点不等于机场观测。与温哥华及原有波特兰案例属于同一大尺度热浪，不能作为相互独立的事件样本。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "西雅图",
+      "country": "美国",
+      "continent": "北美洲",
+      "year": 2021
+    },
+    {
+      "id": "vancouver2021",
+      "cityId": "vancouver",
+      "title": "2021 温哥华热浪",
+      "start": "2021-06-20",
+      "end": "2021-07-05",
+      "hours": 384,
+      "peakTemperature": 37.3,
+      "peakTime": "2021-06-28T22:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Vancouver",
+      "dataUrl": "/data/case-vancouver2021.json",
+      "csvUrl": "/data/case-vancouver2021.csv",
+      "requestedLocation": {
+        "latitude": 49.28,
+        "longitude": -123.12
+      },
+      "gridLocation": {
+        "latitude": 49.25,
+        "longitude": -123.0,
+        "elevation": 224.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:32:03Z",
+      "rawSha256": "25658964083d08fe3496d841a7c5179dd03f4d455ca3760e9b1c5110b28c3597",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=49.25&longitude=-123.0&start_date=2021-06-20&end_date=2021-07-05&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "加拿大环境与气候变化部回顾了2021年6月底热穹顶，并单独记录温哥华持续高温。沿海点位可与西雅图对照，观察同一大尺度事件中的不同日夜变化。",
+      "eventEvidence": [
+        {
+          "title": "Canada’s top 10 weather stories of 2021",
+          "url": "https://www.canada.ca/en/environment-climate-change/services/top-ten-weather-stories/2021.html",
+          "organisation": "Environment and Climate Change Canada",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official retrospective page opened; heat-dome and second-heat-wave sections checked",
+          "evidenceNote": "Record heat under the dome段说明6月底高压脊持续；Second heat wave段单独记载温哥华6月底连续高温及6月29日站点纪录。未采用该页伤亡表述。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，非统一阈值事件边界；城市附近格点并非机场站点实测。与西雅图及原有波特兰属于同一大尺度热浪。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "温哥华",
+      "country": "加拿大",
+      "continent": "北美洲",
+      "year": 2021
+    },
+    {
+      "id": "lasvegas2024",
+      "cityId": "lasvegas",
+      "title": "2024 拉斯维加斯热浪",
+      "start": "2024-07-01",
+      "end": "2024-07-16",
+      "hours": 384,
+      "peakTemperature": 44.6,
+      "peakTime": "2024-07-07T23:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Los_Angeles",
+      "dataUrl": "/data/case-lasvegas2024.json",
+      "csvUrl": "/data/case-lasvegas2024.csv",
+      "requestedLocation": {
+        "latitude": 36.17,
+        "longitude": -115.14
+      },
+      "gridLocation": {
+        "latitude": 36.25,
+        "longitude": -115.25,
+        "elevation": 1066.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:32:40Z",
+      "rawSha256": "650f46d5c81e63ffe2af4b17d0ef246f6350b788667019237042539d6551f858",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=36.25&longitude=-115.25&start_date=2024-07-01&end_date=2024-07-16&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "NOAA将2024年7月初美国西部的持续炎热记为热浪，并列出拉斯维加斯7月7日站点纪录。该窗口适合观察沙漠城市附近白天升温、暖夜与风场的共同变化。",
+      "eventEvidence": [
+        {
+          "title": "Assessing the U.S. Climate in July 2024",
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202407",
+          "organisation": "NOAA National Centers for Environmental Information",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official monthly retrospective opened; Other Notable Events checked",
+          "evidenceNote": "Other Notable Events明确称7月初美国西部热浪，并列出拉斯维加斯7月7日站点高温纪录。既有事件描述，也有具体城市日期。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，只覆盖7月初一段过程，不代表整个夏季或7月全部热事件；ERA5网格高温不应被校准成站点纪录。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "拉斯维加斯",
+      "country": "美国",
+      "continent": "北美洲",
+      "year": 2024
+    },
+    {
+      "id": "sacramento2022",
+      "cityId": "sacramento",
+      "title": "2022 萨克拉门托热浪",
+      "start": "2022-08-28",
+      "end": "2022-09-12",
+      "hours": 384,
+      "peakTemperature": 47.7,
+      "peakTime": "2022-09-06T01:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Los_Angeles",
+      "dataUrl": "/data/case-sacramento2022.json",
+      "csvUrl": "/data/case-sacramento2022.csv",
+      "requestedLocation": {
+        "latitude": 38.58,
+        "longitude": -121.49
+      },
+      "gridLocation": {
+        "latitude": 38.5,
+        "longitude": -121.5,
+        "elevation": 27.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:33:15Z",
+      "rawSha256": "aef2df2bc0cc11c27c5b952ddb5940ab99dadcd44e6026b753b2a1da33b76ced",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=38.5&longitude=-121.5&start_date=2022-08-28&end_date=2022-09-12&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "NWS年度回顾记录了2022年8月底至9月上旬的加州热浪，萨克拉门托在其中出现站点极端高温。这里回放内陆谷地的风温变化，保留高峰前后可比较的日夜序列。",
+      "eventEvidence": [
+        {
+          "title": "2022 Weather Review — September",
+          "url": "https://www.weather.gov/media/sgx/climate/Yearly/2022.pdf",
+          "organisation": "NOAA National Weather Service San Diego",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official PDF opened, then downloaded and text extracted with pdftotext",
+          "evidenceNote": "September章节描述8月底至9月上旬加州长时间热浪，并在文字和极值表中列出萨克拉门托9月6日纪录；南加州Kay降温叙述不直接移植为本市因果。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，非统一阈值事件边界；再分析格点不等于城市观测站，附近小格网不覆盖整场美国西部热浪。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "萨克拉门托",
+      "country": "美国",
+      "continent": "北美洲",
+      "year": 2022
+    },
+    {
+      "id": "chicago2023",
+      "cityId": "chicago",
+      "title": "2023 芝加哥湿热过程",
+      "start": "2023-08-16",
+      "end": "2023-08-31",
+      "hours": 384,
+      "peakTemperature": 35.4,
+      "peakTime": "2023-08-24T21:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Chicago",
+      "dataUrl": "/data/case-chicago2023.json",
+      "csvUrl": "/data/case-chicago2023.csv",
+      "requestedLocation": {
+        "latitude": 41.88,
+        "longitude": -87.63
+      },
+      "gridLocation": {
+        "latitude": 42.0,
+        "longitude": -87.75,
+        "elevation": 193.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:33:52Z",
+      "rawSha256": "d01984e4301e947810efaca64bd722516200a03c3267d232600190d61cf56232",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=42.0&longitude=-87.75&start_date=2023-08-16&end_date=2023-08-31&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "NWS记录芝加哥2023年8月23—24日出现明显湿热高峰，之前还有一次短暂升温和缓解。气温与湿度的并列回放可展示，热环境变化并不只取决于最高气温。",
+      "eventEvidence": [
+        {
+          "title": "August 23–24, 2023: Late Summer Heat Wave Results in Consecutive Days With 115°+ Heat Indices",
+          "url": "https://www.weather.gov/lot/2023_08_23-24_Heat",
+          "organisation": "NOAA National Weather Service Chicago",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official event report opened; Overview and August 24 caveat checked",
+          "evidenceNote": "Overview区分8月20日短暂湿热与23—24日主高峰，明确芝加哥O’Hare观测。报告提醒部分热指数极值来自小时内观测，不能与旧逐小时纪录直接同等比较。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗覆盖主高峰及相邻过程；热浪称谓采用NWS事件报告，并非本站统一连续天数算法。市中心附近格点与O’Hare机场位置不同。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "芝加哥",
+      "country": "美国",
+      "continent": "北美洲",
+      "year": 2023
+    },
+    {
+      "id": "miami2023",
+      "cityId": "miami",
+      "title": "2023 迈阿密持续湿热",
+      "start": "2023-07-09",
+      "end": "2023-07-24",
+      "hours": 384,
+      "peakTemperature": 33.7,
+      "peakTime": "2023-07-23T20:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/New_York",
+      "dataUrl": "/data/case-miami2023.json",
+      "csvUrl": "/data/case-miami2023.csv",
+      "requestedLocation": {
+        "latitude": 25.76,
+        "longitude": -80.19
+      },
+      "gridLocation": {
+        "latitude": 25.75,
+        "longitude": -80.25,
+        "elevation": 4.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:37:14Z",
+      "rawSha256": "7e767aaec2b0d7e38b61eb769392e343402b3eeba63c8ab45fd15d9b69d22030",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=25.75&longitude=-80.25&start_date=2023-07-09&end_date=2023-07-24&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "南佛罗里达NWS回顾将2023年夏季描述为持续高温与高露点过程，并记载迈阿密地区7月的具体高温日。本案例截取7月片段，观察沿海城市的湿度与暖夜。",
+      "eventEvidence": [
+        {
+          "title": "2023 South Florida Weather Summary",
+          "url": "https://www.weather.gov/media/mfl/news/2023Summary.pdf",
+          "organisation": "NOAA National Weather Service Miami",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official PDF opened, then downloaded and text extracted with pdftotext",
+          "evidenceNote": "2023 Temperatures段描述夏季持续高温与高露点、迈阿密地区7月12日观测及国际机场7月23日年内最高温；本文取其中7月片段，不以全年排名单独定义热浪。"
+        },
+        {
+          "title": "Miami-Dade County Homeless Trust Announces Protective Measures During Excessive Heat",
+          "url": "https://www.miamidade.gov/global/release.page?Mduid_release=rel1689973055328322",
+          "organisation": "Miami-Dade County",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official dated release opened; July 21 2023 event context checked",
+          "evidenceNote": "7月21日公告记录当时持续酷热及周末可能的高温警报情境，补足具体时段；不把公告中的预期警报当成已验证的警报发布记录。"
+        }
+      ],
+      "scopeNote": "人工UTC窗口截取持续湿热季的一段，非独立算法定义的完整热浪边界；沿海格网可能含海陆差异，不代表建筑室内或人体暴露。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "迈阿密",
+      "country": "美国",
+      "continent": "北美洲",
+      "year": 2023
+    },
+    {
+      "id": "mexicocity2024",
+      "cityId": "mexicocity",
+      "title": "2024 墨西哥城热浪",
+      "start": "2024-05-01",
+      "end": "2024-05-16",
+      "hours": 384,
+      "peakTemperature": 31.1,
+      "peakTime": "2024-05-09T21:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Mexico_City",
+      "dataUrl": "/data/case-mexicocity2024.json",
+      "csvUrl": "/data/case-mexicocity2024.csv",
+      "requestedLocation": {
+        "latitude": 19.43,
+        "longitude": -99.13
+      },
+      "gridLocation": {
+        "latitude": 19.5,
+        "longitude": -99.25,
+        "elevation": 2542.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:37:53Z",
+      "rawSha256": "cc246e6f71e73925f6115b0e98321a0d425d6e77d00e0843935b2a86381fe5bc",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=19.5&longitude=-99.25&start_date=2024-05-01&end_date=2024-05-16&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "WMO在2024年5月的官方通报中记录墨西哥热浪，并明确提到墨西哥城Tacubaya站的高温。选取月初至月中的窗口，可观察高海拔城市附近的昼夜升温过程。",
+      "eventEvidence": [
+        {
+          "title": "Global temperature record streak continues, as climate change makes heatwaves more extreme",
+          "url": "https://public.wmo.int/media/news/global-temperature-record-streak-continues-climate-change-makes-heatwaves-more-extreme",
+          "organisation": "World Meteorological Organization",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official English page opened; Extreme heat section checked",
+          "evidenceNote": "2024年5月15日文章的Extreme heat章节描述墨西哥5月热浪，并明确Tacubaya/Mexico City站5月9日观测；全国其他城市温度没有当成墨西哥城温度。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，非统一阈值热浪边界；覆盖5月前半段，不涵盖当月全部热浪。城市附近再分析格点不是Tacubaya站点观测。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "墨西哥城",
+      "country": "墨西哥",
+      "continent": "北美洲",
+      "year": 2024
+    },
+    {
+      "id": "riodejaneiro2023",
+      "cityId": "riodejaneiro",
+      "title": "2023 里约热内卢热浪",
+      "start": "2023-11-08",
+      "end": "2023-11-23",
+      "hours": 384,
+      "peakTemperature": 37.5,
+      "peakTime": "2023-11-18T16:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Sao_Paulo",
+      "dataUrl": "/data/case-riodejaneiro2023.json",
+      "csvUrl": "/data/case-riodejaneiro2023.csv",
+      "requestedLocation": {
+        "latitude": -22.91,
+        "longitude": -43.17
+      },
+      "gridLocation": {
+        "latitude": -23.0,
+        "longitude": -43.25,
+        "elevation": 0.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:38:31Z",
+      "rawSha256": "b5b776d8c29de0b87d6ed5ec94269ce2841c06e058521a16877cb3ac9a3c03b8",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=-23.0&longitude=-43.25&start_date=2023-11-08&end_date=2023-11-23&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "里约本地研究分析了2023年11月热浪，并将17—18日高温置于热浪末段的锋前形势。窗口可用于观察南半球春季高温、湿度及风向转变如何在时间上相接。",
+      "eventEvidence": [
+        {
+          "title": "Case Study of an Extreme Heat Wave in Rio de Janeiro on November 2023: Synoptic Conditions and Climatological Trends",
+          "url": "https://revistas.ufrj.br/index.php/aigeo/article/view/66182",
+          "organisation": "Universidade Federal do Rio de Janeiro / Anuário do Instituto de Geociências",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "original research article landing page opened; abstract checked",
+          "evidenceNote": "原始研究摘要明确研究2023年11月17—18日里约高温，指出高峰位于持续八天热浪末段及锋前形势；只采用事件时序背景，不复制其归因或健康结论。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，非本站统一热浪检测；原文站点、热指数和现场情境与ERA5网格值分开使用，不把城市平均场当成活动现场实测。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "里约热内卢",
+      "country": "巴西",
+      "continent": "南美洲",
+      "year": 2023
+    },
+    {
+      "id": "santiago2017",
+      "cityId": "santiago",
+      "title": "2017 圣地亚哥热浪",
+      "start": "2017-01-19",
+      "end": "2017-02-03",
+      "hours": 384,
+      "peakTemperature": 35.7,
+      "peakTime": "2017-01-20T20:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Santiago",
+      "dataUrl": "/data/case-santiago2017.json",
+      "csvUrl": "/data/case-santiago2017.csv",
+      "requestedLocation": {
+        "latitude": -33.45,
+        "longitude": -70.67
+      },
+      "gridLocation": {
+        "latitude": -33.5,
+        "longitude": -70.75,
+        "elevation": 548.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:39:10Z",
+      "rawSha256": "a11b16d05261a8c15576d8a0ee17481e124b589a5d015d36ae7f0b2ef5bce59a",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=-33.5&longitude=-70.75&start_date=2017-01-19&end_date=2017-02-03&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "智利气象局的Quinta Normal站热浪表记录2017年1月下旬多次高温过程，本案例围绕24—27日事件展开。相邻事件也保留在窗口内，便于观察短暂缓解与再次升温。",
+      "eventEvidence": [
+        {
+          "title": "Eventos de Olas de Calor de la Estación (Diurna): Quinta Normal, Santiago (330020)",
+          "url": "https://climatologia.meteochile.gob.cl/application/historico/olaDeCalorEstacion/330020",
+          "organisation": "Dirección Meteorológica de Chile",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official station event table opened; January 2017 rows checked",
+          "evidenceNote": "官方Quinta Normal日间热浪表列出2017年1月24—27日事件，峰值日期25日；另列17—21日及29—31日过程，因此观察窗包含相邻热浪，不能全部连称一个连续事件。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗围绕1月24—27日事件，并覆盖前一轮后段与下一轮；采用官方日间热浪记录，未与其他城市统一阈值。再分析格点不等于Quinta Normal站点。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "圣地亚哥",
+      "country": "智利",
+      "continent": "南美洲",
+      "year": 2017
+    },
+    {
+      "id": "montevideo2022",
+      "cityId": "montevideo",
+      "title": "2022 蒙得维的亚热浪",
+      "start": "2022-01-04",
+      "end": "2022-01-19",
+      "hours": 384,
+      "peakTemperature": 30.5,
+      "peakTime": "2022-01-15T16:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "America/Montevideo",
+      "dataUrl": "/data/case-montevideo2022.json",
+      "csvUrl": "/data/case-montevideo2022.csv",
+      "requestedLocation": {
+        "latitude": -34.9,
+        "longitude": -56.16
+      },
+      "gridLocation": {
+        "latitude": -35.0,
+        "longitude": -56.25,
+        "elevation": 0.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:39:47Z",
+      "rawSha256": "f3c5fcd435b504ca3c3e1d8f018558ca8f69badeead9ec917fc49b8b1f3fc5fa",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=-35.0&longitude=-56.25&start_date=2022-01-04&end_date=2022-01-19&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "INUMET事后报告记录2022年1月12—16日乌拉圭热浪，包含蒙得维的亚地区Prado与邻近Carrasco资料。窗口保留热过程前后，用来观察沿岸风温与夜间变化。",
+      "eventEvidence": [
+        {
+          "title": "Informe post evento: Ola de calor, 12 al 16 de enero 2022",
+          "url": "https://www.inumet.gub.uy/sites/default/files/2022-01/POSEVENTO_OLA%20DE%20CALOR_12al16ene.pdf",
+          "organisation": "Instituto Uruguayo de Meteorología (INUMET)",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official PDF opened and extracted text checked; graphic screenshot endpoint returned a verification page",
+          "evidenceNote": "PDF第2页说明1月12—16日暖干气团在阻塞背景下持续，列出Prado与Carrasco观测；第3页保留这些站点的持续性分析。未据截图推断站点图标等级；报告注明数值为初步资料。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，非统一阈值事件边界；官方初步站点资料只用于事件背景，不混入ERA5序列。未覆盖1月20日开始的后一轮过程。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "蒙得维的亚",
+      "country": "乌拉圭",
+      "continent": "南美洲",
+      "year": 2022
+    },
+    {
+      "id": "athens2023",
+      "cityId": "athens",
+      "title": "2023 雅典热浪",
+      "start": "2023-07-10",
+      "end": "2023-07-29",
+      "hours": 480,
+      "peakTemperature": 41.9,
+      "peakTime": "2023-07-23T13:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Athens",
+      "dataUrl": "/data/case-athens2023.json",
+      "csvUrl": "/data/case-athens2023.csv",
+      "requestedLocation": {
+        "latitude": 37.98,
+        "longitude": 23.73
+      },
+      "gridLocation": {
+        "latitude": 38.0,
+        "longitude": 23.75,
+        "elevation": 175.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:40:24Z",
+      "rawSha256": "b36c7ca8bdb3afe8c85b311acfbb591c7fa7d48730838d1a42c124977e891af1",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=38.0&longitude=23.75&start_date=2023-07-10&end_date=2023-07-29&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "希腊国家天文台复盘了7月12—26日分阶段发展的持续热浪。本案例在这一全国事件背景下观察雅典周边的升温、暖夜与缓解过程，各阶段强度以当地再分析资料呈现。",
+      "eventEvidence": [
+        {
+          "title": "Αποτίμηση του πρόσφατου κύματος καύσωνα – 1ο Μέρος: Θερμοκρασίες",
+          "url": "https://w2.meteo.gr/article_view.cfm?entryID=2857",
+          "organisation": "National Observatory of Athens / Meteo.gr",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "2023年7月28日复盘正文与图注确认全国热浪为7月12—26日，分12—15、18—23、23—26日三阶段。来源是全国站网回顾，不把全国最高值当作雅典实测。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "雅典",
+      "country": "希腊",
+      "continent": "欧洲",
+      "year": 2023
+    },
+    {
+      "id": "rome2023",
+      "cityId": "rome",
+      "title": "2023 罗马热浪",
+      "start": "2023-07-10",
+      "end": "2023-07-29",
+      "hours": 480,
+      "peakTemperature": 39.3,
+      "peakTime": "2023-07-18T14:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Rome",
+      "dataUrl": "/data/case-rome2023.json",
+      "csvUrl": "/data/case-rome2023.csv",
+      "requestedLocation": {
+        "latitude": 41.9,
+        "longitude": 12.5
+      },
+      "gridLocation": {
+        "latitude": 42.0,
+        "longitude": 12.5,
+        "elevation": 137.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:40:59Z",
+      "rawSha256": "11b158efdcc3dcf5dfc344bb646b4badc075ab0fcfd3335fd66523a636674728",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=42.0&longitude=12.5&start_date=2023-07-10&end_date=2023-07-29&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "意大利官方热健康监测将7月10—25日列为主要影响中南部的热浪，并展示罗马的逐日温度与预警过程。这里观察城市周边气温、湿度和夜间降温，不重算报告中的健康效应。",
+      "eventEvidence": [
+        {
+          "title": "Heatwaves and mortality — summer 2023",
+          "url": "https://indicatoriambientali.isprambiente.it/en/climate/heatwaves-and-mortality",
+          "organisation": "ISPRA / DEP Lazio / Italian Ministry of Health",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "State assessment明确7月10—25日的中南部热浪；Figure 3b列罗马的日最大体感温度过程。该报告热浪定义为HHWW风险2/3级连续至少3日，与本回放窗定义不同。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "罗马",
+      "country": "意大利",
+      "continent": "欧洲",
+      "year": 2023
+    },
+    {
+      "id": "lisbon2018",
+      "cityId": "lisbon",
+      "title": "2018 里斯本高温过程",
+      "start": "2018-07-28",
+      "end": "2018-08-12",
+      "hours": 384,
+      "peakTemperature": 34.7,
+      "peakTime": "2018-08-04T14:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Lisbon",
+      "dataUrl": "/data/case-lisbon2018.json",
+      "csvUrl": "/data/case-lisbon2018.csv",
+      "requestedLocation": {
+        "latitude": 38.72,
+        "longitude": -9.14
+      },
+      "gridLocation": {
+        "latitude": 38.75,
+        "longitude": -9.25,
+        "elevation": 67.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:41:36Z",
+      "rawSha256": "f2c0f4862bedc2b98d8a764fdbf2776c2592d268a26859ab3f59c31750f2a091",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=38.75&longitude=-9.25&start_date=2018-07-28&end_date=2018-08-12&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "IPMA报告确认8月1—6日葡萄牙出现异常高温，里斯本多个站连续经历极端炎热。沿海地点未必符合该机构的严格持续日数定义，因此本案例展示区域热浪中的城市高温过程。",
+      "eventEvidence": [
+        {
+          "title": "Boletim Climatológico — Agosto 2018",
+          "url": "https://www.ipma.pt/resources.www/docs/im.publicacoes/edicoes.online/20180924/QyzZvZwgxxBnLFiHkSkX/cli_20180801_20180831_pcl_mm_co_pt.pdf",
+          "organisation": "IPMA",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "PDF页2摘要与页3天气形势确认8月1—6日高温过程；页9正文点名Lisboa/G.C.、Lisboa/Tapada和Lisboa/Geofísico的连续极端高温，并说明严格热浪范围排除部分沿海。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。里斯本称为区域热浪中的高温过程，不宣称满足IPMA的每一项站点热浪判据。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "里斯本",
+      "country": "葡萄牙",
+      "continent": "欧洲",
+      "year": 2018
+    },
+    {
+      "id": "seville2022",
+      "cityId": "seville",
+      "title": "2022 塞维利亚热浪",
+      "start": "2022-07-07",
+      "end": "2022-07-26",
+      "hours": 480,
+      "peakTemperature": 42.0,
+      "peakTime": "2022-07-13T15:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Madrid",
+      "dataUrl": "/data/case-seville2022.json",
+      "csvUrl": "/data/case-seville2022.csv",
+      "requestedLocation": {
+        "latitude": 37.39,
+        "longitude": -5.98
+      },
+      "gridLocation": {
+        "latitude": 37.5,
+        "longitude": -6.0,
+        "elevation": 66.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:42:13Z",
+      "rawSha256": "3b5f8cc6707b75780b6d4b5ca7cbdc1e35401cd3a91d1baaaee65cc29c991878",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=37.5&longitude=-6.0&start_date=2022-07-07&end_date=2022-07-26&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "AEMET的7月复盘记录了伊比利亚半岛持续热浪，并明确列出塞维利亚机场在13日的极端高温。本案例覆盖该地高峰前后及其后的持续炎热，便于观察白天增温与夜间缓解。",
+      "eventEvidence": [
+        {
+          "title": "Avance Climático Nacional de julio de 2022",
+          "url": "https://aemetblog.es/2022/08/11/avance-climatico-nacional-de-julio-de-2022/",
+          "organisation": "AEMET",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "温度章节明确7月热浪，并点名Sevilla/aeropuerto在7月13日的最高温；正文也描述反气旋和暖空气输送。此为AEMET官方博客的一手月度复盘。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。观察窗可能截取长事件的一部分。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "塞维利亚",
+      "country": "西班牙",
+      "continent": "欧洲",
+      "year": 2022
+    },
+    {
+      "id": "berlin2019",
+      "cityId": "berlin",
+      "title": "2019 柏林热浪",
+      "start": "2019-06-22",
+      "end": "2019-07-07",
+      "hours": 384,
+      "peakTemperature": 38.3,
+      "peakTime": "2019-06-30T15:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Berlin",
+      "dataUrl": "/data/case-berlin2019.json",
+      "csvUrl": "/data/case-berlin2019.csv",
+      "requestedLocation": {
+        "latitude": 52.52,
+        "longitude": 13.41
+      },
+      "gridLocation": {
+        "latitude": 52.5,
+        "longitude": 13.5,
+        "elevation": 50.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:42:58Z",
+      "rawSha256": "923019ddd8124d43a4959e4bde96acfdb4d6d241d9d595b93c7f953bfc17d3a7",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=52.5&longitude=13.5&start_date=2019-06-22&end_date=2019-07-07&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "德国气象局将6月下旬列为强烈高温阶段，指出德国东部持续偏热，并在站点表中列出柏林的观测。本案例选择六月这一轮热浪，观察接近月末的增强及随后变化。",
+      "eventEvidence": [
+        {
+          "title": "Neuer Rekord der mittleren Junitemperatur für Deutschland und intensive Hitzewelle in Europa",
+          "url": "https://www.dwd.de/DE/leistungen/besondereereignisse/temperatur/20190703_bericht_juni2019.pdf?__blob=publicationFile&v=2",
+          "organisation": "Deutscher Wetterdienst",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "官方下载PDF成功，并用pdftotext读取第1—2、6页；web解析端403",
+          "evidenceNote": "2019-07-03报告第1—2页描述6月最后十天的高温及Berlin/Brandenburg背景；第6页Table 1列Berlin-Tegel、Berlin-Schönefeld在6月30日的观测。未引用后来修订的Lingen七月纪录。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "柏林",
+      "country": "德国",
+      "continent": "欧洲",
+      "year": 2019
+    },
+    {
+      "id": "amsterdam2019",
+      "cityId": "amsterdam",
+      "title": "2019 阿姆斯特丹热浪",
+      "start": "2019-07-18",
+      "end": "2019-08-02",
+      "hours": 384,
+      "peakTemperature": 38.0,
+      "peakTime": "2019-07-25T16:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Amsterdam",
+      "dataUrl": "/data/case-amsterdam2019.json",
+      "csvUrl": "/data/case-amsterdam2019.csv",
+      "requestedLocation": {
+        "latitude": 52.37,
+        "longitude": 4.9
+      },
+      "gridLocation": {
+        "latitude": 52.25,
+        "longitude": 5.0,
+        "elevation": -2.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:43:42Z",
+      "rawSha256": "9549e0999174ed526c5fdbaaa641cbe748d227886f48c64ff8e979d675fd93c4",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=52.25&longitude=5.0&start_date=2019-07-18&end_date=2019-08-02&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "KNMI月报描述7月下旬由较凉天气转入极端炎热、随后逐渐缓解的过程，并提供阿姆斯特丹附近史基浦站的月内极值日期。本案例呈现沿海城市周边与全国高温背景的区别。",
+      "eventEvidence": [
+        {
+          "title": "Maandoverzicht van het weer in Nederland — juli 2019",
+          "url": "https://cdn.knmi.nl/knmi/map/page/klimatologie/gegevens/mow/mow_201907.pdf",
+          "organisation": "KNMI",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "PDF第2页描述7月22日起增暖、24—26日极热及27—28日缓解；第9页Schiphol行将月最高温日期列为26日。全国热浪判据取De Bilt，不能移作阿姆斯特丹自己的事件边界。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "阿姆斯特丹",
+      "country": "荷兰",
+      "continent": "欧洲",
+      "year": 2019
+    },
+    {
+      "id": "zurich2015",
+      "cityId": "zurich",
+      "title": "2015 苏黎世热浪",
+      "start": "2015-06-26",
+      "end": "2015-07-11",
+      "hours": 384,
+      "peakTemperature": 34.9,
+      "peakTime": "2015-07-07T15:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Zurich",
+      "dataUrl": "/data/case-zurich2015.json",
+      "csvUrl": "/data/case-zurich2015.csv",
+      "requestedLocation": {
+        "latitude": 47.38,
+        "longitude": 8.54
+      },
+      "gridLocation": {
+        "latitude": 47.5,
+        "longitude": 8.5,
+        "elevation": 535.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:44:20Z",
+      "rawSha256": "bc671c7763683af700a29715ac02a709ad06abebd6b3f8eec094dcbd46c64222",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=47.5&longitude=8.5&start_date=2015-06-26&end_date=2015-07-11&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "瑞士气象局专题报告记录7月初第一轮热浪，展示苏黎世克洛滕站的过程和预警评估。观察窗覆盖升温前、热期中短暂变化与之后缓解，可对照风和云量的同步转折。",
+      "eventEvidence": [
+        {
+          "title": "Der Hitzesommer 2015 in der Schweiz — Fachbericht Nr. 260",
+          "url": "https://www.meteoschweiz.admin.ch/dam/jcr%3A9200bd1a-2f3e-411c-bae9-22d4fd98a882/hitzesommer_2015_v5_final_CD.pdf",
+          "organisation": "MeteoSwiss",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "官方下载PDF成功，并用pdftotext读取页9及Table 1；web解析端因文件大小拒绝",
+          "evidenceNote": "报告印刷页9明确第一轮为7月1—7日，Figure 4含Zürich-Kloten；Table 1也列该站7月1—7日预警评估。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "苏黎世",
+      "country": "瑞士",
+      "continent": "欧洲",
+      "year": 2015
+    },
+    {
+      "id": "stockholm2018",
+      "cityId": "stockholm",
+      "title": "2018 斯德哥尔摩热浪",
+      "start": "2018-07-10",
+      "end": "2018-07-29",
+      "hours": 480,
+      "peakTemperature": 29.2,
+      "peakTime": "2018-07-27T12:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Stockholm",
+      "dataUrl": "/data/case-stockholm2018.json",
+      "csvUrl": "/data/case-stockholm2018.csv",
+      "requestedLocation": {
+        "latitude": 59.33,
+        "longitude": 18.07
+      },
+      "gridLocation": {
+        "latitude": 59.25,
+        "longitude": 18.0,
+        "elevation": 34.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:44:57Z",
+      "rawSha256": "0202484493c3163ca8d39c5dc8031d064ad11e8c1471174f1dacde4920563813",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=59.25&longitude=18.0&start_date=2018-07-10&end_date=2018-07-29&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "SMHI对7月的逐段复盘记录了持续炎热，明确列出斯德哥尔摩在月中升温及附近群岛暖夜。这里选取月中到月底的一段过程，比较高纬度城市白天与夜间的温度变化。",
+      "eventEvidence": [
+        {
+          "title": "Juli 2018 — Långvarig hetta och svåra skogsbränder",
+          "url": "https://www.smhi.se/klimat/klimatet-da-och-nu/manadens-vader-och-vatten-i-sverige/manadens-vader-och-vatten-i-sverige/2018-07-31-juli-2018---langvarig-hetta-och-svara-skogsbrander",
+          "organisation": "SMHI",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "逐段天气回顾明确7月14—15日Stockholm高温、18日Stockholm群岛Skarpö暖夜，以及25—27日再增强；未把森林火灾归因为本地格网变量。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。这是2018年漫长炎热夏季的片段，不覆盖整个持续期。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "斯德哥尔摩",
+      "country": "瑞典",
+      "continent": "欧洲",
+      "year": 2018
+    },
+    {
+      "id": "helsinki2018",
+      "cityId": "helsinki",
+      "title": "2018 赫尔辛基热浪",
+      "start": "2018-07-18",
+      "end": "2018-08-02",
+      "hours": 384,
+      "peakTemperature": 28.9,
+      "peakTime": "2018-08-01T14:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Helsinki",
+      "dataUrl": "/data/case-helsinki2018.json",
+      "csvUrl": "/data/case-helsinki2018.csv",
+      "requestedLocation": {
+        "latitude": 60.17,
+        "longitude": 24.94
+      },
+      "gridLocation": {
+        "latitude": 60.25,
+        "longitude": 25.0,
+        "elevation": 33.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:45:33Z",
+      "rawSha256": "6d3b24958ab2b9ea845a953ec4bb574716a64f5b2d63c4a7176bea6b6d3e7493",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=60.25&longitude=25.0&start_date=2018-07-18&end_date=2018-08-02&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "芬兰气象研究所的连续热期统计直接列出赫尔辛基昆普拉与赫尔辛基万塔机场的2018年长热期。本案例选取其中一段，让沿海高纬度城市的日夜温度与风变化可以逐小时比较。",
+      "eventEvidence": [
+        {
+          "title": "Helletilastot — Pisimmät yhtämittaiset hellejaksot",
+          "url": "https://www.ilmatieteenlaitos.fi/helletilastot",
+          "organisation": "Finnish Meteorological Institute",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "连续热期表2018行明确12.7.—5.8.共25天，列Vantaa Helsinki-Vantaan lentoasema、Helsinki Kumpula、Porvoo Harabacka；这是城市站点事件证据，不仅是全年纪录。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。窗口位于7月12日—8月5日官方连续热期内部，未覆盖其起止和全部前后背景。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "赫尔辛基",
+      "country": "芬兰",
+      "continent": "欧洲",
+      "year": 2018
+    },
+    {
+      "id": "bucharest2024",
+      "cityId": "bucharest",
+      "title": "2024 布加勒斯特热浪",
+      "start": "2024-07-07",
+      "end": "2024-07-22",
+      "hours": 384,
+      "peakTemperature": 40.4,
+      "peakTime": "2024-07-16T11:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Europe/Bucharest",
+      "dataUrl": "/data/case-bucharest2024.json",
+      "csvUrl": "/data/case-bucharest2024.csv",
+      "requestedLocation": {
+        "latitude": 44.43,
+        "longitude": 26.1
+      },
+      "gridLocation": {
+        "latitude": 44.5,
+        "longitude": 26.0,
+        "elevation": 102.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:46:09Z",
+      "rawSha256": "203e6cf58eedbdbb3ea65585fd199e646a9f893d78dc8aefbb1d84ff69b65007",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=44.5&longitude=26.0&start_date=2024-07-07&end_date=2024-07-22&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "罗马尼亚气象局7月报告明确描述热浪中的炎热白天与暖夜，并单列布加勒斯特菲拉雷特站的月度情况。这里取月中强热阶段作为城市周边回放窗口，不把全国极值归给首都。",
+      "eventEvidence": [
+        {
+          "title": "Caracterizare climatologică — iulie 2024",
+          "url": "https://www.meteoromania.ro/clim/caracterizare-lunara/cc_2024_07.html",
+          "organisation": "Administrația Națională de Meteorologie",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "月温章节及Figure 4—5点名București-Filaret；Table 1显示多数强热日期为7月15—17日；后文明确使用val de căldură并讨论罗马尼亚平原热日和暖夜。窗口为月中全国热阶段，不是官方布加勒斯特起止判定。"
+        }
+      ],
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。该窗口依据报告中的月中热阶段人工选定，未获得统一算法下的城市热浪边界。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "布加勒斯特",
+      "country": "罗马尼亚",
+      "continent": "欧洲",
+      "year": 2024
+    },
+    {
+      "id": "bangkok2024",
+      "cityId": "bangkok",
+      "title": "2024 曼谷高温观察窗",
+      "start": "2024-04-18",
+      "end": "2024-05-03",
+      "hours": 384,
+      "peakTemperature": 38.3,
+      "peakTime": "2024-04-21T08:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Bangkok",
+      "dataUrl": "/data/case-bangkok2024.json",
+      "csvUrl": "/data/case-bangkok2024.csv",
+      "requestedLocation": {
+        "latitude": 13.75,
+        "longitude": 100.5
+      },
+      "gridLocation": {
+        "latitude": 13.75,
+        "longitude": 100.5,
+        "elevation": -2.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:46:47Z",
+      "rawSha256": "88c16704803451c2ad5f650861f5440ebf9d06a7813efe10a98820db147e79a7",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=13.75&longitude=100.5&start_date=2024-04-18&end_date=2024-05-03&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "泰国气象局记录了四月持续偏热、月底加剧的过程，曼谷多个站点在下旬出现高温极值。本窗口围绕这一阶段，观察城市周边风、云、降水与昼夜气温如何变化。",
+      "eventEvidence": [
+        {
+          "title": "Monthly Weather Summary in Thailand — April 2024",
+          "url": "https://www.tmd.go.th/media/climate/climate-monthly/april_2024_rev1-0.pdf",
+          "organisation": "Thai Meteorological Department",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "原站 PDF 通过 curl 下载成功，pdftotext 实读第1、2、6、9页",
+          "evidenceNote": "第1–2页描述4月反复高温且月底特别炎热；第6页列曼谷市区4月21日与廊曼4月30日站点纪录，第9页有曼谷站点月均温与降水。原文第2页小标题误写21–31 April，本目录未沿用错误日期。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，非统一阈值识别。曼谷格点不等于廊曼、港口或市区站点；站点纪录只作事件证据，不作为再分析必须重现的值。该标题保留高温观察窗口径。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "曼谷",
+      "country": "泰国",
+      "continent": "亚洲",
+      "year": 2024
+    },
+    {
+      "id": "singapore2023",
+      "cityId": "singapore",
+      "title": "2023 新加坡持续高温观察窗",
+      "start": "2023-05-05",
+      "end": "2023-05-20",
+      "hours": 384,
+      "peakTemperature": 30.4,
+      "peakTime": "2023-05-10T10:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Singapore",
+      "dataUrl": "/data/case-singapore2023.json",
+      "csvUrl": "/data/case-singapore2023.csv",
+      "requestedLocation": {
+        "latitude": 1.35,
+        "longitude": 103.82
+      },
+      "gridLocation": {
+        "latitude": 1.25,
+        "longitude": 103.75,
+        "elevation": 0.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:47:23Z",
+      "rawSha256": "0ad55ba5a92cb8442cbd0df6be57b3ab73dee8cfc062b09869435b2751bdbe03",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=1.25&longitude=103.75&start_date=2023-05-05&end_date=2023-05-20&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "新加坡气象部门将五月持续偏热列为显著事件，上半月多日炎热，第二周出现微风少云的天气。本窗口覆盖五月十三日前后，适合观察海岛环境中的日夜温差与降雨变化。",
+      "eventEvidence": [
+        {
+          "title": "Singapore Annual Climate Assessment 2023",
+          "url": "https://www.weather.gov.sg/wp-content/uploads/2024/04/ACAR_2023.pdf",
+          "organisation": "Meteorological Service Singapore",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "官方 PDF 通过 web.open 打开并实读温度与显著事件章节",
+          "evidenceNote": "印刷页10描述5月上半月多日高温，第二周微风、少云条件和5月13日多个站点的极值；页10–11还讨论暖海温与MJO背景。并非只用单日纪录认定热浪。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗；本目录未依当地热浪阈值重新判定连续天数，故保留持续高温观察窗标题。海陆混合格点可能平滑城市站点极值，5×5格网也会覆盖周边海域和邻国。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "新加坡",
+      "country": "新加坡",
+      "continent": "亚洲",
+      "year": 2023
+    },
+    {
+      "id": "manila2024",
+      "cityId": "manila",
+      "title": "2024 菲律宾热浪·马尼拉观察窗",
+      "start": "2024-04-15",
+      "end": "2024-05-02",
+      "hours": 432,
+      "peakTemperature": 37.0,
+      "peakTime": "2024-04-28T05:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Manila",
+      "dataUrl": "/data/case-manila2024.json",
+      "csvUrl": "/data/case-manila2024.csv",
+      "requestedLocation": {
+        "latitude": 14.6,
+        "longitude": 120.98
+      },
+      "gridLocation": {
+        "latitude": 14.5,
+        "longitude": 121.0,
+        "elevation": 6.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:47:58Z",
+      "rawSha256": "7223f5ea3bdda06d0ec30240cb0ce408c2bd85b5f1321d00c23a7000ea07aebd",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=14.5&longitude=121.0&start_date=2024-04-15&end_date=2024-05-02&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "菲律宾在四月中下旬经历区域性持续高温，原始研究明确分析了十五日热过程。马尼拉作为区域中的城市观察点，可用于比较气温、湿度和夜间降温，而不代表全国平均。",
+      "eventEvidence": [
+        {
+          "title": "Climate change made the deadly heatwaves that hit millions of highly vulnerable people across Asia more frequent and extreme",
+          "url": "https://www.worldweatherattribution.org/climate-change-made-the-deadly-heatwaves-that-hit-millions-of-highly-vulnerable-people-across-asia-more-frequent-and-extreme/",
+          "organisation": "World Weather Attribution",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "研究团队原始事件说明通过 web.open 实读",
+          "evidenceNote": "正文与图1将菲律宾研究事件定义为2024年4月15–29日区域平均日最高温的15日过程；该研究不是马尼拉单站阈值判定。"
+        },
+        {
+          "title": "Official Statement on Creating Extreme Heat Protocol",
+          "url": "https://www.pagasa.dost.gov.ph/press-release/155",
+          "organisation": "DOST-PAGASA",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "官方原始声明通过 web.open 实读",
+          "evidenceNote": "2024年4月12日声明区分气温与热指数，说明既有热预警系统及面向学校等部门的决策局限；不提供马尼拉站点极值。"
+        }
+      ],
+      "scopeNote": "人工UTC窗覆盖研究的区域热过程及随后数日；区域热浪背景下的城市观察窗，不宣称马尼拉单站已按同一阈值确认热浪。原始来源未核验马尼拉单站逐日极值，不能在网页补写该类纪录。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "马尼拉",
+      "country": "菲律宾",
+      "continent": "亚洲",
+      "year": 2024
+    },
+    {
+      "id": "seoul2018",
+      "cityId": "seoul",
+      "title": "2018 首尔热浪",
+      "start": "2018-07-24",
+      "end": "2018-08-08",
+      "hours": 384,
+      "peakTemperature": 37.3,
+      "peakTime": "2018-08-01T07:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Seoul",
+      "dataUrl": "/data/case-seoul2018.json",
+      "csvUrl": "/data/case-seoul2018.csv",
+      "requestedLocation": {
+        "latitude": 37.57,
+        "longitude": 126.98
+      },
+      "gridLocation": {
+        "latitude": 37.5,
+        "longitude": 127.0,
+        "elevation": 88.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:48:33Z",
+      "rawSha256": "b3ea9d8ccb5a4e4f286e9fb3e59ec7570785591bebc6009d988ba8c8d8ba3390",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=37.5&longitude=127.0&start_date=2018-07-24&end_date=2018-08-08&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "韩国气象厅在八月一日通报首尔极端高温，当时首都圈已处在热浪警报中，炎热过程继续延续。本窗口跨越峰值前后，观察白天升温与夜间热量难以散去的时间变化。",
+      "eventEvidence": [
+        {
+          "title": "서울, 양평 등 일 최고기온 극값 경신（首尔、杨平等日最高气温纪录更新）",
+          "url": "https://testweather.kma.go.kr/metropolitan/html/news/notice_view.jsp?articleno=9785&boardId=press2&pageNo=34",
+          "organisation": "Korea Meteorological Administration — Metropolitan Office",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "韩国气象厅官方韩文通报通过 web.open 实读",
+          "evidenceNote": "2018年8月1日通报正文指出首都圈热浪警报正在生效、首尔当日极端高温及热浪持续；解释高空高压、强日照和东风地形效应，并提及夜间难以降温。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，只截取长热过程的一段；城市周边再分析格点不等于首尔官方观测站，也不能解析街区城市热岛。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "首尔",
+      "country": "韩国",
+      "continent": "亚洲",
+      "year": 2018
+    },
+    {
+      "id": "ahmedabad2016",
+      "cityId": "ahmedabad",
+      "title": "2016 艾哈迈达巴德高温观察窗",
+      "start": "2016-05-12",
+      "end": "2016-05-27",
+      "hours": 384,
+      "peakTemperature": 45.7,
+      "peakTime": "2016-05-19T12:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Kolkata",
+      "dataUrl": "/data/case-ahmedabad2016.json",
+      "csvUrl": "/data/case-ahmedabad2016.csv",
+      "requestedLocation": {
+        "latitude": 23.03,
+        "longitude": 72.58
+      },
+      "gridLocation": {
+        "latitude": 23.0,
+        "longitude": 72.5,
+        "elevation": 43.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:49:10Z",
+      "rawSha256": "443202bb39e25f841e450842b010d798ce9f40d26dd63fa1d515606c604facdf",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=23.0&longitude=72.5&start_date=2016-05-12&end_date=2016-05-27&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "五月下旬的项目参与方报告记录了当地极端高温与连续数日红色警报。本观察窗把气象过程与热行动计划的情境并置，展示高温怎样持续，而不据此推断预警是否减少了健康损失。",
+      "eventEvidence": [
+        {
+          "title": "A Tale of Three Cities: Heat Action Plans Across India",
+          "url": "https://www.nrdc.org/bio/anjali-jaiswal/tale-three-cities-heat-action-plans-across-india",
+          "organisation": "Natural Resources Defense Council — Ahmedabad Heat Action Plan partner",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "热行动计划参与机构作者原始现场工作报告通过 web.open 实读",
+          "evidenceNote": "2016年5月23日文章的 Ahmedabad Highlights 记述当月连续三日极端高温红色警报及现场宣传；开头给出城市高温背景。这里仅采用参与方对警报行动的直接记述，不把其转引媒体的极值当作独立站点数据，也不采纳文中健康行为建议。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗，来源对警报持续的记述不等于统一算法识别的站点热浪起止。尚未取得该事件单站逐小时观测，站点纪录与健康成效均不作为本数据包的已验证结论。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "艾哈迈达巴德",
+      "country": "印度",
+      "continent": "亚洲",
+      "year": 2016
+    },
+    {
+      "id": "jacobabad2018",
+      "cityId": "jacobabad",
+      "title": "2018 信德热浪·雅各布阿巴德",
+      "start": "2018-04-22",
+      "end": "2018-05-07",
+      "hours": 384,
+      "peakTemperature": 46.8,
+      "peakTime": "2018-05-01T10:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Asia/Karachi",
+      "dataUrl": "/data/case-jacobabad2018.json",
+      "csvUrl": "/data/case-jacobabad2018.csv",
+      "requestedLocation": {
+        "latitude": 28.28,
+        "longitude": 68.44
+      },
+      "gridLocation": {
+        "latitude": 28.25,
+        "longitude": 68.5,
+        "elevation": 52.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:49:46Z",
+      "rawSha256": "1836d224b0170f1dfcf2d7229960eaadcd0241de9433a108967c42737e8f7e52",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=28.25&longitude=68.5&start_date=2018-04-22&end_date=2018-05-07&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "世界气象组织记录了信德省四月下旬的热浪，并明确列出雅各布阿巴德在月底高峰中的站点表现。城市周边回放可展示季风前内陆高温的昼夜变化，以及风向转变是否伴随降温。",
+      "eventEvidence": [
+        {
+          "title": "April: high CO2, low sea ice and extreme weather",
+          "url": "https://public.wmo.int/media/news/april-high-co2-low-sea-ice-and-extreme-weather",
+          "organisation": "World Meteorological Organization",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "WMO 官方事件公告通过 web.open 实读",
+          "evidenceNote": "Pakistan heatwave 小节：引述PMD说明持续热背景、4月中旬再次出现异常热过程并于29–30日在信德达到峰值；同段明确列出Jacobabad在4月30日的站点高温。WMO同时声明其极端纪录档案不验证月纪录。"
+        }
+      ],
+      "scopeNote": "人工UTC窗围绕4月29–30日区域高峰，不覆盖从3月开始的全部前期过程。站点极值不要求ERA5格点重现；本项目不验证或新增世界、国家、月度纪录。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "雅各布阿巴德",
+      "country": "巴基斯坦",
+      "continent": "亚洲",
+      "year": 2018
+    },
+    {
+      "id": "perth2024",
+      "cityId": "perth",
+      "title": "2024 珀斯二月热浪",
+      "start": "2024-02-11",
+      "end": "2024-02-26",
+      "hours": 384,
+      "peakTemperature": 39.2,
+      "peakTime": "2024-02-18T07:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Australia/Perth",
+      "dataUrl": "/data/case-perth2024.json",
+      "csvUrl": "/data/case-perth2024.csv",
+      "requestedLocation": {
+        "latitude": -31.95,
+        "longitude": 115.86
+      },
+      "gridLocation": {
+        "latitude": -32.0,
+        "longitude": 115.75,
+        "elevation": 20.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:50:24Z",
+      "rawSha256": "ad2580593bf0e885263b80b0290307de8ce576dc922dfe325cdf4a460c79588e",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=-32.0&longitude=115.75&start_date=2024-02-11&end_date=2024-02-26&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "澳大利亚气象局确认珀斯及周边二月中下旬经历严重热浪，炎热白天与暖夜相继出现。本窗口覆盖该阶段以及随后降雨，可观察沿海风温场与昼夜降温条件的转变。",
+      "eventEvidence": [
+        {
+          "title": "Greater Perth in February 2024",
+          "url": "https://www.bom.gov.au/climate/current/month/wa/archive/202402.perth.shtml",
+          "organisation": "Australian Bureau of Meteorology",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "BoM 官方月报通过 web.open 实读温度段与逐日表",
+          "evidenceNote": "Temperature 段明确珀斯及周边2月17–21日达到 severe intensity 热浪；Perth Metro段与逐日表给出18日最高温和19日暖夜，24–26日出现降雨。"
+        }
+      ],
+      "scopeNote": "人工UTC观察窗围绕2月17–21日过程；官方BoM严重程度分类仅用于事件说明，本站未重算该等级。区域含近海格点，不等于陆地城市站点网。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "珀斯",
+      "country": "澳大利亚",
+      "continent": "大洋洲",
+      "year": 2024
+    },
+    {
+      "id": "adelaide2019",
+      "cityId": "adelaide",
+      "title": "2019 阿德莱德一月热浪",
+      "start": "2019-01-17",
+      "end": "2019-02-01",
+      "hours": 384,
+      "peakTemperature": 39.5,
+      "peakTime": "2019-01-24T09:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Australia/Adelaide",
+      "dataUrl": "/data/case-adelaide2019.json",
+      "csvUrl": "/data/case-adelaide2019.csv",
+      "requestedLocation": {
+        "latitude": -34.93,
+        "longitude": 138.6
+      },
+      "gridLocation": {
+        "latitude": -35.0,
+        "longitude": 138.5,
+        "elevation": 0.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:51:05Z",
+      "rawSha256": "8f7940d48333c5bb74c553f7bf43a25941e45fde6c5cab37600ff318376d3bb1",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=-35.0&longitude=138.5&start_date=2019-01-17&end_date=2019-02-01&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "阿德莱德在一月少雨且多次炎热的背景下，于二十四日前后出现强烈高温与暖夜。窗口保留峰值前后的变化，可用于观察南半球夏季城市周边温度、风与地表水分的共同演变。",
+      "eventEvidence": [
+        {
+          "title": "Greater Adelaide in January 2019: very hot and dry",
+          "url": "https://www.bom.gov.au/climate/current/month/sa/archive/201901.adelaide.shtml",
+          "organisation": "Australian Bureau of Meteorology",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "BoM 官方月报通过 web.open 实读概述、Very hot at times 与站点段",
+          "evidenceNote": "月报描述一月高温少雨、24日各站极端高温和暖夜，明确将当时过程连接到 Widespread heatwaves during December 2018 and January 2019 专项报告。"
+        }
+      ],
+      "scopeNote": "人工UTC窗只取12月至1月更广泛热浪中的城市片段；BoM每日站点统计采用其观测日规则，不能与UTC格点小时极值直接视为同口径。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "阿德莱德",
+      "country": "澳大利亚",
+      "continent": "大洋洲",
+      "year": 2019
+    },
+    {
+      "id": "bamako2024",
+      "cityId": "bamako",
+      "title": "2024 萨赫勒热浪·巴马科",
+      "start": "2024-03-25",
+      "end": "2024-04-09",
+      "hours": 384,
+      "peakTemperature": 43.3,
+      "peakTime": "2024-04-03T15:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Africa/Bamako",
+      "dataUrl": "/data/case-bamako2024.json",
+      "csvUrl": "/data/case-bamako2024.csv",
+      "requestedLocation": {
+        "latitude": 12.65,
+        "longitude": -8.0
+      },
+      "gridLocation": {
+        "latitude": 12.75,
+        "longitude": -8.0,
+        "elevation": 409.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:51:44Z",
+      "rawSha256": "068ddd67e0ad7ed8a5a22c8477b8603a9a8c0f8830d665cbb614390966a9006b",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=12.75&longitude=-8.0&start_date=2024-03-25&end_date=2024-04-09&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "三月底至四月初，萨赫勒发生持续强热过程，研究同时关注白天最高温与夜间最低温。巴马科观察窗展示同一区域事件在城市周边的演变，并为讨论夜间恢复与基础设施条件提供气象背景。",
+      "eventEvidence": [
+        {
+          "title": "Extreme Sahel heatwave that hit highly vulnerable population at the end of Ramadan would not have occurred without climate change",
+          "url": "https://www.worldweatherattribution.org/extreme-sahel-heatwave-that-hit-highly-vulnerable-population-at-the-end-of-ramadan-would-not-have-occurred-without-climate-change/",
+          "organisation": "World Weather Attribution",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "研究团队原始事件说明通过 web.open 实读正文、图1时间窗及Main Findings",
+          "evidenceNote": "正文定义3月底4月初事件；图1给马里南部/布基纳法索3月31日至4月4日五日窗，并明确讨论Bamako和暖夜。本站不采用网页转引的医院死亡数量作为可归因热死亡。"
+        }
+      ],
+      "scopeNote": "人工UTC窗，城市格点不是原研究的国家区域平均；研究的气候归因结论不能直接转化为本城市格点的归因系数。与瓦加杜古同属一次区域事件，不是独立气候样本。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "巴马科",
+      "country": "马里",
+      "continent": "非洲",
+      "year": 2024
+    },
+    {
+      "id": "ouagadougou2024",
+      "cityId": "ouagadougou",
+      "title": "2024 萨赫勒热浪·瓦加杜古",
+      "start": "2024-03-25",
+      "end": "2024-04-09",
+      "hours": 384,
+      "peakTemperature": 42.8,
+      "peakTime": "2024-04-02T15:00:00Z",
+      "timeBasis": "UTC",
+      "timezone": "Africa/Ouagadougou",
+      "dataUrl": "/data/case-ouagadougou2024.json",
+      "csvUrl": "/data/case-ouagadougou2024.csv",
+      "requestedLocation": {
+        "latitude": 12.37,
+        "longitude": -1.52
+      },
+      "gridLocation": {
+        "latitude": 12.25,
+        "longitude": -1.5,
+        "elevation": 310.0
+      },
+      "source": {
+        "label": "ERA5 再分析 · 通过 Open-Meteo 获取",
+        "provider": "Open-Meteo（第三方 API）",
+        "datasetUrl": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+        "documentationUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+        "attribution": "Weather data by Open-Meteo.com (CC BY 4.0), based on Copernicus Climate Change Service ERA5 reanalysis (ECMWF).",
+        "licence": "CC BY 4.0",
+        "model": "era5",
+        "elevationDownscaling": false,
+        "cellSelection": "nearest"
+      },
+      "retrievedAt": "2026-10-02T13:52:19Z",
+      "rawSha256": "1568cbac75ef93ee8ce716f2316f0f447ae6638a6b21ef9b047bc4b604c50947",
+      "requestUrl": "https://archive-api.open-meteo.com/v1/archive?latitude=12.25&longitude=-1.5&start_date=2024-03-25&end_date=2024-04-09&hourly=temperature_2m%2Crelative_humidity_2m%2Cpressure_msl%2Ccloud_cover%2Cshortwave_radiation%2Cwind_speed_10m%2Cwind_direction_10m%2Csoil_moisture_0_to_7cm%2Csoil_moisture_7_to_28cm%2Cprecipitation&models=era5&elevation=nan&cell_selection=nearest&timezone=UTC&wind_speed_unit=ms",
+      "summary": "瓦加杜古位于研究确认的布基纳法索热浪区域，三月底至四月初的高温也涉及夜间难以降温。它与巴马科可作为同次区域事件的两个城市观察点，比较局地气象变化的共同点与差别。",
+      "eventEvidence": [
+        {
+          "title": "Extreme Sahel heatwave that hit highly vulnerable population at the end of Ramadan would not have occurred without climate change",
+          "url": "https://www.worldweatherattribution.org/extreme-sahel-heatwave-that-hit-highly-vulnerable-population-at-the-end-of-ramadan-would-not-have-occurred-without-climate-change/",
+          "organisation": "World Weather Attribution",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "研究团队原始事件说明通过 web.open 实读正文、图1时间窗及Main Findings",
+          "evidenceNote": "图1明确马里南部/布基纳法索3月31日至4月4日五日过程，正文讨论布基纳法索的暖夜；Main Findings点名Ouagadougou城市背景。此来源支持区域事件，未提供该城市逐小时单站序列。"
+        }
+      ],
+      "scopeNote": "人工UTC城市观察窗，源研究为区域热浪分析，未确认本城市单站统一阈值起止。与巴马科并非独立事件；不能将城市数量当作相互独立热浪的样本量。",
+      "windowType": "curated_replay_window",
+      "caveat": "人工选择的事件前后观察窗口，不是阈值算法识别的热浪边界。资料为 ERA5 再分析网格，不是城市站点纪录；变量共同变化不能确定因果贡献。",
+      "qualityStatus": "clean",
+      "qualityWarnings": [],
+      "name": "瓦加杜古",
+      "country": "布基纳法索",
+      "continent": "非洲",
+      "year": 2024
+    }
+  ],
+  "status": "complete",
+  "expectedCases": 30,
+  "scope": "新增三十处历史高温案例的有限区域与代表格点；人工回放窗，不是全球全量或三十套独立气候模型。"
+}

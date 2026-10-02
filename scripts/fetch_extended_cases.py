@@ -10,6 +10,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,6 +29,24 @@ VARIABLES = {
     'precipitation': ('mm', 0, 500),
 }
 REGIONAL = ['temperature_2m', 'wind_speed_10m', 'wind_direction_10m']
+
+
+@dataclass(frozen=True)
+class DatasetConfig:
+    data: Path = DATA
+    index_name: str = 'extended-cases.json'
+    expected_cases: int = 10
+    scope: str = '十处历史高温观察窗的有限区域与代表格点；不是全球连续覆盖，也不是新增十个20年城市序列。'
+    minimum_interval: float = 8
+    freeze_catalog: bool = False
+    include_geography: bool = False
+
+
+DEFAULT_CONFIG = DatasetConfig()
+EXPANSION_CONFIG = DatasetConfig(
+    data=ROOT / 'data/expansion-30', index_name='expansion-cases.json', expected_cases=30,
+    scope='新增三十处历史高温案例的有限区域与代表格点；人工回放窗，不是全球全量或三十套独立气候模型。',
+    minimum_interval=10, freeze_catalog=True, include_geography=True)
 
 
 def now():
@@ -107,12 +126,13 @@ def validate(payload, points, start, end, variables):
 
 
 class Downloader:
-    def __init__(self, interval=10):
-        self.interval = max(8, interval)
+    def __init__(self, interval=10, config=DEFAULT_CONFIG):
+        self.config = config
+        self.interval = max(config.minimum_interval, interval)
         self.last = None
 
     def fetch(self, case, name, points, start, end, variables, manifest):
-        folder = DATA / case['id']
+        folder = self.config.data / case['id']
         manifest_path = folder / 'manifest.json'
         path = folder / 'raw' / (name + '.json')
         relative = str(path.relative_to(ROOT))
@@ -164,13 +184,19 @@ class Downloader:
 
 
 def run(case, downloader):
-    folder = DATA / case['id']
+    config = downloader.config
+    folder = config.data / case['id']
     path = folder / 'manifest.json'
     manifest = json.loads(path.read_text()) if path.exists() else dict(
         schemaVersion=1, caseId=case['id'], createdAt=now(), status='incomplete',
-        catalogSha256=sha((DATA/'catalog.json').read_bytes()), requests=[], errors=[],
+        catalogSha256=sha((config.data/'catalog.json').read_bytes()), requests=[], errors=[],
         requestPolicy=dict(serial=True, minimumSecondsAfterResponse=downloader.interval,
                            stopImmediatelyOn429=True, retryCount=0, cacheRequiresExactUrlAndSha256=True))
+    if config.freeze_catalog:
+        if manifest['catalogSha256'] != sha((config.data/'catalog.json').read_bytes()):
+            raise ValueError('冻结目录 SHA-256 已改变，停止复用')
+        if not path.exists() and any((ROOT/'public/data'/f'{prefix}-{case["id"]}.json').exists() for prefix in ['case', 'regional']):
+            raise ValueError('新案例 id 与既有公开产物冲突，不覆盖')
     lons, lats = grid_for(case)
     points = [(lon, lat) for lat in lats for lon in lons]
     center = [points[12]]
@@ -181,20 +207,22 @@ def run(case, downloader):
     manifest['status'] = 'downloaded'
     save(path, manifest)
     from build_extended_cases import build_case, build_index
-    build_case(case)
-    build_index()
+    build_case(case, config)
+    build_index(config)
 
 
-def main():
+def main(config=DEFAULT_CONFIG):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--case', default='all')
     parser.add_argument('--interval', type=float, default=10)
     args = parser.parse_args()
-    catalog = json.loads((DATA/'catalog.json').read_text())['cases']
+    catalog = json.loads((config.data/'catalog.json').read_text())['cases']
+    if config.freeze_catalog and (len(catalog) != config.expected_cases or len({c['id'] for c in catalog}) != config.expected_cases):
+        raise ValueError('目录必须包含完整且唯一的30例，不能按部分目录取数')
     chosen = catalog if args.case == 'all' else [c for c in catalog if c['id'] == args.case]
     if not chosen:
         raise ValueError('未知案例')
-    downloader = Downloader(args.interval)
+    downloader = Downloader(args.interval, config)
     for case in chosen:
         run(case, downloader)
 

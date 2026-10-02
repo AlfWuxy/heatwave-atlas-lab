@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-02",
+  "timeBasis": "UTC",
+  "windowDefinition": "人工观察窗，非统一阈值识别；明确标注长事件片段及区域热浪中的局地高温过程",
+  "cases": [
+    {
+      "id": "athens2023",
+      "cityId": "athens",
+      "name": "雅典",
+      "country": "希腊",
+      "continent": "欧洲",
+      "title": "2023 雅典热浪",
+      "year": 2023,
+      "timezone": "Europe/Athens",
+      "latitude": 37.98,
+      "longitude": 23.73,
+      "start": "2023-07-10",
+      "end": "2023-07-29",
+      "sourceUrls": [
+        {
+          "title": "Αποτίμηση του πρόσφατου κύματος καύσωνα – 1ο Μέρος: Θερμοκρασίες",
+          "url": "https://w2.meteo.gr/article_view.cfm?entryID=2857",
+          "organisation": "National Observatory of Athens / Meteo.gr",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "2023年7月28日复盘正文与图注确认全国热浪为7月12—26日，分12—15、18—23、23—26日三阶段。来源是全国站网回顾，不把全国最高值当作雅典实测。"
+        }
+      ],
+      "summary": "希腊国家天文台复盘了7月12—26日分阶段发展的持续热浪。本案例在这一全国事件背景下观察雅典周边的升温、暖夜与缓解过程，各阶段强度以当地再分析资料呈现。",
+      "mechanismNote": "比较不同阶段的风温与昼夜变化；单层风温回放不能独立判断高空下沉、气团来源或火灾反馈。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。"
+    },
+    {
+      "id": "rome2023",
+      "cityId": "rome",
+      "name": "罗马",
+      "country": "意大利",
+      "continent": "欧洲",
+      "title": "2023 罗马热浪",
+      "year": 2023,
+      "timezone": "Europe/Rome",
+      "latitude": 41.9,
+      "longitude": 12.5,
+      "start": "2023-07-10",
+      "end": "2023-07-29",
+      "sourceUrls": [
+        {
+          "title": "Heatwaves and mortality — summer 2023",
+          "url": "https://indicatoriambientali.isprambiente.it/en/climate/heatwaves-and-mortality",
+          "organisation": "ISPRA / DEP Lazio / Italian Ministry of Health",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "State assessment明确7月10—25日的中南部热浪；Figure 3b列罗马的日最大体感温度过程。该报告热浪定义为HHWW风险2/3级连续至少3日，与本回放窗定义不同。"
+        }
+      ],
+      "summary": "意大利官方热健康监测将7月10—25日列为主要影响中南部的热浪，并展示罗马的逐日温度与预警过程。这里观察城市周边气温、湿度和夜间降温，不重算报告中的健康效应。",
+      "mechanismNote": "将气温、相对湿度和暖夜并列，区分空气温度与报告采用的最大体感温度；不直接复现其城市健康预警阈值。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。"
+    },
+    {
+      "id": "lisbon2018",
+      "cityId": "lisbon",
+      "name": "里斯本",
+      "country": "葡萄牙",
+      "continent": "欧洲",
+      "title": "2018 里斯本高温过程",
+      "year": 2018,
+      "timezone": "Europe/Lisbon",
+      "latitude": 38.72,
+      "longitude": -9.14,
+      "start": "2018-07-28",
+      "end": "2018-08-12",
+      "sourceUrls": [
+        {
+          "title": "Boletim Climatológico — Agosto 2018",
+          "url": "https://www.ipma.pt/resources.www/docs/im.publicacoes/edicoes.online/20180924/QyzZvZwgxxBnLFiHkSkX/cli_20180801_20180831_pcl_mm_co_pt.pdf",
+          "organisation": "IPMA",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "PDF页2摘要与页3天气形势确认8月1—6日高温过程；页9正文点名Lisboa/G.C.、Lisboa/Tapada和Lisboa/Geofísico的连续极端高温，并说明严格热浪范围排除部分沿海。"
+        }
+      ],
+      "summary": "IPMA报告确认8月1—6日葡萄牙出现异常高温，里斯本多个站连续经历极端炎热。沿海地点未必符合该机构的严格持续日数定义，因此本案例展示区域热浪中的城市高温过程。",
+      "mechanismNote": "报告讨论持续偏东气流与热干空气输送；回放可观察局地风温同步变化，不能凭近地面风线重建远程空气来源。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。里斯本称为区域热浪中的高温过程，不宣称满足IPMA的每一项站点热浪判据。"
+    },
+    {
+      "id": "seville2022",
+      "cityId": "seville",
+      "name": "塞维利亚",
+      "country": "西班牙",
+      "continent": "欧洲",
+      "title": "2022 塞维利亚热浪",
+      "year": 2022,
+      "timezone": "Europe/Madrid",
+      "latitude": 37.39,
+      "longitude": -5.98,
+      "start": "2022-07-07",
+      "end": "2022-07-26",
+      "sourceUrls": [
+        {
+          "title": "Avance Climático Nacional de julio de 2022",
+          "url": "https://aemetblog.es/2022/08/11/avance-climatico-nacional-de-julio-de-2022/",
+          "organisation": "AEMET",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "温度章节明确7月热浪，并点名Sevilla/aeropuerto在7月13日的最高温；正文也描述反气旋和暖空气输送。此为AEMET官方博客的一手月度复盘。"
+        }
+      ],
+      "summary": "AEMET的7月复盘记录了伊比利亚半岛持续热浪，并明确列出塞维利亚机场在13日的极端高温。本案例覆盖该地高峰前后及其后的持续炎热，便于观察白天增温与夜间缓解。",
+      "mechanismNote": "官方报告讨论大西洋反气旋和非洲暖空气输送；局地风温格网只显示这一环流背景下的近地面变化，不量化成因贡献。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。观察窗可能截取长事件的一部分。"
+    },
+    {
+      "id": "berlin2019",
+      "cityId": "berlin",
+      "name": "柏林",
+      "country": "德国",
+      "continent": "欧洲",
+      "title": "2019 柏林热浪",
+      "year": 2019,
+      "timezone": "Europe/Berlin",
+      "latitude": 52.52,
+      "longitude": 13.41,
+      "start": "2019-06-22",
+      "end": "2019-07-07",
+      "sourceUrls": [
+        {
+          "title": "Neuer Rekord der mittleren Junitemperatur für Deutschland und intensive Hitzewelle in Europa",
+          "url": "https://www.dwd.de/DE/leistungen/besondereereignisse/temperatur/20190703_bericht_juni2019.pdf?__blob=publicationFile&v=2",
+          "organisation": "Deutscher Wetterdienst",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "官方下载PDF成功，并用pdftotext读取第1—2、6页；web解析端403",
+          "evidenceNote": "2019-07-03报告第1—2页描述6月最后十天的高温及Berlin/Brandenburg背景；第6页Table 1列Berlin-Tegel、Berlin-Schönefeld在6月30日的观测。未引用后来修订的Lingen七月纪录。"
+        }
+      ],
+      "summary": "德国气象局将6月下旬列为强烈高温阶段，指出德国东部持续偏热，并在站点表中列出柏林的观测。本案例选择六月这一轮热浪，观察接近月末的增强及随后变化。",
+      "mechanismNote": "DWD报告讨论高压脊、暖空气输送、下沉和晴空日照；本数据仅能检查局地变量共同变化，不对这些机制进行独立归因。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。"
+    },
+    {
+      "id": "amsterdam2019",
+      "cityId": "amsterdam",
+      "name": "阿姆斯特丹",
+      "country": "荷兰",
+      "continent": "欧洲",
+      "title": "2019 阿姆斯特丹热浪",
+      "year": 2019,
+      "timezone": "Europe/Amsterdam",
+      "latitude": 52.37,
+      "longitude": 4.9,
+      "start": "2019-07-18",
+      "end": "2019-08-02",
+      "sourceUrls": [
+        {
+          "title": "Maandoverzicht van het weer in Nederland — juli 2019",
+          "url": "https://cdn.knmi.nl/knmi/map/page/klimatologie/gegevens/mow/mow_201907.pdf",
+          "organisation": "KNMI",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "PDF第2页描述7月22日起增暖、24—26日极热及27—28日缓解；第9页Schiphol行将月最高温日期列为26日。全国热浪判据取De Bilt，不能移作阿姆斯特丹自己的事件边界。"
+        }
+      ],
+      "summary": "KNMI月报描述7月下旬由较凉天气转入极端炎热、随后逐渐缓解的过程，并提供阿姆斯特丹附近史基浦站的月内极值日期。本案例呈现沿海城市周边与全国高温背景的区别。",
+      "mechanismNote": "观察偏东风阶段、逐小时增温与降温转换；沿海格点包含陆海差异，不能视为市中心街区或机场观测。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。"
+    },
+    {
+      "id": "zurich2015",
+      "cityId": "zurich",
+      "name": "苏黎世",
+      "country": "瑞士",
+      "continent": "欧洲",
+      "title": "2015 苏黎世热浪",
+      "year": 2015,
+      "timezone": "Europe/Zurich",
+      "latitude": 47.38,
+      "longitude": 8.54,
+      "start": "2015-06-26",
+      "end": "2015-07-11",
+      "sourceUrls": [
+        {
+          "title": "Der Hitzesommer 2015 in der Schweiz — Fachbericht Nr. 260",
+          "url": "https://www.meteoschweiz.admin.ch/dam/jcr%3A9200bd1a-2f3e-411c-bae9-22d4fd98a882/hitzesommer_2015_v5_final_CD.pdf",
+          "organisation": "MeteoSwiss",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "官方下载PDF成功，并用pdftotext读取页9及Table 1；web解析端因文件大小拒绝",
+          "evidenceNote": "报告印刷页9明确第一轮为7月1—7日，Figure 4含Zürich-Kloten；Table 1也列该站7月1—7日预警评估。"
+        }
+      ],
+      "summary": "瑞士气象局专题报告记录7月初第一轮热浪，展示苏黎世克洛滕站的过程和预警评估。观察窗覆盖升温前、热期中短暂变化与之后缓解，可对照风和云量的同步转折。",
+      "mechanismNote": "报告描述高压脊、热空气输送与冷锋变化；局地回放可探索时间关系，不能从近地面格点量化锋面或高空环流贡献。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。"
+    },
+    {
+      "id": "stockholm2018",
+      "cityId": "stockholm",
+      "name": "斯德哥尔摩",
+      "country": "瑞典",
+      "continent": "欧洲",
+      "title": "2018 斯德哥尔摩热浪",
+      "year": 2018,
+      "timezone": "Europe/Stockholm",
+      "latitude": 59.33,
+      "longitude": 18.07,
+      "start": "2018-07-10",
+      "end": "2018-07-29",
+      "sourceUrls": [
+        {
+          "title": "Juli 2018 — Långvarig hetta och svåra skogsbränder",
+          "url": "https://www.smhi.se/klimat/klimatet-da-och-nu/manadens-vader-och-vatten-i-sverige/manadens-vader-och-vatten-i-sverige/2018-07-31-juli-2018---langvarig-hetta-och-svara-skogsbrander",
+          "organisation": "SMHI",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "逐段天气回顾明确7月14—15日Stockholm高温、18日Stockholm群岛Skarpö暖夜，以及25—27日再增强；未把森林火灾归因为本地格网变量。"
+        }
+      ],
+      "summary": "SMHI对7月的逐段复盘记录了持续炎热，明确列出斯德哥尔摩在月中升温及附近群岛暖夜。这里选取月中到月底的一段过程，比较高纬度城市白天与夜间的温度变化。",
+      "mechanismNote": "对照短波、云量、风和夜间气温，探索长日照季节的时间结构；不能仅凭这一窗口分离海洋影响或土壤反馈。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。这是2018年漫长炎热夏季的片段，不覆盖整个持续期。"
+    },
+    {
+      "id": "helsinki2018",
+      "cityId": "helsinki",
+      "name": "赫尔辛基",
+      "country": "芬兰",
+      "continent": "欧洲",
+      "title": "2018 赫尔辛基热浪",
+      "year": 2018,
+      "timezone": "Europe/Helsinki",
+      "latitude": 60.17,
+      "longitude": 24.94,
+      "start": "2018-07-18",
+      "end": "2018-08-02",
+      "sourceUrls": [
+        {
+          "title": "Helletilastot — Pisimmät yhtämittaiset hellejaksot",
+          "url": "https://www.ilmatieteenlaitos.fi/helletilastot",
+          "organisation": "Finnish Meteorological Institute",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "连续热期表2018行明确12.7.—5.8.共25天，列Vantaa Helsinki-Vantaan lentoasema、Helsinki Kumpula、Porvoo Harabacka；这是城市站点事件证据，不仅是全年纪录。"
+        }
+      ],
+      "summary": "芬兰气象研究所的连续热期统计直接列出赫尔辛基昆普拉与赫尔辛基万塔机场的2018年长热期。本案例选取其中一段，让沿海高纬度城市的日夜温度与风变化可以逐小时比较。",
+      "mechanismNote": "比较长热期内的风向、湿度与夜间缓解；官方连续热期按当地日最高温判定，不能直接用UTC小时资料冒充其站点统计。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。窗口位于7月12日—8月5日官方连续热期内部，未覆盖其起止和全部前后背景。"
+    },
+    {
+      "id": "bucharest2024",
+      "cityId": "bucharest",
+      "name": "布加勒斯特",
+      "country": "罗马尼亚",
+      "continent": "欧洲",
+      "title": "2024 布加勒斯特热浪",
+      "year": 2024,
+      "timezone": "Europe/Bucharest",
+      "latitude": 44.43,
+      "longitude": 26.1,
+      "start": "2024-07-07",
+      "end": "2024-07-22",
+      "sourceUrls": [
+        {
+          "title": "Caracterizare climatologică — iulie 2024",
+          "url": "https://www.meteoromania.ro/clim/caracterizare-lunara/cc_2024_07.html",
+          "organisation": "Administrația Națională de Meteorologie",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "直接打开官方页面或PDF并核验相关段落",
+          "evidenceNote": "月温章节及Figure 4—5点名București-Filaret；Table 1显示多数强热日期为7月15—17日；后文明确使用val de căldură并讨论罗马尼亚平原热日和暖夜。窗口为月中全国热阶段，不是官方布加勒斯特起止判定。"
+        }
+      ],
+      "summary": "罗马尼亚气象局7月报告明确描述热浪中的炎热白天与暖夜，并单列布加勒斯特菲拉雷特站的月度情况。这里取月中强热阶段作为城市周边回放窗口，不把全国极值归给首都。",
+      "mechanismNote": "观察持续热期与当地夜间降温、湿度和风的关系；不从月度全国异常推导某一小时的高压强度或城市热岛贡献。",
+      "scopeNote": "人工选定的UTC完整日观察窗，非统一阈值识别的热浪起止；城市附近格点再分析不等于站点实测极值，也不代表整场热浪全域。该窗口依据报告中的月中热阶段人工选定，未获得统一算法下的城市热浪边界。"
+    }
+  ]
+}

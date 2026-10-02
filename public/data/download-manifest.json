@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T13:09:47.820394+00:00",
+  "generatedAt": "2026-10-02T13:57:29.578360+00:00",
   "files": [
     {
       "file": "annual-summary.csv",
@@ -51,6 +51,18 @@
       "sha256": "2c4bc3ebb2a2f0cb9cc3cb5180e299e503e2dca11444d71b972a4e26f0bd0f7e"
     },
     {
+      "file": "case-adelaide2019.csv",
+      "url": "/data/case-adelaide2019.csv",
+      "bytes": 26819,
+      "sha256": "ccb38f9df1aa699c6581fad2092e7cecd47540faea8c3976018733a9b3dd0bbf"
+    },
+    {
+      "file": "case-adelaide2019.json",
+      "url": "/data/case-adelaide2019.json",
+      "bytes": 108846,
+      "sha256": "c00bb93a0a5b3af8e0137b88a964dfcc05368d01e6108739c7c075dde5739b1f"
+    },
+    {
       "file": "case-agadir2023.csv",
       "url": "/data/case-agadir2023.csv",
       "bytes": 26646,
@@ -63,6 +75,90 @@
       "sha256": "0e4c7c531d554b2f56c1c673e665163ab39890ca659ddd2c917d3c6a9a1defe6"
     },
     {
+      "file": "case-ahmedabad2016.csv",
+      "url": "/data/case-ahmedabad2016.csv",
+      "bytes": 26550,
+      "sha256": "2bedad6607da342939d8c93a94176d93495d1ca6f1b2fd4fcf8ebd43e2732632"
+    },
+    {
+      "file": "case-ahmedabad2016.json",
+      "url": "/data/case-ahmedabad2016.json",
+      "bytes": 108817,
+      "sha256": "caa31b6ea928cd70b580516ecc72737ee3edb772838ced339c2bfc030f4ae17c"
+    },
+    {
+      "file": "case-amsterdam2019.csv",
+      "url": "/data/case-amsterdam2019.csv",
+      "bytes": 26881,
+      "sha256": "0003fc14eb7adfad7454a7ee205f3dc1e64659a4a0fea759d41be4f61d47d061"
+    },
+    {
+      "file": "case-amsterdam2019.json",
+      "url": "/data/case-amsterdam2019.json",
+      "bytes": 108872,
+      "sha256": "b6acda912f5afa91be3bd5169d7e2bbb4e7c8d8d683676cf3a5475bbffee9556"
+    },
+    {
+      "file": "case-athens2023.csv",
+      "url": "/data/case-athens2023.csv",
+      "bytes": 32982,
+      "sha256": "ad024bbbc18d4e12ec162cc441f3dc1591ddbd9493bc16920d3b87b781c86991"
+    },
+    {
+      "file": "case-athens2023.json",
+      "url": "/data/case-athens2023.json",
+      "bytes": 134774,
+      "sha256": "4736bb3a21324fdb233e2c3f2c4c04dd2ae5043a8366ec81709fd47dd6a4f1be"
+    },
+    {
+      "file": "case-bamako2024.csv",
+      "url": "/data/case-bamako2024.csv",
+      "bytes": 26813,
+      "sha256": "2bb472a495f41e55e510dcee95d6bc4ae0c4944fc8234ed976959a9064a40415"
+    },
+    {
+      "file": "case-bamako2024.json",
+      "url": "/data/case-bamako2024.json",
+      "bytes": 109096,
+      "sha256": "c90c56a49ea4f8c4ab198750b79fc73ca43c8bfc1b4e90e73f58c26e0dc3cdcd"
+    },
+    {
+      "file": "case-bangkok2024.csv",
+      "url": "/data/case-bangkok2024.csv",
+      "bytes": 26670,
+      "sha256": "dd2b269e11f37a9d907512e8cce601732595997f73bb6fb9f368e5b5694c8bd8"
+    },
+    {
+      "file": "case-bangkok2024.json",
+      "url": "/data/case-bangkok2024.json",
+      "bytes": 108751,
+      "sha256": "78701a4afde48b7f9da7334b6852da29aa969af4519494486ef99f20915c4617"
+    },
+    {
+      "file": "case-berlin2019.csv",
+      "url": "/data/case-berlin2019.csv",
+      "bytes": 26872,
+      "sha256": "445c55feeecc7ce6c6dd599f19c22c8327b2e8c8aed0ef0ade04202930c9950d"
+    },
+    {
+      "file": "case-berlin2019.json",
+      "url": "/data/case-berlin2019.json",
+      "bytes": 108949,
+      "sha256": "9e5d3505ea60065b12fc9255ea98fc9259e18d9a62ec884be7ec2c1fa54279bd"
+    },
+    {
+      "file": "case-bucharest2024.csv",
+      "url": "/data/case-bucharest2024.csv",
+      "bytes": 26504,
+      "sha256": "d0ef3e0749dde74665c6bd7f8a6f5c143d722596e9c2a18df09c63d69ed11740"
+    },
+    {
+      "file": "case-bucharest2024.json",
+      "url": "/data/case-bucharest2024.json",
+      "bytes": 108684,
+      "sha256": "54dbf5ca5a3252f8a8b05132f961a30548e3d51c015a4f7287e3c292a9679d57"
+    },
+    {
       "file": "case-buenosaires2023.csv",
       "url": "/data/case-buenosaires2023.csv",
       "bytes": 36446,
@@ -73,6 +169,18 @@
       "url": "/data/case-buenosaires2023.json",
       "bytes": 147770,
       "sha256": "4ae953cbcfa3ed579e1e77657d14b6c47ec8267cddc405e638afa4cbf93864cb"
+    },
+    {
+      "file": "case-chicago2023.csv",
+      "url": "/data/case-chicago2023.csv",
+      "bytes": 26650,
+      "sha256": "85d7397c916c00a84d3441984016621fb2c29a91dd45e045e814f288a74e3659"
+    },
+    {
+      "file": "case-chicago2023.json",
+      "url": "/data/case-chicago2023.json",
+      "bytes": 108672,
+      "sha256": "62a74fe2a016094faaf30c2ac6d40d5a3f4296dd18429e82c3f37de424a0410c"
     },
     {
       "file": "case-chongqing2022.csv",
@@ -99,6 +207,30 @@
       "sha256": "5ff4400ffb1d47b43259df5554e83c07e439fb5171fd6326148b75820a9128da"
     },
     {
+      "file": "case-helsinki2018.csv",
+      "url": "/data/case-helsinki2018.csv",
+      "bytes": 26824,
+      "sha256": "c6958f2d8b367a4be520edc11194702dcd7326a3358e54ad87a0697e4d3656c0"
+    },
+    {
+      "file": "case-helsinki2018.json",
+      "url": "/data/case-helsinki2018.json",
+      "bytes": 108890,
+      "sha256": "4021dfc92aa22afe4b0b063324023ca0364c31d8580c8b4219dd3691fdebccf5"
+    },
+    {
+      "file": "case-jacobabad2018.csv",
+      "url": "/data/case-jacobabad2018.csv",
+      "bytes": 26500,
+      "sha256": "0c86c05c6a7910f7bc79045c0ff53a2d9b4974bfc165b238e5e0b1489ba25751"
+    },
+    {
+      "file": "case-jacobabad2018.json",
+      "url": "/data/case-jacobabad2018.json",
+      "bytes": 108609,
+      "sha256": "acc70c18a95e001d007c27d14759232a673531edd8a09a68c3988c1083ee6d4b"
+    },
+    {
       "file": "case-karachi2015.csv",
       "url": "/data/case-karachi2015.csv",
       "bytes": 31356,
@@ -109,6 +241,30 @@
       "url": "/data/case-karachi2015.json",
       "bytes": 127659,
       "sha256": "11dc961e9e7837b723be00f0c2ea3698afd188b3b73a95ad12eafd88e1c5ea09"
+    },
+    {
+      "file": "case-lasvegas2024.csv",
+      "url": "/data/case-lasvegas2024.csv",
+      "bytes": 26523,
+      "sha256": "b8ea901c31b8202cae12a2f6ae0a7bd41064a37328b26b509705b89af92a60e8"
+    },
+    {
+      "file": "case-lasvegas2024.json",
+      "url": "/data/case-lasvegas2024.json",
+      "bytes": 108458,
+      "sha256": "ae37fedc3850fa1973c5e5b7f9ac9369c388d6eb7bf10840874831e3288e6652"
+    },
+    {
+      "file": "case-lisbon2018.csv",
+      "url": "/data/case-lisbon2018.csv",
+      "bytes": 26711,
+      "sha256": "5d9b4561d53542b27fe72246c37007ecb7a3608a464596da28681eff18bcb7f1"
+    },
+    {
+      "file": "case-lisbon2018.json",
+      "url": "/data/case-lisbon2018.json",
+      "bytes": 108829,
+      "sha256": "efe7b75c32cc28e8040c1dcd007a02f5ef3691cb542a25a890b2402baea36767"
     },
     {
       "file": "case-london2022.csv",
@@ -135,6 +291,18 @@
       "sha256": "dd0ce5f7d2e28feeae10b17486f2f35dd88a0dd049fd2dcda86924d5e7b10876"
     },
     {
+      "file": "case-manila2024.csv",
+      "url": "/data/case-manila2024.csv",
+      "bytes": 29902,
+      "sha256": "9c2af15b76f843cfda730934f5cba17cb98cea38942918f92cec2dc91375cc6f"
+    },
+    {
+      "file": "case-manila2024.json",
+      "url": "/data/case-manila2024.json",
+      "bytes": 122387,
+      "sha256": "2ba6ee6167e5f88c585bbba569bb91e44930a0fe506a5439517844d23b5912c9"
+    },
+    {
       "file": "case-melbourne2009.csv",
       "url": "/data/case-melbourne2009.csv",
       "bytes": 36781,
@@ -145,6 +313,42 @@
       "url": "/data/case-melbourne2009.json",
       "bytes": 148005,
       "sha256": "2f5baf805ddf55c4620256b8416d66b7cae9a2e8a1c467d38c4a56e33236e075"
+    },
+    {
+      "file": "case-mexicocity2024.csv",
+      "url": "/data/case-mexicocity2024.csv",
+      "bytes": 26755,
+      "sha256": "d1f177ca047ac2baa2d42e38a78153d51a64f7210ef7717270c466b741676dbe"
+    },
+    {
+      "file": "case-mexicocity2024.json",
+      "url": "/data/case-mexicocity2024.json",
+      "bytes": 108810,
+      "sha256": "9855877a8a1d2132767a2ccf4d74bf319b7110e9b2bb326009f1474bfd03ad87"
+    },
+    {
+      "file": "case-miami2023.csv",
+      "url": "/data/case-miami2023.csv",
+      "bytes": 26925,
+      "sha256": "913862be0a14c19cbd9c219caaff43f55e4713e671c65027a163cb54698546d3"
+    },
+    {
+      "file": "case-miami2023.json",
+      "url": "/data/case-miami2023.json",
+      "bytes": 109392,
+      "sha256": "ba30e5d4da947c42fff53164aace5759c5c553fa448b3159fbc8b1a8381e5122"
+    },
+    {
+      "file": "case-montevideo2022.csv",
+      "url": "/data/case-montevideo2022.csv",
+      "bytes": 25304,
+      "sha256": "b0b854c90d7e2ff2b8c877e2337ee705ae96e3d55355295c590fe9d86f46bfb0"
+    },
+    {
+      "file": "case-montevideo2022.json",
+      "url": "/data/case-montevideo2022.json",
+      "bytes": 107409,
+      "sha256": "4ef1f14792161148bf33b09ce7936fe825c47a83decaf75f9335424d58c7a89a"
     },
     {
       "file": "case-moscow2010.csv",
@@ -159,6 +363,18 @@
       "sha256": "5aba7156ba58e0b12f253dc43f7f217e7297f324057876c4fe6eb35f8129b758"
     },
     {
+      "file": "case-ouagadougou2024.csv",
+      "url": "/data/case-ouagadougou2024.csv",
+      "bytes": 26741,
+      "sha256": "73fc5d436e616a034c2d28667301b539513ec7843381313ab8c10fda810d412b"
+    },
+    {
+      "file": "case-ouagadougou2024.json",
+      "url": "/data/case-ouagadougou2024.json",
+      "bytes": 109057,
+      "sha256": "5daa52c425bd576fc83e35f80903761f01c055df2ccb5c8edfecc2f62ba02cf5"
+    },
+    {
       "file": "case-paris2019.csv",
       "url": "/data/case-paris2019.csv",
       "bytes": 20012,
@@ -169,6 +385,18 @@
       "url": "/data/case-paris2019.json",
       "bytes": 78061,
       "sha256": "86fafc922375fead2a2ca185ceedfc93c7c3dd9f3655e9d04b36aff0f1af2f5c"
+    },
+    {
+      "file": "case-perth2024.csv",
+      "url": "/data/case-perth2024.csv",
+      "bytes": 26795,
+      "sha256": "063610acde98133348249365f569e0863f0449eed340827b918e5e9333e7e547"
+    },
+    {
+      "file": "case-perth2024.json",
+      "url": "/data/case-perth2024.json",
+      "bytes": 108755,
+      "sha256": "361c731359f30c8c9ca5a8885a41021d42c3d1018636d3ce2b52644548242040"
     },
     {
       "file": "case-phoenix2023.csv",
@@ -195,6 +423,114 @@
       "sha256": "259954ec4529b2e8a412d26c17499baad4958e550cba9d2dc480cf9e5b94a937"
     },
     {
+      "file": "case-riodejaneiro2023.csv",
+      "url": "/data/case-riodejaneiro2023.csv",
+      "bytes": 26748,
+      "sha256": "2419a78cc7874fef6bc72fb2bf9017d2224891d20084cfc18826bcaec9c9c929"
+    },
+    {
+      "file": "case-riodejaneiro2023.json",
+      "url": "/data/case-riodejaneiro2023.json",
+      "bytes": 108856,
+      "sha256": "e7d909e3d2d112fab2a4f4a9130a7819db451e449e7b9e5f08b1ded4fbbde218"
+    },
+    {
+      "file": "case-rome2023.csv",
+      "url": "/data/case-rome2023.csv",
+      "bytes": 33280,
+      "sha256": "c30d53485191325e918f3c2650c29d7e38a7a5f0377f6df1cb2072cf1a8875d3"
+    },
+    {
+      "file": "case-rome2023.json",
+      "url": "/data/case-rome2023.json",
+      "bytes": 135030,
+      "sha256": "155fa50fb9a03df154c906265cf8aa0e305d48df97dada1e5d739fc4edd09ca4"
+    },
+    {
+      "file": "case-sacramento2022.csv",
+      "url": "/data/case-sacramento2022.csv",
+      "bytes": 25944,
+      "sha256": "3c9bf0d4e0815b808ce929cb189a0a85c2b5066de8ce604a218d49c6f20de2f5"
+    },
+    {
+      "file": "case-sacramento2022.json",
+      "url": "/data/case-sacramento2022.json",
+      "bytes": 107905,
+      "sha256": "aff7586e2848f03d2c2c7aa246d0367e855051ac33747de1687fc6c46e98234c"
+    },
+    {
+      "file": "case-santiago2017.csv",
+      "url": "/data/case-santiago2017.csv",
+      "bytes": 26653,
+      "sha256": "8e893274a0c1dcbf873ac5617d6158c22a659d7cba9c030b2a4dc7bb7a20b81d"
+    },
+    {
+      "file": "case-santiago2017.json",
+      "url": "/data/case-santiago2017.json",
+      "bytes": 108734,
+      "sha256": "b195d7c40c55189e1bccee70eeda69ad22cdb3d93c574c1a6564ff9805f93a2f"
+    },
+    {
+      "file": "case-seattle2021.csv",
+      "url": "/data/case-seattle2021.csv",
+      "bytes": 26710,
+      "sha256": "edc9673acb518a1c33dc62b358b107f6190a2284a68f1b80e0709e57116438c2"
+    },
+    {
+      "file": "case-seattle2021.json",
+      "url": "/data/case-seattle2021.json",
+      "bytes": 108717,
+      "sha256": "1a741fdb6fd0a18d02ab3d0f1ef6f8f796fa39cec8acfae9bfa50b8e999d8e2a"
+    },
+    {
+      "file": "case-seoul2018.csv",
+      "url": "/data/case-seoul2018.csv",
+      "bytes": 26737,
+      "sha256": "3463a7bded20d56718c3d6442d712158ec6cf1e4a46ab5bed585d233ac556ac4"
+    },
+    {
+      "file": "case-seoul2018.json",
+      "url": "/data/case-seoul2018.json",
+      "bytes": 108794,
+      "sha256": "717a7c894d35dcb3cb17beb3caeb6b31fe94cc8583205c6f94db34f6b1d01aeb"
+    },
+    {
+      "file": "case-seville2022.csv",
+      "url": "/data/case-seville2022.csv",
+      "bytes": 33197,
+      "sha256": "c183ed092ba3735e968797e15a7ab1f83ec7ea8024b925ee0e977369d0d3c2ee"
+    },
+    {
+      "file": "case-seville2022.json",
+      "url": "/data/case-seville2022.json",
+      "bytes": 134952,
+      "sha256": "0899fe86a222356c88cd621b1ad4a02294449ad841f632061535d3ab1b5df3e9"
+    },
+    {
+      "file": "case-singapore2023.csv",
+      "url": "/data/case-singapore2023.csv",
+      "bytes": 25505,
+      "sha256": "93d09ae5cc00e4d446c6d01989ee84f601b3c9be6ea7494b10a17f859cccca12"
+    },
+    {
+      "file": "case-singapore2023.json",
+      "url": "/data/case-singapore2023.json",
+      "bytes": 107563,
+      "sha256": "581903c6e45a6c5c9546f66ff4c3d3ea60009511d6ee05becf956dd4d60598bb"
+    },
+    {
+      "file": "case-stockholm2018.csv",
+      "url": "/data/case-stockholm2018.csv",
+      "bytes": 33391,
+      "sha256": "fb560febecde539b268686b4394cec685b9892407b9f6fde044a1ad7d98b3f53"
+    },
+    {
+      "file": "case-stockholm2018.json",
+      "url": "/data/case-stockholm2018.json",
+      "bytes": 135287,
+      "sha256": "fcbb7ea866bbf16d0a3c519d3c756f79f94231198de51b52d51f60fdc991574c"
+    },
+    {
       "file": "case-tokyo2018.csv",
       "url": "/data/case-tokyo2018.csv",
       "bytes": 36872,
@@ -205,6 +541,30 @@
       "url": "/data/case-tokyo2018.json",
       "bytes": 148098,
       "sha256": "083cec6c824ce64d4831a4266425028853505d261554b1740500c1dc20b44526"
+    },
+    {
+      "file": "case-vancouver2021.csv",
+      "url": "/data/case-vancouver2021.csv",
+      "bytes": 26672,
+      "sha256": "f3d57c4f395c3b38ddb300df4ca99dfff00b48eb28f9724e723845fdb85ad805"
+    },
+    {
+      "file": "case-vancouver2021.json",
+      "url": "/data/case-vancouver2021.json",
+      "bytes": 108668,
+      "sha256": "70daf25801b760c3a5390533695c5f0725aabc43011dad8001110183db45e762"
+    },
+    {
+      "file": "case-zurich2015.csv",
+      "url": "/data/case-zurich2015.csv",
+      "bytes": 26681,
+      "sha256": "7f25477d6783931a7855582115ea6fd71ab39337363c9731ae41208b3736ad0e"
+    },
+    {
+      "file": "case-zurich2015.json",
+      "url": "/data/case-zurich2015.json",
+      "bytes": 108645,
+      "sha256": "35ded732ed5679f8a70f835b46f3944b0a83fa6fe58125cf0ac16ef2b3abcb71"
     },
     {
       "file": "cases.json",
@@ -327,10 +687,22 @@
       "sha256": "ac3f384ed5be7913e0ba5dcfa87375f31e548f56eae7d6553fc5529fd2d31a4e"
     },
     {
+      "file": "expansion-cases.json",
+      "url": "/data/expansion-cases.json",
+      "bytes": 101357,
+      "sha256": "29605bdf0a0f425a68be2a08ea6cd57ffcbc95d27789197cfd268bd74770a6fa"
+    },
+    {
+      "file": "expansion-validation.json",
+      "url": "/data/expansion-validation.json",
+      "bytes": 10173,
+      "sha256": "e114c84092995832f50f6b632cdeb563c596fcf3a06e5a8506ea462fde59d856"
+    },
+    {
       "file": "extended-cases.json",
       "url": "/data/extended-cases.json",
-      "bytes": 28389,
-      "sha256": "bca711a1ba970da3379f74c3aa9159bed1e9d23e1a2f0b95bf8eacccf0ee802b"
+      "bytes": 28392,
+      "sha256": "4b307869f7ef4858a7895793a96df9907240ba4ae3911ef7379d7002945106f9"
     },
     {
       "file": "noaa-portland-airport-2021.csv",
@@ -345,6 +717,18 @@
       "sha256": "2c833879593c0dbaf21624e6ed31dd171d915211d546000faa63295c422c8232"
     },
     {
+      "file": "regional-adelaide2019-manifest.json",
+      "url": "/data/regional-adelaide2019-manifest.json",
+      "bytes": 54669,
+      "sha256": "e872aaceef17496d3eda7cec01cefae0d30ac7666d72d736ab267bef23f695e4"
+    },
+    {
+      "file": "regional-adelaide2019.json",
+      "url": "/data/regional-adelaide2019.json",
+      "bytes": 235908,
+      "sha256": "e8c495f04bc421840e7c34d976b8fc5210a6305da9f644c72a0ff01b3bf06755"
+    },
+    {
       "file": "regional-agadir2023-manifest.json",
       "url": "/data/regional-agadir2023-manifest.json",
       "bytes": 53981,
@@ -357,6 +741,90 @@
       "sha256": "5d46050872cbe053f22457640d850cb6c7719790328a680670fec21d1f9dad43"
     },
     {
+      "file": "regional-ahmedabad2016-manifest.json",
+      "url": "/data/regional-ahmedabad2016-manifest.json",
+      "bytes": 54718,
+      "sha256": "2f65762b16dbe3f39142060d917e89028e9b0f6c9fc25d1a49304b53ab3c3097"
+    },
+    {
+      "file": "regional-ahmedabad2016.json",
+      "url": "/data/regional-ahmedabad2016.json",
+      "bytes": 231493,
+      "sha256": "5b0faa9de0043a6aa32fed22aade50014144b6eb6c5884aebf57bd6ba9924019"
+    },
+    {
+      "file": "regional-amsterdam2019-manifest.json",
+      "url": "/data/regional-amsterdam2019-manifest.json",
+      "bytes": 54290,
+      "sha256": "d336f1933bcfbe139f2ceac62ba2a9014a3707b3eb877cca87df9a5b50fa1aa7"
+    },
+    {
+      "file": "regional-amsterdam2019.json",
+      "url": "/data/regional-amsterdam2019.json",
+      "bytes": 233996,
+      "sha256": "1cc57cbc7a4f64a24ca2960c3b63574fb8eb30bf88ffce1c0f664fb74e281ca0"
+    },
+    {
+      "file": "regional-athens2023-manifest.json",
+      "url": "/data/regional-athens2023-manifest.json",
+      "bytes": 54400,
+      "sha256": "4b47c6442797c6945dbe1b774776f18270889015ffdd9fad19370f5c6c9b9a04"
+    },
+    {
+      "file": "regional-athens2023.json",
+      "url": "/data/regional-athens2023.json",
+      "bytes": 298016,
+      "sha256": "88b67836b31733b18b214dea84a9278a179d87f3fb766e9a574f66b278837130"
+    },
+    {
+      "file": "regional-bamako2024-manifest.json",
+      "url": "/data/regional-bamako2024-manifest.json",
+      "bytes": 54729,
+      "sha256": "ce167ff72eacfc2273a95b4c1a7f4830c6c28283bbd0b17742b32744dd2e89e7"
+    },
+    {
+      "file": "regional-bamako2024.json",
+      "url": "/data/regional-bamako2024.json",
+      "bytes": 236450,
+      "sha256": "cd8fb94aa2f76bd5f16b251af1d22f5d60b4906567f5ecab5c7002402b11d0a3"
+    },
+    {
+      "file": "regional-bangkok2024-manifest.json",
+      "url": "/data/regional-bangkok2024-manifest.json",
+      "bytes": 54663,
+      "sha256": "08b08664e09535077dad289ea85dcbaa582cf2a52857cdb8ce68ea0512a0aa7e"
+    },
+    {
+      "file": "regional-bangkok2024.json",
+      "url": "/data/regional-bangkok2024.json",
+      "bytes": 231060,
+      "sha256": "3530eac2bfb035c569f9dd6f226910759c6f9107c0a51501dba908ae843fd3ad"
+    },
+    {
+      "file": "regional-berlin2019-manifest.json",
+      "url": "/data/regional-berlin2019-manifest.json",
+      "bytes": 54461,
+      "sha256": "7f2cc2c982240aa98f995558965b34afe15393852002316b7aa34ec59de5b476"
+    },
+    {
+      "file": "regional-berlin2019.json",
+      "url": "/data/regional-berlin2019.json",
+      "bytes": 238224,
+      "sha256": "a81a41b7b8dd773e432969297612dfa3730c27864320628965fc0c492a14a200"
+    },
+    {
+      "file": "regional-bucharest2024-manifest.json",
+      "url": "/data/regional-bucharest2024-manifest.json",
+      "bytes": 54602,
+      "sha256": "752b77aacbb2d220eaedb2239f2080abae9a566c411473416174232e94ff1e9b"
+    },
+    {
+      "file": "regional-bucharest2024.json",
+      "url": "/data/regional-bucharest2024.json",
+      "bytes": 245508,
+      "sha256": "ea02f9c7a846f9ee8ca37986767248ae1f4614584bc1321b6fce3b823bf3d26c"
+    },
+    {
       "file": "regional-buenosaires2023-manifest.json",
       "url": "/data/regional-buenosaires2023-manifest.json",
       "bytes": 54328,
@@ -367,6 +835,18 @@
       "url": "/data/regional-buenosaires2023.json",
       "bytes": 331097,
       "sha256": "fabf415dbd6b4be69d8147274ef5f40d69203b5d32b0b5a305af0b90f442ac59"
+    },
+    {
+      "file": "regional-chicago2023-manifest.json",
+      "url": "/data/regional-chicago2023-manifest.json",
+      "bytes": 54587,
+      "sha256": "668a69f0d1184db83a2e8b2d93f31a135f9e61b8cb4301b96aacd4759ba82f15"
+    },
+    {
+      "file": "regional-chicago2023.json",
+      "url": "/data/regional-chicago2023.json",
+      "bytes": 239574,
+      "sha256": "c772df2f10a961832fb883a0ea89caaf10242a9cf4f6c7cdf3ecb700f30136ab"
     },
     {
       "file": "regional-chongqing2022-manifest.json",
@@ -393,6 +873,30 @@
       "sha256": "469c59c94ea1e6865822bf7eec1a14cdf69129cd4f46f0bd3a822123cbb797ee"
     },
     {
+      "file": "regional-helsinki2018-manifest.json",
+      "url": "/data/regional-helsinki2018-manifest.json",
+      "bytes": 54509,
+      "sha256": "59939fb07c826ef105c2053c5655ea1d85eb1632388ac930a8dafb12f6073a24"
+    },
+    {
+      "file": "regional-helsinki2018.json",
+      "url": "/data/regional-helsinki2018.json",
+      "bytes": 238380,
+      "sha256": "c90749f64407f27c03503cc38079dd0ef4010404e9f6070be62b08b2db3fd5fc"
+    },
+    {
+      "file": "regional-jacobabad2018-manifest.json",
+      "url": "/data/regional-jacobabad2018-manifest.json",
+      "bytes": 54553,
+      "sha256": "49a31e7ba4ba5ea90bbfbf12b5cdd4634169a34e3d54df55e7023bad40ed7703"
+    },
+    {
+      "file": "regional-jacobabad2018.json",
+      "url": "/data/regional-jacobabad2018.json",
+      "bytes": 236270,
+      "sha256": "3e6beae8e2c9c6b255a45120bf5640b5df70abc98480d2ad2659cdda6f732f3f"
+    },
+    {
       "file": "regional-karachi2015-manifest.json",
       "url": "/data/regional-karachi2015-manifest.json",
       "bytes": 53928,
@@ -403,6 +907,30 @@
       "url": "/data/regional-karachi2015.json",
       "bytes": 274873,
       "sha256": "0d9d9a01126c5d68275936ee6f23072957930fe2cbf24c1a69e449f738f75ec1"
+    },
+    {
+      "file": "regional-lasvegas2024-manifest.json",
+      "url": "/data/regional-lasvegas2024-manifest.json",
+      "bytes": 54647,
+      "sha256": "6381af697bb08129db921696843cc222964db7f943e58e888a9352724b5f9c7e"
+    },
+    {
+      "file": "regional-lasvegas2024.json",
+      "url": "/data/regional-lasvegas2024.json",
+      "bytes": 236066,
+      "sha256": "a9e8e4dfeac659b9de0f963ca8e1f9b8d81d6b853d34602e087eb00e7a97eef7"
+    },
+    {
+      "file": "regional-lisbon2018-manifest.json",
+      "url": "/data/regional-lisbon2018-manifest.json",
+      "bytes": 54563,
+      "sha256": "67f1d7e735cdd7234830cce231b2ba42dd8ffa9dbfc870a377d554b36e9fc751"
+    },
+    {
+      "file": "regional-lisbon2018.json",
+      "url": "/data/regional-lisbon2018.json",
+      "bytes": 240377,
+      "sha256": "5cffb06fad0c155e3ffc8d3727c079b96e9d7478bbf36d412d8b075f5d1b09bf"
     },
     {
       "file": "regional-london2022-manifest.json",
@@ -429,6 +957,18 @@
       "sha256": "002195564d24a30ff051047121a8cf001e614b06d416ccd91bf03937a3a7f2be"
     },
     {
+      "file": "regional-manila2024-manifest.json",
+      "url": "/data/regional-manila2024-manifest.json",
+      "bytes": 55226,
+      "sha256": "238193650ddef04f9227e3ca22f672bec298d266ecbc1981e91beeb62dff391c"
+    },
+    {
+      "file": "regional-manila2024.json",
+      "url": "/data/regional-manila2024.json",
+      "bytes": 270681,
+      "sha256": "d962f93295b27571e1a1856220e4180c5e9691de81573ff2695cb80c50cf16b6"
+    },
+    {
       "file": "regional-melbourne2009-manifest.json",
       "url": "/data/regional-melbourne2009-manifest.json",
       "bytes": 54247,
@@ -439,6 +979,42 @@
       "url": "/data/regional-melbourne2009.json",
       "bytes": 321448,
       "sha256": "b904b5ac4a12c3d3c1cacdc3ac2de340115484f6e5ea534a96280e605b3cd8c4"
+    },
+    {
+      "file": "regional-mexicocity2024-manifest.json",
+      "url": "/data/regional-mexicocity2024-manifest.json",
+      "bytes": 54650,
+      "sha256": "4bd58692a2ef01f80a87fa4b4fb2650f0ced22fc502e33db1b41c2b9d37a06e0"
+    },
+    {
+      "file": "regional-mexicocity2024.json",
+      "url": "/data/regional-mexicocity2024.json",
+      "bytes": 232884,
+      "sha256": "282b46076263f1ab2f82114c35de75f20c8d1cb120e3933f4cc806bde7f69fc1"
+    },
+    {
+      "file": "regional-miami2023-manifest.json",
+      "url": "/data/regional-miami2023-manifest.json",
+      "bytes": 55529,
+      "sha256": "bc2e49c1cb6fb15d36f67eb70b7ae004ff72441e3e692df9550ad8f4559474bc"
+    },
+    {
+      "file": "regional-miami2023.json",
+      "url": "/data/regional-miami2023.json",
+      "bytes": 234019,
+      "sha256": "15c9a05d7979536734d41e555cbf7e92bd712a2a193b33911487fd8ec68a2366"
+    },
+    {
+      "file": "regional-montevideo2022-manifest.json",
+      "url": "/data/regional-montevideo2022-manifest.json",
+      "bytes": 54773,
+      "sha256": "f7c8e2d2c137bde3994529c672a98c9f4c649a5940fda60b8bb9a741ebf90704"
+    },
+    {
+      "file": "regional-montevideo2022.json",
+      "url": "/data/regional-montevideo2022.json",
+      "bytes": 244266,
+      "sha256": "25ecf66ebf07acbf8df3c4e04a0dcc8cfde362679cfacf7983651884cf781c9d"
     },
     {
       "file": "regional-moscow2010-manifest.json",
@@ -453,6 +1029,18 @@
       "sha256": "7d0f05fbe12dac3146f3150f32907fda07faf07f9a062cc7a4fbf1c38edb225d"
     },
     {
+      "file": "regional-ouagadougou2024-manifest.json",
+      "url": "/data/regional-ouagadougou2024-manifest.json",
+      "bytes": 54810,
+      "sha256": "8da376612526961f5844fdb3e882a559d5dce0e3ed12f046ef549c35cb051684"
+    },
+    {
+      "file": "regional-ouagadougou2024.json",
+      "url": "/data/regional-ouagadougou2024.json",
+      "bytes": 233934,
+      "sha256": "571976da0014a032b8c569ad896b31aa7191a66eb12ffaf4ca655abe0bd461ce"
+    },
+    {
       "file": "regional-paris2019-manifest.json",
       "url": "/data/regional-paris2019-manifest.json",
       "bytes": 129984,
@@ -463,6 +1051,18 @@
       "url": "/data/regional-paris2019.json",
       "bytes": 3803430,
       "sha256": "16dd9c1a00a9c3b751e499d1b683771bee5aab9c27471f5b9618a569925c35f4"
+    },
+    {
+      "file": "regional-perth2024-manifest.json",
+      "url": "/data/regional-perth2024-manifest.json",
+      "bytes": 54613,
+      "sha256": "9e2db69c7e153ced748744946dba7756fc160f82bc6fc8cf83127ee93b719b8d"
+    },
+    {
+      "file": "regional-perth2024.json",
+      "url": "/data/regional-perth2024.json",
+      "bytes": 236408,
+      "sha256": "4f5a3e45218ca6677fa85c77be144cc6f6c375bbdbe487978fba4cceba812009"
     },
     {
       "file": "regional-phoenix2023-manifest.json",
@@ -489,6 +1089,114 @@
       "sha256": "9c83eaacc635175a53bf3748c98fcb0ab9508a631d307cccd72923a649b0ffff"
     },
     {
+      "file": "regional-riodejaneiro2023-manifest.json",
+      "url": "/data/regional-riodejaneiro2023-manifest.json",
+      "bytes": 54761,
+      "sha256": "8a87b97cda33f6c8ad2f89d6251710684bda3ab4dbb2dd4fa757cac70249083d"
+    },
+    {
+      "file": "regional-riodejaneiro2023.json",
+      "url": "/data/regional-riodejaneiro2023.json",
+      "bytes": 239240,
+      "sha256": "0bc562c064a97e1404c070c1cd2cf4734343397208ea2d0b983c3cd551ef43b1"
+    },
+    {
+      "file": "regional-rome2023-manifest.json",
+      "url": "/data/regional-rome2023-manifest.json",
+      "bytes": 54352,
+      "sha256": "811f9beb2c13ae42fa109bb43c2abe419648727a82a6d4a51e36e337af4caba1"
+    },
+    {
+      "file": "regional-rome2023.json",
+      "url": "/data/regional-rome2023.json",
+      "bytes": 292090,
+      "sha256": "567ae23a5eff08aea7795b81eb96442e42f82d21cb5b6de0632d1895533d8b55"
+    },
+    {
+      "file": "regional-sacramento2022-manifest.json",
+      "url": "/data/regional-sacramento2022-manifest.json",
+      "bytes": 54614,
+      "sha256": "19920e3732ea69a7540db2d82f1d18e7a94f6c5a0a748de6727cf1564b8c92ba"
+    },
+    {
+      "file": "regional-sacramento2022.json",
+      "url": "/data/regional-sacramento2022.json",
+      "bytes": 233616,
+      "sha256": "6dcb543e09bc7963125c26e002b5850516c4be5973776c35df0faaf6779167ac"
+    },
+    {
+      "file": "regional-santiago2017-manifest.json",
+      "url": "/data/regional-santiago2017-manifest.json",
+      "bytes": 54763,
+      "sha256": "a6eb37e29db51dd801d64c050aedb4808a356c53581689580961e20f4a915f1b"
+    },
+    {
+      "file": "regional-santiago2017.json",
+      "url": "/data/regional-santiago2017.json",
+      "bytes": 228183,
+      "sha256": "5ae8a2308d1312fae6da6336634ea3ab228d6fc446fe34e40ef3bcb25c8cddb7"
+    },
+    {
+      "file": "regional-seattle2021-manifest.json",
+      "url": "/data/regional-seattle2021-manifest.json",
+      "bytes": 54624,
+      "sha256": "bbbde30af12811813c2b1aa66f82035506dada9b3810968c1b16bb355c22b502"
+    },
+    {
+      "file": "regional-seattle2021.json",
+      "url": "/data/regional-seattle2021.json",
+      "bytes": 234625,
+      "sha256": "09c86761ded368adaf529f9ab54a551f58dfb228aed7e632916ae4d2b60ead99"
+    },
+    {
+      "file": "regional-seoul2018-manifest.json",
+      "url": "/data/regional-seoul2018-manifest.json",
+      "bytes": 54576,
+      "sha256": "fdf301b9451db256fd18108a4b52da8edd7931beb3dd6878cc45beec2482f560"
+    },
+    {
+      "file": "regional-seoul2018.json",
+      "url": "/data/regional-seoul2018.json",
+      "bytes": 234127,
+      "sha256": "8a0cefcfba761994df703d5e7c6d57c22946b01afd4a851f6d168123ea935285"
+    },
+    {
+      "file": "regional-seville2022-manifest.json",
+      "url": "/data/regional-seville2022-manifest.json",
+      "bytes": 54405,
+      "sha256": "14191de2142649251feaf663f811899474a6acc6e54614ff63c9f0504be2a84a"
+    },
+    {
+      "file": "regional-seville2022.json",
+      "url": "/data/regional-seville2022.json",
+      "bytes": 295839,
+      "sha256": "a9d3d762e55d018a9a2db58a81138cfac74e2c74d795fbb96d15ddd511b83321"
+    },
+    {
+      "file": "regional-singapore2023-manifest.json",
+      "url": "/data/regional-singapore2023-manifest.json",
+      "bytes": 54530,
+      "sha256": "417aa276bfb6cf45b9bbd37de06ec81f331234966739d287004d17b4998433a1"
+    },
+    {
+      "file": "regional-singapore2023.json",
+      "url": "/data/regional-singapore2023.json",
+      "bytes": 234981,
+      "sha256": "6d9fa664cb646700cdd02e4813ef8586015974a48581c38f527cb190935f3a30"
+    },
+    {
+      "file": "regional-stockholm2018-manifest.json",
+      "url": "/data/regional-stockholm2018-manifest.json",
+      "bytes": 54538,
+      "sha256": "9035db59dfaebbdab5caf502fdf52433b3140cfc562fcc82b1f5cd53d7b51ad7"
+    },
+    {
+      "file": "regional-stockholm2018.json",
+      "url": "/data/regional-stockholm2018.json",
+      "bytes": 297209,
+      "sha256": "6d5c43fee65e01eddb34ddc3e042404d7f85e26c9582b4f72fa06e916a71ea7e"
+    },
+    {
       "file": "regional-tokyo2018-manifest.json",
       "url": "/data/regional-tokyo2018-manifest.json",
       "bytes": 54126,
@@ -499,6 +1207,30 @@
       "url": "/data/regional-tokyo2018.json",
       "bytes": 322738,
       "sha256": "1fd8ab10794ba5c072b94dd4c436ea635633588d84a58c563e99cfc1a87290a2"
+    },
+    {
+      "file": "regional-vancouver2021-manifest.json",
+      "url": "/data/regional-vancouver2021-manifest.json",
+      "bytes": 54642,
+      "sha256": "a40cd450866f95f1733c9cd202e50e82806914122513a5f1df7485715d4d6596"
+    },
+    {
+      "file": "regional-vancouver2021.json",
+      "url": "/data/regional-vancouver2021.json",
+      "bytes": 233380,
+      "sha256": "bf95755c77dc404da3c01be8ac1090590242fb23587c010922669f8db99445c1"
+    },
+    {
+      "file": "regional-zurich2015-manifest.json",
+      "url": "/data/regional-zurich2015-manifest.json",
+      "bytes": 54239,
+      "sha256": "4a61462b2a3b8b04d3717cb945dd040724b7ecfa59017f51e9302293b3493963"
+    },
+    {
+      "file": "regional-zurich2015.json",
+      "url": "/data/regional-zurich2015.json",
+      "bytes": 235855,
+      "sha256": "5ccd8f0b4813ebe8ce5659dd66edcd0296cc0c1991ade723f2175b9cfd633d58"
     },
     {
       "file": "sources.csv",

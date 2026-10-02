@@ -4,7 +4,7 @@ import csv
 import json
 import math
 from pathlib import Path
-from fetch_extended_cases import ROOT, DATA, VARIABLES, REGIONAL, grid_for, now, save, sha, validate, url_for, times_for
+from fetch_extended_cases import ROOT, DATA, VARIABLES, REGIONAL, DEFAULT_CONFIG, grid_for, now, save, sha, validate, url_for, times_for
 
 PUBLIC = ROOT / 'public/data'
 SOURCE = dict(label='ERA5 再分析 · 通过 Open-Meteo 获取', provider='Open-Meteo（第三方 API）',
@@ -30,10 +30,16 @@ def read_request(manifest, purpose):
     return rows, entry
 
 
-def build_case(case):
+def build_case(case, config=DEFAULT_CONFIG):
     cid = case['id']
-    path = DATA/cid/'manifest.json'
+    if config.freeze_catalog:
+        frozen = json.loads((config.data/'catalog.json').read_text())['cases']
+        if [c for c in frozen if c['id'] == cid] != [case]:
+            raise ValueError('构建参数与冻结案例描述不一致')
+    path = config.data/cid/'manifest.json'
     manifest = json.loads(path.read_text())
+    if config.freeze_catalog and manifest['catalogSha256'] != sha((config.data/'catalog.json').read_bytes()):
+        raise ValueError('冻结目录 SHA-256 已改变，停止构建')
     lons, lats = grid_for(case)
     points = [(lon, lat) for lat in lats for lon in lons]
     specifications = {
@@ -85,6 +91,8 @@ def build_case(case):
                 source=SOURCE, retrievedAt=point_entry['retrievedAt'], rawSha256=point_entry['sha256'], requestUrl=point_entry['url'],
                 summary=case.get('summary', ''), eventEvidence=evidence, scopeNote=case.get('scopeNote', ''),
                 windowType='curated_replay_window', caveat=CAVEAT, qualityStatus=quality_status, qualityWarnings=quality_warnings)
+    if config.include_geography:
+        meta.update({k: case[k] for k in ('name', 'country', 'continent', 'year')})
     compact(PUBLIC/f'case-{cid}.json', dict(schemaVersion=1, **meta, units=point['hourly_units'], rows=rows))
     with (PUBLIC/f'case-{cid}.csv').open('w', newline='') as stream:
         writer = csv.DictWriter(stream, fieldnames=['time', *VARIABLES])
@@ -118,7 +126,7 @@ def build_case(case):
     regional_path = PUBLIC/f'regional-{cid}.json'
     compact(regional_path, regional)
     manifest.update(status='complete', completedAt=now(), validation=checks, qualityStatus=quality_status, qualityWarnings=quality_warnings,
-                    builtCatalogSha256=sha((DATA/'catalog.json').read_bytes()), caseSpecification=case)
+                    builtCatalogSha256=sha((config.data/'catalog.json').read_bytes()), caseSpecification=case)
     manifest['artifacts'] = [{ 'path': str(p.relative_to(ROOT)), 'sha256': sha(p.read_bytes()), 'bytes': p.stat().st_size}
                              for p in [PUBLIC/f'case-{cid}.json', PUBLIC/f'case-{cid}.csv', regional_path]]
     manifest['artifact'] = manifest['artifacts'][-1]
@@ -128,18 +136,25 @@ def build_case(case):
     return meta
 
 
-def build_index():
-    catalog = json.loads((DATA/'catalog.json').read_text())['cases']
+def build_index(config=DEFAULT_CONFIG):
+    catalog = json.loads((config.data/'catalog.json').read_text())['cases']
     complete = []
     for case in catalog:
-        manifest_path = DATA/case['id']/'manifest.json'
+        manifest_path = config.data/case['id']/'manifest.json'
         if not manifest_path.exists() or json.loads(manifest_path.read_text())['status'] != 'complete':
             continue
+        if config.freeze_catalog:
+            manifest = json.loads(manifest_path.read_text())
+            if manifest.get('caseSpecification') != case or manifest.get('builtCatalogSha256') != sha((config.data/'catalog.json').read_bytes()):
+                raise ValueError('索引案例与冻结目录不一致')
+            for artifact_entry in manifest['artifacts']:
+                if sha((ROOT/artifact_entry['path']).read_bytes()) != artifact_entry['sha256']:
+                    raise ValueError('索引产物哈希不符')
         artifact = json.loads((PUBLIC/f"case-{case['id']}.json").read_text())
         complete.append({k:v for k,v in artifact.items() if k not in ('rows','units','schemaVersion')})
-    save(PUBLIC/'extended-cases.json', dict(schemaVersion=1, generatedAt=now(), cases=complete,
-         status='complete' if len(complete)==len(catalog)==10 else 'partial', expectedCases=10,
-         scope='十处独立热浪事件的有限区域与代表格点；不是全球连续覆盖，也不是新增十个20年城市序列。'))
+    save(PUBLIC/config.index_name, dict(schemaVersion=1, generatedAt=now(), cases=complete,
+         status='complete' if len(complete)==len(catalog)==config.expected_cases else 'partial', expectedCases=config.expected_cases,
+         scope=config.scope))
 
 
 if __name__ == '__main__':

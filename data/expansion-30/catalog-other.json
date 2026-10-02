@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "timeBasis": "UTC",
+  "checkedOn": "2026-10-02",
+  "windowDefinition": "人工选择的城市周边观察窗，不是统一阈值识别的热浪起止日期；同一地区事件可覆盖多个城市。",
+  "cases": [
+    {
+      "id": "bangkok2024", "cityId": "bangkok", "name": "曼谷", "country": "泰国", "continent": "亚洲",
+      "title": "2024 曼谷高温观察窗", "year": 2024, "timezone": "Asia/Bangkok", "latitude": 13.75, "longitude": 100.50,
+      "start": "2024-04-18", "end": "2024-05-03",
+      "sourceUrls": [{"title": "Monthly Weather Summary in Thailand — April 2024", "url": "https://www.tmd.go.th/media/climate/climate-monthly/april_2024_rev1-0.pdf", "organisation": "Thai Meteorological Department", "verifiedOn": "2026-10-02", "accessMethod": "原站 PDF 通过 curl 下载成功，pdftotext 实读第1、2、6、9页", "evidenceNote": "第1–2页描述4月反复高温且月底特别炎热；第6页列曼谷市区4月21日与廊曼4月30日站点纪录，第9页有曼谷站点月均温与降水。原文第2页小标题误写21–31 April，本目录未沿用错误日期。"}],
+      "summary": "泰国气象局记录了四月持续偏热、月底加剧的过程，曼谷多个站点在下旬出现高温极值。本窗口围绕这一阶段，观察城市周边风、云、降水与昼夜气温如何变化。",
+      "mechanismNote": "报告描述热低压与风场背景；回放可观察近地变量的共同变化，不能仅凭海平面气压还原高空环流或量化各机制贡献。",
+      "scopeNote": "人工UTC观察窗，非统一阈值识别。曼谷格点不等于廊曼、港口或市区站点；站点纪录只作事件证据，不作为再分析必须重现的值。该标题保留高温观察窗口径。"
+    },
+    {
+      "id": "singapore2023", "cityId": "singapore", "name": "新加坡", "country": "新加坡", "continent": "亚洲",
+      "title": "2023 新加坡持续高温观察窗", "year": 2023, "timezone": "Asia/Singapore", "latitude": 1.35, "longitude": 103.82,
+      "start": "2023-05-05", "end": "2023-05-20",
+      "sourceUrls": [{"title": "Singapore Annual Climate Assessment 2023", "url": "https://www.weather.gov.sg/wp-content/uploads/2024/04/ACAR_2023.pdf", "organisation": "Meteorological Service Singapore", "verifiedOn": "2026-10-02", "accessMethod": "官方 PDF 通过 web.open 打开并实读温度与显著事件章节", "evidenceNote": "印刷页10描述5月上半月多日高温，第二周微风、少云条件和5月13日多个站点的极值；页10–11还讨论暖海温与MJO背景。并非只用单日纪录认定热浪。"}],
+      "summary": "新加坡气象部门将五月持续偏热列为显著事件，上半月多日炎热，第二周出现微风少云的天气。本窗口覆盖五月十三日前后，适合观察海岛环境中的日夜温差与降雨变化。",
+      "mechanismNote": "官方报告指出低层微风、云量与区域气候背景；局地再分析可显示风温共变，但无法单独检验MJO、海温或城市热岛的因果作用。",
+      "scopeNote": "人工UTC观察窗；本目录未依当地热浪阈值重新判定连续天数，故保留持续高温观察窗标题。海陆混合格点可能平滑城市站点极值，5×5格网也会覆盖周边海域和邻国。"
+    },
+    {
+      "id": "manila2024", "cityId": "manila", "name": "马尼拉", "country": "菲律宾", "continent": "亚洲",
+      "title": "2024 菲律宾热浪·马尼拉观察窗", "year": 2024, "timezone": "Asia/Manila", "latitude": 14.60, "longitude": 120.98,
+      "start": "2024-04-15", "end": "2024-05-02",
+      "sourceUrls": [
+        {"title": "Climate change made the deadly heatwaves that hit millions of highly vulnerable people across Asia more frequent and extreme", "url": "https://www.worldweatherattribution.org/climate-change-made-the-deadly-heatwaves-that-hit-millions-of-highly-vulnerable-people-across-asia-more-frequent-and-extreme/", "organisation": "World Weather Attribution", "verifiedOn": "2026-10-02", "accessMethod": "研究团队原始事件说明通过 web.open 实读", "evidenceNote": "正文与图1将菲律宾研究事件定义为2024年4月15–29日区域平均日最高温的15日过程；该研究不是马尼拉单站阈值判定。"},
+        {"title": "Official Statement on Creating Extreme Heat Protocol", "url": "https://www.pagasa.dost.gov.ph/press-release/155", "organisation": "DOST-PAGASA", "verifiedOn": "2026-10-02", "accessMethod": "官方原始声明通过 web.open 实读", "evidenceNote": "2024年4月12日声明区分气温与热指数，说明既有热预警系统及面向学校等部门的决策局限；不提供马尼拉站点极值。"}
+      ],
+      "summary": "菲律宾在四月中下旬经历区域性持续高温，原始研究明确分析了十五日热过程。马尼拉作为区域中的城市观察点，可用于比较气温、湿度和夜间降温，而不代表全国平均。",
+      "mechanismNote": "联合观察气温与湿度；气温不等于热指数，现有回放也不构成完整人体热应激评估。区域气候归因结果不能直接套用于马尼拉某一个格点。",
+      "scopeNote": "人工UTC窗覆盖研究的区域热过程及随后数日；区域热浪背景下的城市观察窗，不宣称马尼拉单站已按同一阈值确认热浪。原始来源未核验马尼拉单站逐日极值，不能在网页补写该类纪录。"
+    },
+    {
+      "id": "seoul2018", "cityId": "seoul", "name": "首尔", "country": "韩国", "continent": "亚洲",
+      "title": "2018 首尔热浪", "year": 2018, "timezone": "Asia/Seoul", "latitude": 37.57, "longitude": 126.98,
+      "start": "2018-07-24", "end": "2018-08-08",
+      "sourceUrls": [{"title": "서울, 양평 등 일 최고기온 극값 경신（首尔、杨平等日最高气温纪录更新）", "url": "https://testweather.kma.go.kr/metropolitan/html/news/notice_view.jsp?articleno=9785&boardId=press2&pageNo=34", "organisation": "Korea Meteorological Administration — Metropolitan Office", "verifiedOn": "2026-10-02", "accessMethod": "韩国气象厅官方韩文通报通过 web.open 实读", "evidenceNote": "2018年8月1日通报正文指出首都圈热浪警报正在生效、首尔当日极端高温及热浪持续；解释高空高压、强日照和东风地形效应，并提及夜间难以降温。"}],
+      "summary": "韩国气象厅在八月一日通报首尔极端高温，当时首都圈已处在热浪警报中，炎热过程继续延续。本窗口跨越峰值前后，观察白天升温与夜间热量难以散去的时间变化。",
+      "mechanismNote": "官方通报提供高压、日照与地形作用的解释；当前近地回放只显示部分伴随变量，不能将粒子运动当作高空下沉或焚风证据。",
+      "scopeNote": "人工UTC观察窗，只截取长热过程的一段；城市周边再分析格点不等于首尔官方观测站，也不能解析街区城市热岛。"
+    },
+    {
+      "id": "ahmedabad2016", "cityId": "ahmedabad", "name": "艾哈迈达巴德", "country": "印度", "continent": "亚洲",
+      "title": "2016 艾哈迈达巴德高温观察窗", "year": 2016, "timezone": "Asia/Kolkata", "latitude": 23.03, "longitude": 72.58,
+      "start": "2016-05-12", "end": "2016-05-27",
+      "sourceUrls": [{"title": "A Tale of Three Cities: Heat Action Plans Across India", "url": "https://www.nrdc.org/bio/anjali-jaiswal/tale-three-cities-heat-action-plans-across-india", "organisation": "Natural Resources Defense Council — Ahmedabad Heat Action Plan partner", "verifiedOn": "2026-10-02", "accessMethod": "热行动计划参与机构作者原始现场工作报告通过 web.open 实读", "evidenceNote": "2016年5月23日文章的 Ahmedabad Highlights 记述当月连续三日极端高温红色警报及现场宣传；开头给出城市高温背景。这里仅采用参与方对警报行动的直接记述，不把其转引媒体的极值当作独立站点数据，也不采纳文中健康行为建议。"}],
+      "summary": "五月下旬的项目参与方报告记录了当地极端高温与连续数日红色警报。本观察窗把气象过程与热行动计划的情境并置，展示高温怎样持续，而不据此推断预警是否减少了健康损失。",
+      "mechanismNote": "观察白天气温、短波与地表湿度的共同变化；仅用气象回放无法判定预警传播、居民行动或干预效果。",
+      "scopeNote": "人工UTC观察窗，来源对警报持续的记述不等于统一算法识别的站点热浪起止。尚未取得该事件单站逐小时观测，站点纪录与健康成效均不作为本数据包的已验证结论。"
+    },
+    {
+      "id": "jacobabad2018", "cityId": "jacobabad", "name": "雅各布阿巴德", "country": "巴基斯坦", "continent": "亚洲",
+      "title": "2018 信德热浪·雅各布阿巴德", "year": 2018, "timezone": "Asia/Karachi", "latitude": 28.28, "longitude": 68.44,
+      "start": "2018-04-22", "end": "2018-05-07",
+      "sourceUrls": [{"title": "April: high CO2, low sea ice and extreme weather", "url": "https://public.wmo.int/media/news/april-high-co2-low-sea-ice-and-extreme-weather", "organisation": "World Meteorological Organization", "verifiedOn": "2026-10-02", "accessMethod": "WMO 官方事件公告通过 web.open 实读", "evidenceNote": "Pakistan heatwave 小节：引述PMD说明持续热背景、4月中旬再次出现异常热过程并于29–30日在信德达到峰值；同段明确列出Jacobabad在4月30日的站点高温。WMO同时声明其极端纪录档案不验证月纪录。"}],
+      "summary": "世界气象组织记录了信德省四月下旬的热浪，并明确列出雅各布阿巴德在月底高峰中的站点表现。城市周边回放可展示季风前内陆高温的昼夜变化，以及风向转变是否伴随降温。",
+      "mechanismNote": "比较内陆干热环境中的风速、湿度与日夜气温；短窗中的少雨不等于长期干旱诊断，也不能独立量化平流与辐射的热量贡献。",
+      "scopeNote": "人工UTC窗围绕4月29–30日区域高峰，不覆盖从3月开始的全部前期过程。站点极值不要求ERA5格点重现；本项目不验证或新增世界、国家、月度纪录。"
+    },
+    {
+      "id": "perth2024", "cityId": "perth", "name": "珀斯", "country": "澳大利亚", "continent": "大洋洲",
+      "title": "2024 珀斯二月热浪", "year": 2024, "timezone": "Australia/Perth", "latitude": -31.95, "longitude": 115.86,
+      "start": "2024-02-11", "end": "2024-02-26",
+      "sourceUrls": [{"title": "Greater Perth in February 2024", "url": "https://www.bom.gov.au/climate/current/month/wa/archive/202402.perth.shtml", "organisation": "Australian Bureau of Meteorology", "verifiedOn": "2026-10-02", "accessMethod": "BoM 官方月报通过 web.open 实读温度段与逐日表", "evidenceNote": "Temperature 段明确珀斯及周边2月17–21日达到 severe intensity 热浪；Perth Metro段与逐日表给出18日最高温和19日暖夜，24–26日出现降雨。"}],
+      "summary": "澳大利亚气象局确认珀斯及周边二月中下旬经历严重热浪，炎热白天与暖夜相继出现。本窗口覆盖该阶段以及随后降雨，可观察沿海风温场与昼夜降温条件的转变。",
+      "mechanismNote": "观察近地风向和温度变化是否相伴；当前格网不能还原逐街海风锋，也不将所有风向变化解释为热浪结束的唯一原因。",
+      "scopeNote": "人工UTC观察窗围绕2月17–21日过程；官方BoM严重程度分类仅用于事件说明，本站未重算该等级。区域含近海格点，不等于陆地城市站点网。"
+    },
+    {
+      "id": "adelaide2019", "cityId": "adelaide", "name": "阿德莱德", "country": "澳大利亚", "continent": "大洋洲",
+      "title": "2019 阿德莱德一月热浪", "year": 2019, "timezone": "Australia/Adelaide", "latitude": -34.93, "longitude": 138.60,
+      "start": "2019-01-17", "end": "2019-02-01",
+      "sourceUrls": [{"title": "Greater Adelaide in January 2019: very hot and dry", "url": "https://www.bom.gov.au/climate/current/month/sa/archive/201901.adelaide.shtml", "organisation": "Australian Bureau of Meteorology", "verifiedOn": "2026-10-02", "accessMethod": "BoM 官方月报通过 web.open 实读概述、Very hot at times 与站点段", "evidenceNote": "月报描述一月高温少雨、24日各站极端高温和暖夜，明确将当时过程连接到 Widespread heatwaves during December 2018 and January 2019 专项报告。"}],
+      "summary": "阿德莱德在一月少雨且多次炎热的背景下，于二十四日前后出现强烈高温与暖夜。窗口保留峰值前后的变化，可用于观察南半球夏季城市周边温度、风与地表水分的共同演变。",
+      "mechanismNote": "比较热峰前后的风向、温湿与短波；局地地表湿度变化不能直接推出蒸散受限程度，当前资料也不含完整地表能量收支。",
+      "scopeNote": "人工UTC窗只取12月至1月更广泛热浪中的城市片段；BoM每日站点统计采用其观测日规则，不能与UTC格点小时极值直接视为同口径。"
+    },
+    {
+      "id": "bamako2024", "cityId": "bamako", "name": "巴马科", "country": "马里", "continent": "非洲",
+      "title": "2024 萨赫勒热浪·巴马科", "year": 2024, "timezone": "Africa/Bamako", "latitude": 12.65, "longitude": -8.00,
+      "start": "2024-03-25", "end": "2024-04-09",
+      "sourceUrls": [{"title": "Extreme Sahel heatwave that hit highly vulnerable population at the end of Ramadan would not have occurred without climate change", "url": "https://www.worldweatherattribution.org/extreme-sahel-heatwave-that-hit-highly-vulnerable-population-at-the-end-of-ramadan-would-not-have-occurred-without-climate-change/", "organisation": "World Weather Attribution", "verifiedOn": "2026-10-02", "accessMethod": "研究团队原始事件说明通过 web.open 实读正文、图1时间窗及Main Findings", "evidenceNote": "正文定义3月底4月初事件；图1给马里南部/布基纳法索3月31日至4月4日五日窗，并明确讨论Bamako和暖夜。本站不采用网页转引的医院死亡数量作为可归因热死亡。"}],
+      "summary": "三月底至四月初，萨赫勒发生持续强热过程，研究同时关注白天最高温与夜间最低温。巴马科观察窗展示同一区域事件在城市周边的演变，并为讨论夜间恢复与基础设施条件提供气象背景。",
+      "mechanismNote": "关注夜间最低气温和降温幅度；格点资料只描述气象暴露，不能据此估计死亡人数、电力供应或住户实际室内温度。",
+      "scopeNote": "人工UTC窗，城市格点不是原研究的国家区域平均；研究的气候归因结论不能直接转化为本城市格点的归因系数。与瓦加杜古同属一次区域事件，不是独立气候样本。"
+    },
+    {
+      "id": "ouagadougou2024", "cityId": "ouagadougou", "name": "瓦加杜古", "country": "布基纳法索", "continent": "非洲",
+      "title": "2024 萨赫勒热浪·瓦加杜古", "year": 2024, "timezone": "Africa/Ouagadougou", "latitude": 12.37, "longitude": -1.52,
+      "start": "2024-03-25", "end": "2024-04-09",
+      "sourceUrls": [{"title": "Extreme Sahel heatwave that hit highly vulnerable population at the end of Ramadan would not have occurred without climate change", "url": "https://www.worldweatherattribution.org/extreme-sahel-heatwave-that-hit-highly-vulnerable-population-at-the-end-of-ramadan-would-not-have-occurred-without-climate-change/", "organisation": "World Weather Attribution", "verifiedOn": "2026-10-02", "accessMethod": "研究团队原始事件说明通过 web.open 实读正文、图1时间窗及Main Findings", "evidenceNote": "图1明确马里南部/布基纳法索3月31日至4月4日五日过程，正文讨论布基纳法索的暖夜；Main Findings点名Ouagadougou城市背景。此来源支持区域事件，未提供该城市逐小时单站序列。"}],
+      "summary": "瓦加杜古位于研究确认的布基纳法索热浪区域，三月底至四月初的高温也涉及夜间难以降温。它与巴马科可作为同次区域事件的两个城市观察点，比较局地气象变化的共同点与差别。",
+      "mechanismNote": "在相同时间窗比较两城昼夜气温与风湿变化；不能把两城差异直接归因于城市化、绿地或预警政策，现有格网不解析街区尺度。",
+      "scopeNote": "人工UTC城市观察窗，源研究为区域热浪分析，未确认本城市单站统一阈值起止。与巴马科并非独立事件；不能将城市数量当作相互独立热浪的样本量。"
+    }
+  ]
+}

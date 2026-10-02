@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-10-02",
+  "timeBasis": "UTC",
+  "windowDefinition": "人工选定的16天UTC完整观察窗，非统一阈值识别的热浪边界；可能涵盖相邻过程或截取长事件片段",
+  "dataProduct": "ERA5 via Open-Meteo; 城市周边网格再分析回放，不是独立天气模型或站点极值重建",
+  "cases": [
+    {
+      "id": "seattle2021",
+      "cityId": "seattle",
+      "name": "西雅图",
+      "country": "美国",
+      "continent": "北美洲",
+      "title": "2021 西雅图热浪",
+      "year": 2021,
+      "timezone": "America/Los_Angeles",
+      "latitude": 47.61,
+      "longitude": -122.33,
+      "start": "2021-06-20",
+      "end": "2021-07-05",
+      "sourceUrls": [
+        {
+          "title": "Causes of the record-breaking Pacific Northwest heatwave, late June 2021",
+          "url": "https://repository.library.noaa.gov/view/noaa/40148",
+          "organisation": "NOAA PMEL / Atmosphere, Overland (2021)",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "primary research repository page opened; abstract checked",
+          "evidenceNote": "论文摘要明确记载2021年6月底太平洋西北地区热浪及西雅图极端高温，并讨论大尺度阻塞、下沉增温与太阳辐射；此处不复现归因。"
+        }
+      ],
+      "summary": "2021年6月底，太平洋西北地区热浪影响西雅图。原始研究将其置于持续阻塞与下沉增温背景下；回放保留高温前后的局地变化，便于和邻近海岸城市比较。",
+      "mechanismNote": "比较风向、气温与短波的时序；所取近地面变量不能独立诊断高空阻塞或定量分解下沉增温。",
+      "scopeNote": "人工UTC观察窗，不是统一算法识别的事件边界；再分析格点不等于机场观测。与温哥华及原有波特兰案例属于同一大尺度热浪，不能作为相互独立的事件样本。"
+    },
+    {
+      "id": "vancouver2021",
+      "cityId": "vancouver",
+      "name": "温哥华",
+      "country": "加拿大",
+      "continent": "北美洲",
+      "title": "2021 温哥华热浪",
+      "year": 2021,
+      "timezone": "America/Vancouver",
+      "latitude": 49.28,
+      "longitude": -123.12,
+      "start": "2021-06-20",
+      "end": "2021-07-05",
+      "sourceUrls": [
+        {
+          "title": "Canada’s top 10 weather stories of 2021",
+          "url": "https://www.canada.ca/en/environment-climate-change/services/top-ten-weather-stories/2021.html",
+          "organisation": "Environment and Climate Change Canada",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official retrospective page opened; heat-dome and second-heat-wave sections checked",
+          "evidenceNote": "Record heat under the dome段说明6月底高压脊持续；Second heat wave段单独记载温哥华6月底连续高温及6月29日站点纪录。未采用该页伤亡表述。"
+        }
+      ],
+      "summary": "加拿大环境与气候变化部回顾了2021年6月底热穹顶，并单独记录温哥华持续高温。沿海点位可与西雅图对照，观察同一大尺度事件中的不同日夜变化。",
+      "mechanismNote": "并列观察沿海风温与夜间降温；局地格网不能解析建筑、海湾海风细节，也不能把内陆利顿的极值套用到温哥华。",
+      "scopeNote": "人工UTC观察窗，非统一阈值事件边界；城市附近格点并非机场站点实测。与西雅图及原有波特兰属于同一大尺度热浪。"
+    },
+    {
+      "id": "lasvegas2024",
+      "cityId": "lasvegas",
+      "name": "拉斯维加斯",
+      "country": "美国",
+      "continent": "北美洲",
+      "title": "2024 拉斯维加斯热浪",
+      "year": 2024,
+      "timezone": "America/Los_Angeles",
+      "latitude": 36.17,
+      "longitude": -115.14,
+      "start": "2024-07-01",
+      "end": "2024-07-16",
+      "sourceUrls": [
+        {
+          "title": "Assessing the U.S. Climate in July 2024",
+          "url": "https://www.ncei.noaa.gov/news/national-climate-202407",
+          "organisation": "NOAA National Centers for Environmental Information",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official monthly retrospective opened; Other Notable Events checked",
+          "evidenceNote": "Other Notable Events明确称7月初美国西部热浪，并列出拉斯维加斯7月7日站点高温纪录。既有事件描述，也有具体城市日期。"
+        }
+      ],
+      "summary": "NOAA将2024年7月初美国西部的持续炎热记为热浪，并列出拉斯维加斯7月7日站点纪录。该窗口适合观察沙漠城市附近白天升温、暖夜与风场的共同变化。",
+      "mechanismNote": "观察低降水背景下短波、土壤含水量和日夜温差；缺少感热与潜热通量，不能据此给出能量分配比例。",
+      "scopeNote": "人工UTC观察窗，只覆盖7月初一段过程，不代表整个夏季或7月全部热事件；ERA5网格高温不应被校准成站点纪录。"
+    },
+    {
+      "id": "sacramento2022",
+      "cityId": "sacramento",
+      "name": "萨克拉门托",
+      "country": "美国",
+      "continent": "北美洲",
+      "title": "2022 萨克拉门托热浪",
+      "year": 2022,
+      "timezone": "America/Los_Angeles",
+      "latitude": 38.58,
+      "longitude": -121.49,
+      "start": "2022-08-28",
+      "end": "2022-09-12",
+      "sourceUrls": [
+        {
+          "title": "2022 Weather Review — September",
+          "url": "https://www.weather.gov/media/sgx/climate/Yearly/2022.pdf",
+          "organisation": "NOAA National Weather Service San Diego",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official PDF opened, then downloaded and text extracted with pdftotext",
+          "evidenceNote": "September章节描述8月底至9月上旬加州长时间热浪，并在文字和极值表中列出萨克拉门托9月6日纪录；南加州Kay降温叙述不直接移植为本市因果。"
+        }
+      ],
+      "summary": "NWS年度回顾记录了2022年8月底至9月上旬的加州热浪，萨克拉门托在其中出现站点极端高温。这里回放内陆谷地的风温变化，保留高峰前后可比较的日夜序列。",
+      "mechanismNote": "比较谷地风向转变、短波和夜间温度；局地回放不能重建整个高压系统，也不能把南加州降温机制直接套用到本市。",
+      "scopeNote": "人工UTC观察窗，非统一阈值事件边界；再分析格点不等于城市观测站，附近小格网不覆盖整场美国西部热浪。"
+    },
+    {
+      "id": "chicago2023",
+      "cityId": "chicago",
+      "name": "芝加哥",
+      "country": "美国",
+      "continent": "北美洲",
+      "title": "2023 芝加哥湿热过程",
+      "year": 2023,
+      "timezone": "America/Chicago",
+      "latitude": 41.88,
+      "longitude": -87.63,
+      "start": "2023-08-16",
+      "end": "2023-08-31",
+      "sourceUrls": [
+        {
+          "title": "August 23–24, 2023: Late Summer Heat Wave Results in Consecutive Days With 115°+ Heat Indices",
+          "url": "https://www.weather.gov/lot/2023_08_23-24_Heat",
+          "organisation": "NOAA National Weather Service Chicago",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official event report opened; Overview and August 24 caveat checked",
+          "evidenceNote": "Overview区分8月20日短暂湿热与23—24日主高峰，明确芝加哥O’Hare观测。报告提醒部分热指数极值来自小时内观测，不能与旧逐小时纪录直接同等比较。"
+        }
+      ],
+      "summary": "NWS记录芝加哥2023年8月23—24日出现明显湿热高峰，之前还有一次短暂升温和缓解。气温与湿度的并列回放可展示，热环境变化并不只取决于最高气温。",
+      "mechanismNote": "观察气温、相对湿度、风和暖夜同步变化；不把热指数称为气温，也不把小时格点值当成小时内站点极值或个人健康风险预测。",
+      "scopeNote": "人工UTC观察窗覆盖主高峰及相邻过程；热浪称谓采用NWS事件报告，并非本站统一连续天数算法。市中心附近格点与O’Hare机场位置不同。"
+    },
+    {
+      "id": "miami2023",
+      "cityId": "miami",
+      "name": "迈阿密",
+      "country": "美国",
+      "continent": "北美洲",
+      "title": "2023 迈阿密持续湿热",
+      "year": 2023,
+      "timezone": "America/New_York",
+      "latitude": 25.76,
+      "longitude": -80.19,
+      "start": "2023-07-09",
+      "end": "2023-07-24",
+      "sourceUrls": [
+        {
+          "title": "2023 South Florida Weather Summary",
+          "url": "https://www.weather.gov/media/mfl/news/2023Summary.pdf",
+          "organisation": "NOAA National Weather Service Miami",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official PDF opened, then downloaded and text extracted with pdftotext",
+          "evidenceNote": "2023 Temperatures段描述夏季持续高温与高露点、迈阿密地区7月12日观测及国际机场7月23日年内最高温；本文取其中7月片段，不以全年排名单独定义热浪。"
+        },
+        {
+          "title": "Miami-Dade County Homeless Trust Announces Protective Measures During Excessive Heat",
+          "url": "https://www.miamidade.gov/global/release.page?Mduid_release=rel1689973055328322",
+          "organisation": "Miami-Dade County",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official dated release opened; July 21 2023 event context checked",
+          "evidenceNote": "7月21日公告记录当时持续酷热及周末可能的高温警报情境，补足具体时段；不把公告中的预期警报当成已验证的警报发布记录。"
+        }
+      ],
+      "summary": "南佛罗里达NWS回顾将2023年夏季描述为持续高温与高露点过程，并记载迈阿密地区7月的具体高温日。本案例截取7月片段，观察沿海城市的湿度与暖夜。",
+      "mechanismNote": "并列观察气温、湿度、云量与风；附近海温和高空环流未包含在当前数据中，不在回放中声称已量化海洋或副热带高压的贡献。",
+      "scopeNote": "人工UTC窗口截取持续湿热季的一段，非独立算法定义的完整热浪边界；沿海格网可能含海陆差异，不代表建筑室内或人体暴露。"
+    },
+    {
+      "id": "mexicocity2024",
+      "cityId": "mexicocity",
+      "name": "墨西哥城",
+      "country": "墨西哥",
+      "continent": "北美洲",
+      "title": "2024 墨西哥城热浪",
+      "year": 2024,
+      "timezone": "America/Mexico_City",
+      "latitude": 19.43,
+      "longitude": -99.13,
+      "start": "2024-05-01",
+      "end": "2024-05-16",
+      "sourceUrls": [
+        {
+          "title": "Global temperature record streak continues, as climate change makes heatwaves more extreme",
+          "url": "https://public.wmo.int/media/news/global-temperature-record-streak-continues-climate-change-makes-heatwaves-more-extreme",
+          "organisation": "World Meteorological Organization",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official English page opened; Extreme heat section checked",
+          "evidenceNote": "2024年5月15日文章的Extreme heat章节描述墨西哥5月热浪，并明确Tacubaya/Mexico City站5月9日观测；全国其他城市温度没有当成墨西哥城温度。"
+        }
+      ],
+      "summary": "WMO在2024年5月的官方通报中记录墨西哥热浪，并明确提到墨西哥城Tacubaya站的高温。选取月初至月中的窗口，可观察高海拔城市附近的昼夜升温过程。",
+      "mechanismNote": "比较短波、云、土壤水分和风温；高海拔地形在粗网格中被平均，不能将与Tacubaya站的差异全部解释为城市热岛。",
+      "scopeNote": "人工UTC观察窗，非统一阈值热浪边界；覆盖5月前半段，不涵盖当月全部热浪。城市附近再分析格点不是Tacubaya站点观测。"
+    },
+    {
+      "id": "riodejaneiro2023",
+      "cityId": "riodejaneiro",
+      "name": "里约热内卢",
+      "country": "巴西",
+      "continent": "南美洲",
+      "title": "2023 里约热内卢热浪",
+      "year": 2023,
+      "timezone": "America/Sao_Paulo",
+      "latitude": -22.91,
+      "longitude": -43.17,
+      "start": "2023-11-08",
+      "end": "2023-11-23",
+      "sourceUrls": [
+        {
+          "title": "Case Study of an Extreme Heat Wave in Rio de Janeiro on November 2023: Synoptic Conditions and Climatological Trends",
+          "url": "https://revistas.ufrj.br/index.php/aigeo/article/view/66182",
+          "organisation": "Universidade Federal do Rio de Janeiro / Anuário do Instituto de Geociências",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "original research article landing page opened; abstract checked",
+          "evidenceNote": "原始研究摘要明确研究2023年11月17—18日里约高温，指出高峰位于持续八天热浪末段及锋前形势；只采用事件时序背景，不复制其归因或健康结论。"
+        }
+      ],
+      "summary": "里约本地研究分析了2023年11月热浪，并将17—18日高温置于热浪末段的锋前形势。窗口可用于观察南半球春季高温、湿度及风向转变如何在时间上相接。",
+      "mechanismNote": "观察锋前后风温与湿度变化；近地面局部格点不足以独立识别天气锋面、厄尔尼诺贡献或大型活动现场热暴露。",
+      "scopeNote": "人工UTC观察窗，非本站统一热浪检测；原文站点、热指数和现场情境与ERA5网格值分开使用，不把城市平均场当成活动现场实测。"
+    },
+    {
+      "id": "santiago2017",
+      "cityId": "santiago",
+      "name": "圣地亚哥",
+      "country": "智利",
+      "continent": "南美洲",
+      "title": "2017 圣地亚哥热浪",
+      "year": 2017,
+      "timezone": "America/Santiago",
+      "latitude": -33.45,
+      "longitude": -70.67,
+      "start": "2017-01-19",
+      "end": "2017-02-03",
+      "sourceUrls": [
+        {
+          "title": "Eventos de Olas de Calor de la Estación (Diurna): Quinta Normal, Santiago (330020)",
+          "url": "https://climatologia.meteochile.gob.cl/application/historico/olaDeCalorEstacion/330020",
+          "organisation": "Dirección Meteorológica de Chile",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official station event table opened; January 2017 rows checked",
+          "evidenceNote": "官方Quinta Normal日间热浪表列出2017年1月24—27日事件，峰值日期25日；另列17—21日及29—31日过程，因此观察窗包含相邻热浪，不能全部连称一个连续事件。"
+        }
+      ],
+      "summary": "智利气象局的Quinta Normal站热浪表记录2017年1月下旬多次高温过程，本案例围绕24—27日事件展开。相邻事件也保留在窗口内，便于观察短暂缓解与再次升温。",
+      "mechanismNote": "观察盆地附近风温、短波与少雨时段；当前字段不包含火情或大气垂直剖面，不能重建野火演变或山谷下沉气流。",
+      "scopeNote": "人工UTC观察窗围绕1月24—27日事件，并覆盖前一轮后段与下一轮；采用官方日间热浪记录，未与其他城市统一阈值。再分析格点不等于Quinta Normal站点。"
+    },
+    {
+      "id": "montevideo2022",
+      "cityId": "montevideo",
+      "name": "蒙得维的亚",
+      "country": "乌拉圭",
+      "continent": "南美洲",
+      "title": "2022 蒙得维的亚热浪",
+      "year": 2022,
+      "timezone": "America/Montevideo",
+      "latitude": -34.9,
+      "longitude": -56.16,
+      "start": "2022-01-04",
+      "end": "2022-01-19",
+      "sourceUrls": [
+        {
+          "title": "Informe post evento: Ola de calor, 12 al 16 de enero 2022",
+          "url": "https://www.inumet.gub.uy/sites/default/files/2022-01/POSEVENTO_OLA%20DE%20CALOR_12al16ene.pdf",
+          "organisation": "Instituto Uruguayo de Meteorología (INUMET)",
+          "verifiedOn": "2026-10-02",
+          "accessMethod": "official PDF opened and extracted text checked; graphic screenshot endpoint returned a verification page",
+          "evidenceNote": "PDF第2页说明1月12—16日暖干气团在阻塞背景下持续，列出Prado与Carrasco观测；第3页保留这些站点的持续性分析。未据截图推断站点图标等级；报告注明数值为初步资料。"
+        }
+      ],
+      "summary": "INUMET事后报告记录2022年1月12—16日乌拉圭热浪，包含蒙得维的亚地区Prado与邻近Carrasco资料。窗口保留热过程前后，用来观察沿岸风温与夜间变化。",
+      "mechanismNote": "比较风向转变、暖夜及湿度变化；报告中的阻塞是背景证据，本站近地面格网不能直接验证高空阻塞强度或海岸局地环流。",
+      "scopeNote": "人工UTC观察窗，非统一阈值事件边界；官方初步站点资料只用于事件背景，不混入ERA5序列。未覆盖1月20日开始的后一轮过程。"
+    }
+  ]
+}

@@ -43,3 +43,7 @@
 .replay-data-quality strong { font-size:.88rem; font-weight:500; }
 .replay-data-quality p { font-size:.8rem; line-height:1.75; margin:.5rem 0; }
 .replay-data-quality p span { display:block; color:var(--muted); font-size:.75rem; }
+
+.replay-event-evidence details { margin: 8px 0 12px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.replay-event-evidence summary { cursor: pointer; color: var(--blue); }
+.replay-event-evidence details p { font-size: 12px; margin: 8px 0; }

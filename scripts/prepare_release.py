@@ -24,6 +24,7 @@ def public_files():
         "public/regional-methods.md", "docs/区域风温回放方法.md", "public/map-style.json",
         "public/europe-methods.md", "docs/欧洲2019机制数据方法.md",
         "public/extended-methods.md", "docs/十地历史热浪数据方法.md",
+        "public/expansion-methods.md", "docs/三十地扩展数据方法.md",
     ):
         path = ROOT / name
         if not path.is_file() or path.is_symlink():
@@ -40,6 +41,7 @@ def prepare_release():
         ("regional-methods.md", "区域风温回放方法.md"),
         ("europe-methods.md", "欧洲2019机制数据方法.md"),
         ("extended-methods.md", "十地历史热浪数据方法.md"),
+        ("expansion-methods.md", "三十地扩展数据方法.md"),
     ):
         PUBLIC.joinpath(public_name).write_text(ROOT.joinpath("docs", source_name).read_text(), encoding="utf-8")
     target = PUBLIC / "downloads/heat-atlas-source.zip"

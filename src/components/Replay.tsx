@@ -8,7 +8,7 @@ import SegmentedGroup from './SegmentedGroup';
 import { DownloadLink, Loading, Sources } from './Shared';
 import { parseReplayState, serializeReplayState, type ReplayPoint } from '../lib/replay-state';
 import '../replay-enhancements.css';
-import { REPLAY_CASES, mergeReplayCases } from '../lib/case-catalog';
+import { REPLAY_CASES, REPLAY_CONTINENTS, mergeReplayCases } from '../lib/case-catalog';
 
 const RegionalReplay = lazy(() => import('./RegionalReplay'));
 
@@ -33,17 +33,19 @@ const metrics: { key: keyof HourRow; title: string; unit: string; color: string 
 export default function Replay({ caseId, onCase, replayHash = window.location.hash }: { caseId: string; onCase: (id: string) => void; replayHash?: string }) {
   const index = useData<{ cases: CaseMeta[] }>('/data/cases.json');
   const extended = useData<{ cases: CaseMeta[]; status?: string }>('/data/extended-cases.json');
-  const available = mergeReplayCases(index.data?.cases, extended.data?.cases);
+  const expansion = useData<{ cases: CaseMeta[]; status?: string }>('/data/expansion-cases.json');
+  const available = mergeReplayCases(index.data?.cases, extended.data?.cases, expansion.data?.cases);
   const selected = REPLAY_CASES.find(item => item.id === caseId);
   const current = available.find(item => item.id === caseId);
-  const activeRequest = selected?.original ? index : extended;
+  const activeRequest = selected?.collection === 'original' ? index : selected?.collection === 'expansion' ? expansion : extended;
   return <section className="replay-page">
     <div className="page-intro"><h1>一场热浪，<br className="mobile-break" />是怎样形成的？</h1><p>沿着真实数据，回到高温发生之前。</p></div>
     <SegmentedGroup key={`quick-${caseId}`} className="case-tabs" label="选择历史回放" selectedKey={caseId}>{[
       ['portland2021', '北美西北', '2021'], ['paris2019', '西欧', '2019'], ['chongqing2022', '长江流域', '2022'],
     ].map(([id, title, year]) => <button key={id} aria-pressed={caseId === id} className={caseId === id ? 'active' : ''} onClick={() => onCase(id)}>{title}<span> · {year}</span></button>)}</SegmentedGroup>
-    <div className="replay-case-picker"><label htmlFor="all-replay-cases">选择城市与事件<select id="all-replay-cases" value={caseId} onChange={event => onCase(event.target.value)}>{REPLAY_CASES.map(item => <option key={item.id} value={item.id} disabled={!available.some(meta => meta.id === item.id)}>{item.title} · {item.country}{available.some(meta => meta.id === item.id) ? '' : '（资料准备中）'}</option>)}</select></label><div><strong>当前：{current?.title ?? selected?.title ?? '未知案例'}</strong><p>已载入 {available.length} 个案例目录 · 每个案例为人工选定观察窗</p></div></div>
+    <div className="replay-case-picker"><label htmlFor="all-replay-cases">选择城市与事件<select id="all-replay-cases" value={caseId} onChange={event => onCase(event.target.value)}>{REPLAY_CONTINENTS.map(continent => <optgroup key={continent} label={continent}>{REPLAY_CASES.filter(item => item.continent === continent).map(item => <option key={item.id} value={item.id} disabled={!available.some(meta => meta.id === item.id)}>{item.title} · {item.country}{available.some(meta => meta.id === item.id) ? '' : '（资料准备中）'}</option>)}</optgroup>)}</select></label><div><strong>当前：{current?.title ?? selected?.title ?? '未知案例'}</strong><p>已载入 {available.length} 个案例目录 · 每个案例为人工选定观察窗</p></div></div>
     {extended.error && <p className="replay-catalog-notice">扩展案例目录暂时无法读取，原有回放仍可使用。<button onClick={extended.reload}>重试扩展目录</button></p>}
+    {expansion.error && <p className="replay-catalog-notice">三十地资料目录暂时无法读取，已载入的回放仍可使用。<button onClick={expansion.reload}>重试三十地目录</button></p>}
     {current ? <ReplayBody key={caseId + replayHash} caseId={caseId} replayHash={replayHash} /> : activeRequest.data ? <div className="loading-state"><h2>{selected?.title ?? '案例'}的资料准备中</h2><p>该案例尚未进入已发布的数据索引。不会用其他城市的数据替代。</p><button className="text-button" onClick={activeRequest.reload}>重新检查案例目录</button></div> : <Loading error={activeRequest.error} retry={activeRequest.reload} />}
   </section>;
 }
@@ -148,7 +150,7 @@ function LoadedReplay({ data, replayHash }: { data: CaseData; replayHash: string
     </div>
     <section className="mechanisms-section" aria-labelledby="mechanism-heading"><h2 id="mechanism-heading">沿着四个过程理解高温</h2><div className="mechanism-tabs">{views.map(view => <button className={mode === view.key ? 'active' : ''} key={view.key} aria-pressed={mode === view.key} onClick={() => setMode(view.key)}><view.icon size={27} /><span><strong>{view.label}</strong><small>{view.description}</small></span><ChevronRight size={16} /></button>)}</div>{mechanism && <div key={mode} className="mechanism-explanation state-enter"><div><h3>{mechanism.title}</h3><p>{mechanism.summary}</p></div><div><ol>{mechanism.steps.map((step, i) => <li key={i}>{step}</li>)}</ol><p className="caution-text">{mechanism.caution}</p><Sources ids={mechanism.sourceIds} /></div></div>}</section>
     {caseId === 'paris2019' && <p className="replay-mechanism-link"><a href="#mechanism">继续探索：欧洲2019两次热浪与土壤水分 →</a></p>}
-    <section className="event-context"><div><h2>把这一小时，放回事件里</h2><p>{data.summary ?? story?.summary ?? '回放提供一个代表格点的逐小时记录。事件的空间范围和形成机制还需要区域资料与专题研究。'}</p>{data.eventEvidence?.length ? <div className="replay-event-evidence"><h3>事件证据 · 官方资料与原始研究</h3><ul>{data.eventEvidence.filter(item => item.url.startsWith('https://')).map(item => <li key={item.url}><a href={item.url} target="_blank" rel="noreferrer">{item.title} <ArrowUpRight size={13} /></a><span>{item.organisation}</span></li>)}</ul></div> : story && <><p className="small muted">资料中的时段：{story.period}</p><Sources ids={story.sourceIds} /></>}
+    <section className="event-context"><div><h2>把这一小时，放回事件里</h2><p>{data.summary ?? story?.summary ?? '回放提供一个代表格点的逐小时记录。事件的空间范围和形成机制还需要区域资料与专题研究。'}</p>{data.eventEvidence?.length ? <div className="replay-event-evidence"><h3>事件来源与核查范围</h3><ul>{data.eventEvidence.filter(item => item.url.startsWith('https://')).map(item => <li key={item.url}><a href={item.url} target="_blank" rel="noreferrer">{item.title} <ArrowUpRight size={13} /></a><span>{item.organisation}</span>{item.evidenceNote && <details><summary>阅读范围与证据边界</summary><p>{item.evidenceNote}</p>{item.verifiedOn && <small>核查日期：{item.verifiedOn}</small>}</details>}</li>)}</ul></div> : story && <><p className="small muted">资料中的时段：{story.period}</p><Sources ids={story.sourceIds} /></>}
       <p className="replay-event-scope">{data.scopeNote ?? data.caveat}</p></div><div className="data-note"><h3>这份数据的坐标</h3><p>请求位置：{coordinates(data.requestedLocation)}<br />返回格点：{coordinates(data.gridLocation)}</p><p className="small">网格值不等同于城市站点纪录。短波辐射为前一小时平均，其他字段的时次含义见数据说明。</p><DownloadLink href={data.csvUrl}>下载逐小时数据 CSV</DownloadLink></div></section>
   </>;
 }

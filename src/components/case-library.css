@@ -48,3 +48,14 @@
   .case-library-actions a { min-height: 44px; }
 }
 @media (prefers-reduced-motion: reduce) { .case-library-play { transition: none; } }
+.case-library-location { margin: 8px 0 0; font-size: 11px; line-height: 1.7; color: var(--muted, #6e6e73); }
+.case-library-clear { border: 0; background: transparent; font: inherit; font-size: 12px; color: var(--blue, #0066cc); min-height: 44px; padding: 8px; cursor: pointer; }
+.case-library-more { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px; padding: 12px 0 24px; }
+.case-library-more button { border: 1px solid var(--hairline, #e6e6eb); border-radius: 100px; background: var(--surface-secondary, #f5f5f7); color: var(--ink, #1d1d1f); font: inherit; font-size: 13px; min-height: 44px; padding: 10px 22px; cursor: pointer; }
+.case-library-more button:hover { background: #ebebef; }
+.case-library-more span { font-size: 11px; color: var(--muted, #6e6e73); }
+@media (max-width: 620px) {
+  .case-library-search { min-width: 0; }
+  .case-library-count { flex-basis: 100%; margin-left: 0; }
+  .case-library-controls { gap: 10px 12px; }
+}

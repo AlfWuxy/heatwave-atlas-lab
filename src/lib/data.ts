@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react';
 export interface Location { latitude: number; longitude: number; elevation?: number }
 export interface Source { label: string; datasetUrl: string; documentationUrl: string; provider: string }
 export interface CaseMeta {
+  name?: string; country?: string; continent?: string; year?: number;
   qualityStatus?: 'clean' | 'flagged'; qualityWarnings?: { variable: string; count: number; min: number; max: number; message: string }[];
-  summary?: string; eventEvidence?: { title: string; url: string; organisation: string }[]; scopeNote?: string;
+  summary?: string; eventEvidence?: { title: string; url: string; organisation: string; evidenceNote?: string; verifiedOn?: string; accessMethod?: string }[]; scopeNote?: string;
   id: string; cityId: string; title: string; start: string; end: string; hours: number;
   peakTemperature: number; peakTime: string; timezone: string; dataUrl: string; csvUrl: string;
   requestedLocation: Location; gridLocation: Location; source: Source; retrievedAt: string; caveat: string;
